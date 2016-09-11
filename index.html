@@ -30,45 +30,89 @@
 
   <body>
 
-    <div id="h">
-      <div class="logo">
-        <h2>BASIC</h2>
-      </div><!--/logo-->
-      <div class="container centered">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>Добрый день, приветствую вас на своей сттраничке <b>Михаил</b>.<br/>Верстальщик HTML, front-end разработчик</h1>
-          </div>
-        </div><!--/row-->
+      <div id="h">
+        <div class="top_header">
+          <div class="container">
+            <div class="row">
+              <div class="logo">
+                  <h2 class="logo_title"> iDesign </h2>
+                </div><!--/logo-->
+                <div class="right_block">
+                  <nav class="navbar top-nav" role="navigation">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                            <span class="sr-only">Показать меню</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home" class="scroll" data-toggle="modal">Я</a><span> </span></li>
+                            <li class="top-nav__b"><a href="#work" class="scroll" data-toggle="modal" >Портфолио</a></li>
+                            <li class="top-nav__b"><a href="#contact" class="scroll" data-toggle="modal" >Контакты</a></li>
+                           </ul>
+                        </div>
+                    </nav>
+                </div>
+             </div>
+           </div>
+        </div>
 
-        <div class="row mt">
+
+
+       <!--  promo -->
+      <div class="container centered">
+        <div class="title_promo center-block">
+            <h1 class="h_title_text"><p>Вёрстка HTML и front-end разработка<br/></p>Добрый день, приветствую вас на своей страничке <br>меня зовут Михаил.<br/> </h1>
+        </div>
+
+        <div class="row mt mb">
+
           <div class="col-sm-4">
             <i class="ion-ios7-monitor-outline"></i>
-            <h3>Web Design</h3>
-          </div><!--/col-md-4-->
+            <h3>Вёрстка в CMS</h3>
+          </div>
 
           <div class="col-sm-4">
             <i class="ion-ios7-browsers-outline"></i>
-            <h3>UI Development</h3>
-          </div><!--/col-md-4-->
+            <h3>Web Design</h3>
+          </div>
 
           <div class="col-sm-4">
             <i class="ion-ios7-copy-outline"></i>
-            <h3>Brand Identity</h3>
-          </div><!--/col-md-4-->
+            <h3>Web разработка</h3>
+          </div>
         
-        </div><!--/row-->
-      </div><!--/container-->
+        </div>
+      </div>
     </div><!--H-->
 
-    <div class="container ptb">
+      <!-- руководствуюсь  правилами -->
+
+    <div class="work_princip container ptb">
       <div class="row">
-        <h2 class="centered mb">I craft handsome sites & stunning apps<br/>that empower your startup.</h2>
+        <h2 class="work_princip--title centered mb">В своей работе я руководствуюсь следующими правилами</h2>
         <div class="col-md-6">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <ul>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Минимизация дерева DOM не в ущерб логике и работе программы. </li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Читабельность кода и комментирование.</li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Использование классов для разметки.</li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Использование семантических тегов. </li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Обязательная W3C-валидация кода.</li>
+             <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Pixel perfect верстка.</li>
+          </ul>
         </div><!--/col-md-6-->
         <div class="col-md-6">
-          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
+          <ul>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Описание стилей по принципу от общего к конкретному элементу, соблюдение иерархии.</li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Обязательное комментирование основных блоков.</li>
+            <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Минимизация кода CSS сокращёнием формы записи правил.</li>
+             <li class="work_princip--item"><i class="ion-ios7-checkmark-empty"></i> Минимизация веса изображений и спрайтов в известных графических программах.</li> 
+          </ul>
         </div><!--/col-md-6-->
       </div><!--/row-->
     </div><!-- /.container -->
@@ -80,12 +124,14 @@
       </div><!--/row-->
     </div><!--/.container-->
 
-    <div id="g">
+    <!-- портфолио -->
+
+    <div id="g" class="description_portfolio">
       <div class="container">
         <div class="row centered">
-          <h2>Check some of my latest works.</h2>
+          <h2 class="description_portfolio--title">Мои работы в рамках учёбы и работы</h2>
           <div class="col-md-8 col-md-offset-2">
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br/>It has roots in a piece of classical Latin literature<br/>from 45 BC, making it over 2000 years old.</p>
+            <p class="description_portfolio--text">Предствленые здесь работы были сделаны исключительно мною по PSD макетам, некоторые макеты разработал и отрисовал в фотошопе также я. </p>
 
           </div><!--/col-md-8-->
         </div><!--/row-->
@@ -227,12 +273,15 @@
 
     <div class="container mt">
         <div class="row clients centered">
-          <p class="mb">Some clients that I had the pleasure to working for.</p>
-          <div class="col-sm-2 col-sm-offset-1">
+          <p class="mb">В своих работах использую следующие технологии WEB разработки.</p>
+          <div class="col-sm-2">
+            <img src="assets/img/lhtml.png" alt="">
+          </div>
+          <div class="col-sm-2">
             <img src="assets/img/client1.png" alt="">
           </div>
           <div class="col-sm-2">
-            <img src="assets/img/client3.png" alt="">
+            <img src="assets/img/css.png" alt="CSS">
           </div>
           <div class="col-sm-2">
             <img src="assets/img/client2.png" alt="">
@@ -253,7 +302,7 @@
           <div class="col-md-8 col-md-offset-2">
             <h1>Я живу и работаю в Санкт-Петербурге</h1>
             <h3 class="mb">Занимаюсь созданием сайтов<br/>Участвую в стартапах</h3>
-            <button class="btn btn-conf btn-clear">Мой опыт и навыки</button>
+            <button class="btn btn-conf btn-clear">Связаться со мной</button>
           </div>
         </div><!--/row-->
       </div><!--/container-->
