@@ -1,3 +1,22 @@
+/* ----------------------------------  font ------------------------------------- */
+
+@font-face {
+    font-family: "Robotolight";
+    src: url("../font/Robotolight.ttf");
+    url("../font/Robotolight.woff") format("woff"),
+    url("../font/Robotolight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Robotoblack";
+    src: url("../font/robotoblack.ttf");
+    url("../font/robotoblack.woff") format("woff"),
+    url("../font/robotoblack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* ----------------------------------  end font ------------------------------------- */
 [canvas=container],
 [off-canvas] {
     padding: 10px 20px;
@@ -5,4 +24,91 @@
 
 [class*=js-] {
     cursor: pointer;
+}
+.content{
+	font-size: 16px;
+	font-family: "Robotolight";
+	line-height: 26px;
+}
+.title_content{
+	text-align: center;
+}
+.title_content--item{
+	text-align: left;
+	font-size: 18px;
+}
+/* ----------------------------------  Описание кода на странице  ------------------------------------- */
+.code_descriptions{
+    padding: 25px 7px 7px;
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
+    margin: 10px 0;
+    overflow: auto;
+    background-color: #F5F5F5;
+    position: relative;
+}
+.code_descriptions:after{
+	position: absolute;
+    right: 0px;
+    top: -2px;
+    background: #ccc;
+    padding: 4px 9px 1px;
+    border-radius: 0px 3px 0 3px;
+}
+
+.code_descriptions--h:after{
+    content: "HTML";
+}
+.code_descriptions--h,
+.code_descriptions--c,
+.code_descriptions--r{
+	width: 46%;
+	margin: 10px;
+}
+.code_descriptions--c{
+	clear: both;
+}
+.line {
+	font-size: 14px;
+    list-style-type: none;
+}
+.tag{
+	color: #008;
+}
+.item_class{
+	color: #606;
+}
+.raven{
+	color: #660;
+}
+.name_class{
+	color: #080;
+}
+
+/* ----css--- */
+
+.prv{
+	margin: 0 0 0 65px;
+}
+.code_descriptions--c:after{
+    content: "CSS";
+}
+.ops{
+	color: #999;
+}
+.prv{
+    color: #905;
+}
+.prv_v{
+    color: #5a5ab0;
+}
+/* ----  result  --- */
+.t_block_result{
+	display: flex;
+}
+.code_descriptions--r{
+    
+}
+.code_descriptions--r:after{
+    content: "result";
 }
