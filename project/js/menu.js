@@ -39,46 +39,46 @@
 
 	function init() {
 		var showMenu = document.getElementById( 'showMenu' ),
-			perspectiveWrapper = document.getElementById( 'perspective' ),
-			container = perspectiveWrapper.querySelector( '.container' ),
-			contentWrapper = container.querySelector( '.wrapper' );
+			perspectiveperspective_wrapper = document.getElementById( 'perspective' ),
+			perspective_container = perspectiveperspective_wrapper.querySelector( '.perspective_container' ),
+			contentperspective_wrapper = perspective_container.querySelector( '.perspective_wrapper' );
 
 		showMenu.addEventListener( clickevent, function( ev ) {
 			ev.stopPropagation();
 			ev.preventDefault();
 			docscroll = scrollY();
-			// change top of contentWrapper
-			contentWrapper.style.top = docscroll * -1 + 'px';
+			// change top of contentperspective_wrapper
+			contentperspective_wrapper.style.top = docscroll * -1 + 'px';
 			// mac chrome issue:
 			document.body.scrollTop = document.documentElement.scrollTop = 0;
 			// add modalview class
-			classie.add( perspectiveWrapper, 'modalview' );
+			classie.add( perspectiveperspective_wrapper, 'modalview' );
 			// animate..
-			setTimeout( function() { classie.add( perspectiveWrapper, 'animate' ); }, 25 );
+			setTimeout( function() { classie.add( perspectiveperspective_wrapper, 'animate' ); }, 25 );
 		});
 
-		container.addEventListener( clickevent, function( ev ) {
-			if( classie.has( perspectiveWrapper, 'animate') ) {
+		perspective_container.addEventListener( clickevent, function( ev ) {
+			if( classie.has( perspectiveperspective_wrapper, 'animate') ) {
 				var onEndTransFn = function( ev ) {
-					if( support && ( ev.target.className !== 'container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
+					if( support && ( ev.target.className !== 'perspective_container' || ev.propertyName.indexOf( 'transform' ) == -1 ) ) return;
 					this.removeEventListener( transEndEventName, onEndTransFn );
-					classie.remove( perspectiveWrapper, 'modalview' );
+					classie.remove( perspectiveperspective_wrapper, 'modalview' );
 					// mac chrome issue:
 					document.body.scrollTop = document.documentElement.scrollTop = docscroll;
-					// change top of contentWrapper
-					contentWrapper.style.top = '0px';
+					// change top of contentperspective_wrapper
+					contentperspective_wrapper.style.top = '0px';
 				};
 				if( support ) {
-					perspectiveWrapper.addEventListener( transEndEventName, onEndTransFn );
+					perspectiveperspective_wrapper.addEventListener( transEndEventName, onEndTransFn );
 				}
 				else {
 					onEndTransFn.call();
 				}
-				classie.remove( perspectiveWrapper, 'animate' );
+				classie.remove( perspectiveperspective_wrapper, 'animate' );
 			}
 		});
 
-		perspectiveWrapper.addEventListener( clickevent, function( ev ) { return false; } );
+		perspectiveperspective_wrapper.addEventListener( clickevent, function( ev ) { return false; } );
 	}
 
 	init();
