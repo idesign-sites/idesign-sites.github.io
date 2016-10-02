@@ -1,0 +1,138 @@
+.home_header .navbar-brand{
+	width: 150px;
+	padding: 5px 0 5px 14px ;
+}
+.home_header .navbar-default{
+	background-color: #fff;
+	border: none;
+}
+
+
+.magazin .logo_img{
+	margin: 50px 0; 
+	display: inline-block;
+}
+.magazin.container-fluid.br-bottom, .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+	padding-left: 0;
+}
+.top_navigation > li > a{
+	
+	padding: 0 15px;
+	border-right: 1px solid #C8C8C8;
+	margin: 15px 0;
+}
+.top_navigation li:nth-child(1){
+	padding-left: 0;
+}
+@media screen and (max-width: 768px){
+
+.navbar-right .shop::before{
+	top:9px;
+ 	left: 133px;
+}}
+.navbar-nav{
+	margin: 7.5px 0px;
+}
+@media (min-width: 1200px){
+.magazin .col-lg-push-1 {
+    left: 5.333333%;
+}}
+
+
+				/* карусель */
+
+	.carousel-inner {}
+    .carousel-inner .item-box {
+        position: absolute;
+        z-index: 2;
+        width: 200px;
+        height: 100px;
+        
+        background: rgba(255, 255, 255, 0.75);
+    }
+    .carousel-inner .item-box.top {
+        top: 5%;
+    }
+    .carousel-inner .item-box.left {
+        left: 5%;
+    }
+    .carousel-inner .item-box.right {
+        right: 5%;
+    }
+
+    .carousel-control{
+    	top:50%;
+    	background-image: none;
+    }
+    .carousel .left .carousel-control {
+		background: none;
+		-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+    }
+    .right .carousel-control {
+		background: none;
+		right: -145px;
+    }
+
+
+@media screen and (max-width: 768px){
+ .products .left_menu .left_menu-title{
+ 	font-size: 22px;
+}}
+
+@media screen and (max-width: 768px){
+ .products .left_menu .nav-item{
+ 	font-size: 10px;
+}}
+
+@media screen and (max-width: 768px){
+ .adress_company span {
+ 	font-size: 16px;
+ 	font-weight: bold;
+}}
+
+@media screen and (max-width: 768px){
+ .work_client span, .magazin .work_client a {
+ 	font-size: 16px;
+ 	font-weight: bold;
+}}
+@media screen and (max-width: 768px){
+ .footer-home {
+ 	font-size: 10px;
+ 	
+}}
+
+
+.input-group{
+	 margin: 65px 0 0 -30px;
+	 width: 250px;
+}
+.products_description{
+	position: relative;
+	top: 65px;
+
+}
+.products_goods-title{
+	margin-top: 80px;
+}
+table {
+	position: relative;
+	top:60px;
+	margin-bottom: 50px;
+}
+ 
+@media screen and (max-width: 768px){
+.col-xs-push-4 {
+    left: 76.333333%;
+    top:95px;
+    padding: 10px;
+    }}
+@media screen and (max-width: 768px){
+	.col-xs-pull-4 {
+ 	right: 33.33333333%;
+}}
+@media screen and (max-width: 768px){
+.socsite {
+margin: 30px;
+}}

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>PSD верстка макетов</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../../assets/css/ionicons.min.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+			<!-- content css-->
+				<link rel="stylesheet" href="css/stylesheet.css" type="text/css" />
+				<link href="css/normalize.css" rel="stylesheet" type="text/css">
+				<link href="css/style.css" rel="stylesheet" type="text/css">
+				<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+				<link href="css/style_bootstrap.css" rel="stylesheet" type="text/css">
+
+		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+		<script src="../js/modernizr.custom.25376.js"></script>
+	</head>
+	<body>
+	<!-- button description --> 
+		<div class="btn-menu-perspective">
+		<button class="perspective_btn" title="Посмотреть описание" id="showMenu"><i class="ion-ios7-help-empty"></i></button>
+		<button onclick="location.href = 'file:///D:/mySite/%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B/index.html'" class="perspective_btn--back" title="Обратно" id="showMenu"><i class="ion-ios7-arrow-thin-left"></i></button>
+		</div>
+	<!-- end button description --> 
+
+		<div id="perspective" class="perspective effect-rotateleft">
+			<div class="perspective_container">
+				<div class="perspective_wrapper"><!-- wrapper needed for scroll -->
+					<!-- /main -->
+
+			<!-- content -->
+				<header class="home_header">	
+			 	<div class="container">
+			 		<div class="navbar navbar-default" role="navigation">
+			        <div class="magazin container-fluid br-bottom">
+			          <div class="navbar-header">
+			            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			              <span class="sr-only">Toggle navigation</span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			            </button>
+			            <a class="navbar-brand visible-xs" href="#"><img class="img-responsive" src="img/logo_p.png" alt=""></a>
+			          </div>
+			          <div class="navbar-collapse collapse">
+			            <ul class="nav navbar-nav top_navigation">
+			              <li><a class="nav-item" href="#">Главная</a></li>
+			              <li><a class="nav-item" href="#">О компании</a></li>
+							<li><a class="nav-item" href="#">Доставка и оплата</a></li>
+							<li><a class="nav-item" href="#">Вопросы и ответы</a></li>
+							<li><a class="nav-item" href="#">Отзывы и пожелания</a></li>
+							<li><a class="nav-item" href="#">Контакты</a></li>
+
+			            </ul>
+			            <ul class="nav navbar-nav navbar-right">
+			              <li class=""><a class="shop" href="#">Ваша корзина пуста</a></li>
+			            </ul>
+
+			          </div><!--/.nav-collapse -->
+			        </div><!--/.container-fluid -->
+			      </div>
+				</div>
+				<!-- интернет магазин и адресса -->
+				<section class="magazin">
+					<div class="container br-bottom">
+						<div class="row">
+							<div class=" col-lg-4 hidden-xs">
+								<a href="index.html" class="logo_img"><img  src="img/logo_p.png" alt=""></a>
+							</div>
+							<div class="col-md-5 col-sm-4 ">
+								<div class="adress_company">
+									<p class="adress_company-text">Адрес центрального склада:<br>
+									<span class="adress_company-item">г. Санкт-Петербург, ст.метро Лесная, Лесной пр., дом 37 ,корп. 3</span>
+									<p class="adress_company-time">Режим работы:<br><span>пн-пт с 10-00 до 18-00</span></p>
+								</div>
+							</div>
+							<div class="col-lg-push-1 col-lg-3">
+								<div class="work_client ">
+									<p class="work_client-text ">Отдел по работе с клиентами:<br>
+									<a class="work_client-tel " href="callto:+79657742301">+7 (965) 774-23-01</a><br>
+			 						<a class="work_client-tel " href="callto:+79052696822">+7 (905) 269-68 22</a></p>
+									<p class="work_client-email ">Адрес электронной почты:<br><span> toparomat@mail.ru </span></p>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</section>
+				</header>
+
+				<main>
+ 		
+	<section class="promo">
+		<div class="container">
+			<div class="row">
+
+		<!-- Наши преимущества: -->
+
+				<div class="advantages to-left">
+					<div class="col-md-3 col-xs-12 col-sm-12">
+						<h1 class="advanteges_title"> Наши преимущества:</h1>
+							<ul>
+								<li class="advanteges_title-text advantages_home">Минимальная сумма заказа<br> по Санкт-Петербургу 500 руб</li>
+								<li class="advanteges_title-text advantages_box">Минимальная сумма заказа для отправки почтой по России 2000 руб</li>
+								<li class="advanteges_title-text advantages_free">Бесплатная доставка по Санкт-Петербургу при заказе от 2000 руб</li>
+								<li class="advanteges_title-text advantages_present">Подарок при заказе от 2000 руб</li>
+							</ul>
+					</div>
+				</div>
+
+		<!-- новые товары, реклама и акции -->	
+
+				<div class="slider_goods hidden-xs">
+					<div class="col-md-9 col-sm-9 col-lg-8">
+
+						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner">
+						    <div class="item active">
+						        
+								    <div class="promo_product hype hidden-sm hidden-xs"><img  alt="картинка" src=
+									"img/slider/slider1.png"></div>
+
+									<div class="promo_product hidden-xs sale"><img alt="картинка" src=
+									"img/slider/slider2.png"></div>
+
+									<div class="promo_product new_product "><img   alt="картинка" src=
+									"img/slider/slider3.png"></div>
+
+						    </div>     
+						    <div class="item">
+								    <div class="promo_product hype"><img  alt="картинка" src=
+									"img/slider/slider1.png"></div>
+
+									<div class="promo_product sale hidden-sm hidden-xs"><img  alt="картинка" src=
+									"img/slider/slider2.png"></div>
+
+									<div class="promo_product new_product hidden-xs"><img alt="картинка" src=
+									"img/slider/slider3.png"></div>        
+						   	</div>
+						    <div class="item ">
+								    <div class="promo_product hype hidden-xs "><img  alt="картинка" src=
+									"img/slider/slider1.png"></div>
+
+									<div class="promo_product sale"><img  alt="картинка" src=
+									"img/slider/slider2.png"></div>
+
+									<div class="promo_product new_product hidden-sm hidden-xs"><img  alt="картинка" src=
+									"img/slider/slider3.png"></div>        
+						    </div>
+						  </div>
+
+						  <!-- Controls -->
+						  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+						    <span class="sprite sprite-slider_arrow"></span>
+						  </a>
+						  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+						    <span class="sprite sprite-slider_arrow"></span>
+						  </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+
+		<section class="products">			
+		<!-- поиск -->
+		
+		<div class="container">
+			<div class=" col-xs-push-4 col-md-4 col-lg-4 col-sm-4 col-xs-4">
+					<form class="navbar-form pull-left">
+              			<div class="input-group" >
+	               			<input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+		                		<div class="input-group-btn">
+		                 			<button class="btn btn-default btn-primary" type="submit"><i class="sprite sprite-search-lupa"></i></button>
+		                		</div>
+	              			</div>
+          				</form>
+          	</div>	
+          	<div class="col-xs-pull-4 col-md-8 col-lg-8 col-sm-8 col-xs-8 pull-right ">		
+					<div class="products_description">
+						<h1 class="products_description-title">О ПРОДУКЦИИ </h1>
+						<p class="products_description-text">Наливные духи Reni — это не парфюм известных брендов, это схожесть направления аромата.
+						Наливная парфюмерия RENI - это высококачественные версии ароматов , которые изготавливают на основе французких....</p>
+					
+					</div>
+			</div>
+		</div>			
+		</section>			
+
+		<!-- продукты и меню -->
+
+	<section class="products">
+		<div class="container">
+			<div class="row">	
+				<div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">	
+
+					
+
+					<!-- левое меню -->
+					<aside class="left_menu">
+					<p class="left_menu-title">Продукция</p>
+					<nav class="navigation to-left">
+							<ul>
+								<li>
+									<a class="nav-item" href="#">Духи RENI женские</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">Духи RENI мужские</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">Масляные духи RENI</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">Флакон для парфюмерии</a>
+								</li>
+								<li class="plus_minus">
+									<a class="nav-item" href="#">Декоративная косметика VEIQUI</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">Антиоксидантная косметика формула преображения</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">МЭТР-Косметика для мужчин уход за лицом и телом</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">LA FEMME ELEGANTE Косметика ANTI-AGE</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">Живое мёртвое море косметика на основе минеральной грязи </a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">природный целитель коллекция космецевтических средств</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">SENSUM гели для душа и шампуни с эфирными маслами </a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">израильская косметика DOCTOR-NATURE</a>
+								</li>
+								<li>
+									<a class="nav-item" href="#">масло для волос VEIQUE</a>
+								</li>
+							</ul>
+						</nav>	
+
+					</aside>
+				</div>
+
+		<!-- перечень товаров и описание -->
+
+				<div class="col-md-8 col-lg-8 col-sm-8 col-xs-8 pull-right">	
+					
+							<table>
+
+								<tr >	
+									<th class="products_goods-title" colspan="3">Каталог товаров</th>
+								</tr>
+								<tr >
+									<td class="products_goods-item"><a href="#"><img src="img/products/1block-1.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href="#"><img src="img/products/1block-2.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href="#"><img src="img/products/1block-3.png" alt="картинка товара"></a></td>
+								</tr>
+								<tr >
+									<td class="description_product">Духи Reni женские</td>
+									<td class="description_product">Духи Reni мужские</td>
+									<td class="description_product">Маслянные духи Reni</td>
+								</tr>
+								<tr >
+									<td class="products_goods-item"><a href=""><img src="img/products/2block-1.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/2block-2.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/2block-3.png" alt="картинка товара"></a></td>
+								</tr>
+								<tr >
+									<td class="description_product">Флакон для парфюмерии</td>
+									<td class="description_product">Декоративная косметика VEIQUI</td>
+									<td class="description_product">Антиоксидантная косметика формула преображения</td>
+								</tr>
+								<tr >
+									<td class="products_goods-item"><a href=""><img src="img/products/3block-1.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/3block-2.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/3block-3.png" alt="картинка товара"></a></td>
+								</tr>
+								<tr >
+									<td class="description_product">МЭТР-Косметика для мужчин уход за лицом и телом</td>
+									<td class="description_product">LA FEMME ELEGANTE Косметика ANTI-AGE</td>
+									<td class="description_product">Живое мёртвое море косметика на основе минеральной грязи</td>
+								</tr>
+								<tr >
+									<td class="products_goods-item"><a href=""><img src="img/products/4block-1.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/4block-2.png" alt="картинка товара"></a></td>
+									<td class="products_goods-item"><a href=""><img src="img/products/4block-3.png" alt="картинка товара"></a></td>
+								</tr>
+								<tr >
+									<td class="description_product">природный целитель коллекция космецевтических средств</td>
+									<td class="description_product">SENSUM гели для душа и шампуни с эфирными маслами </td>
+									<td class="description_product">израильская косметика DOCTOR-NATURE</td>
+								</tr>
+								<tr >
+									<td class="products_goods-item"><a href=""><img src="img/products/4block-4.png" alt="картинка товара"></a></td>
+									
+								</tr>
+								<tr >
+									<td class="description_product">масло для волос VEIQUE</td>
+									
+								</tr>
+							</table>
+				</div>	
+						<!-- группа в контакте , подписка на новости -->	
+					<div class="row">
+					<div class="container">
+						<div class="socsite">
+						
+								<a href="#" class="vk icon-vk speak-vk">Наливная парфюмерия</a>
+								<p class="count_participants"><span class="count">116</span>участников</p>
+							<div class="person-socsite">
+								<div class="row">	
+										<div class="col-4 person_socsite-item">	
+											<img src="img/vk/vk2.png" alt="участник" class=""><p class="person_socsite-name">Саша</p>
+										</div>
+										<div class="col-4 person_socsite-item">
+											<img src="img/vk/vk1.png" alt="участник" class="">Александр
+										</div>
+										<div class="col-4 person_socsite-item">
+											<img src="img/vk/vk3.png" alt="участник" class="">Даниил
+										</div>
+								</div>
+							</div>
+								<a href="#" class="vk icon-vk speak-vk">Подписаться на новости</a>
+								<form action="news" class="vk_form">
+									<input type="text" class="search_text" placeholder="Адрес электронной почты"> 
+									<button type="submit">Подписаться на новости</button>
+								</form>
+						</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</section>
+</main>
+<footer class="footer-home">
+		<div class="container">
+			<div class="row">	
+				<div class="col-md-9 col-lg-9 col-sm-8 col-xs-8">	
+					COPYRIGHT© 2009-2015 г. «TOPAROMAT» интернет-магазин наливной парфюмерии и косметики RENI
+				</div>
+				<div class="col-md-3 col-lg-3 col-sm-3 col-xs-2 pull-right">
+					<a href="http://itmagency.ru/" class="web_development-best to-right">
+					<img class="img-responsive" src="img/web-development.png" alt="картинка товара"></a>
+				</div>		
+			</div>
+		</div>
+	</footer>
+	
+	<!-- owl-carusel -->
+	<script src="js/jquery-1.11.3.min.js" type="text/javascript">
+	</script>
+	<script src="js/owl.carousel.js" type="text/javascript">
+	</script>
+	<script src="js/jquery.plugin.js" type="text/javascript">
+	</script>
+	<script src="js/sclick.js" type="text/javascript">
+	</script>
+	<script src="js/bootstrap.min.js" type="text/javascript">
+	</script>
+	<script src="js/script.js" type="text/javascript">
+	</script>
+	<script>
+		$(document).ready(function(){
+  			$('.left_menu ul li').hover(
+   				 function() {
+     				 $( this ).addClass('plus_minus');
+    			}, function() {	
+     				 $( this ).removeClass('plus_minus');
+   				 	}
+  			);
+		});
+	</script>
+
+			<!-- end content -->
+
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+
+			<nav class="outer-nav right vertical">
+				<a href="#" class="icon-home">Home</a>
+				<a href="#" class="icon-news">News</a>
+				<a href="#" class="icon-image">Images</a>
+				<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>
+			</nav>
+		</div><!-- /perspective -->
+		<script src="../js/classie.js"></script>
+		<script src="../js/menu.js"></script>
+	</body>
+</html>
