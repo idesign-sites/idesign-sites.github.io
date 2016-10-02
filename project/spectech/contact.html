@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>PSD верстка макетов</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="3d page, menu, navigation, mobile, perspective, css transform, web development, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="../../assets/css/ionicons.min.css" />		
+		<link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+			<!-- content css-->
+			<link rel="stylesheet" href="css/normalize.css" type="text/css" />
+			<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+			<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+		<!-- csstransforms3d-shiv-cssclasses-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-load --> 
+		<script src="../js/modernizr.custom.25376.js"></script>
+	</head>
+	<body>
+		<!-- button description --> 
+		<div class="btn-menu-perspective">
+		<button class="perspective_btn" title="Посмотреть описание" id="showMenu"><i class="ion-ios7-help-empty"></i></button>
+		<button onclick="location.href = 'file:///D:/mySite/%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D1%8B/index.html'" class="perspective_btn--back" title="Обратно" id="showMenu"><i class="ion-ios7-arrow-thin-left"></i></button>
+		</div>
+	<!-- end button description --> 
+
+		<div id="perspective" class="perspective effect-rotateleft">
+			<div class="perspective_container">
+				<div class="perspective_wrapper"><!-- wrapper needed for scroll -->
+					<!-- /main -->
+
+			<!-- content -->
+		<header class="page-header">
+			<div class="container">
+				<a href="index.html" class="logo">
+	        	<div class="logo_brend"><b>Спецтех</b><span>24</span></div>
+	      		</a>
+				<nav class="main-nav">
+					<ul>
+						<li><a class="btn-header" href="spectech.html">О компании</a></li>
+						<li><a class="btn-header" href="technichs.html">Услуги</a></li>
+						<li><a class="btn-header" href="portfolio.html">Портфолио</a></li>
+						<li><a class="btn-header" href="contact.html">Контакты</a></li>
+						<li class="make-order button-yellow "><a href="#">Заказать звонок</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section class="contact-subheader">
+			<div class="container">
+				<div class="subheader-left ">
+					<h1 class="subheader-title " >Контакты</h1>
+					<span class="subheader-text">Свяжитесь с нами, и всё будет хорошо</span>
+				</div>
+				<div class="subheader-right">
+					<a href="" class="consultation button-orange">Мне нужна консультация</a>
+				</div>
+			</div>
+		</section>
+		
+		<section class="contacts">	
+			<div class="container">
+				<section id="map_canvas" class="map-google pull-left"></section>
+				<section class="forma pull-right  ">
+					<div class="contacts-company-information">
+						<p class="icon-telefon"> +7(812)212 85 06</p>
+						<p class="icon-email"> rent@spezteh.ru</p>
+						<h2 class="contacts-item"> Заказать консультацию по подбору подходящей техники:</h2>
+					</div>
+					<div class="contacts-user-data">
+						<form action="#" class="contacts-form">
+							<input placeholder="Имя" type="text"  >
+							<input type="tel" placeholder="Телефон для связи">
+							<textarea name="text" placeholder="Описание задачи (можно примерное)"></textarea>  
+							<button class="consultation btn-gray btn-dprice" type="submit" value="">Получить консультацию</button>
+						</form>
+					</div>
+				</section>
+			</div>   
+		</section>
+		
+		<section class="employees">		
+			<div class="container">
+				<h2 class="employees-title">Отзывы</h2>
+				<div class="employees-item pull-left">
+					<div class="employees-item_img  ">	
+						<img class="employees-client_one" src="img/img_employees_one.jpg" alt="фото" />
+					</div>	
+						<blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</blockquote>
+						<p>Оля Молния</p>
+				</div>
+				<div class="employees-item pull-left">
+					<div class="employees-item_img ">	
+						<img class="employees-client_two" src="img/img_employees_two.jpg" alt="фото" />
+					</div>	
+						<blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</blockquote>
+						<p>Оля Молния</p>	
+				</div>
+				<div class="employees-item pull-left">
+					<div class="employees-item_img ">	
+						<img class="employees-client_three" src="img/img_employees_three.jpg" alt="фото" />
+					</div>	
+						<blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</blockquote>
+						<p>Оля Молния</p>	
+				</div>		
+				<div class="employees-item pull-left">
+					<div class="employees-item_img ">	
+						<img class="employees-client_four" src="img/img_employees_four.jpg" alt="фото" />
+					</div>	
+						<blockquote>Спецтех24 – это надежные партнеры нашей компании, которые всегда выполняют работу быстро и еще у них отличное чувство юмора! Благодарим и рекомендуем.</blockquote>
+						<p>Оля Молния</p>	
+				</div>
+			</div>
+		</section>
+		
+		<footer class="page-footer">
+			<div class="container">
+				<a href="index.html" class="logo">
+				<div class="logo_white"><b>Спецтех</b><span>24</span></div>
+				</a>
+				<nav class="primary-nav white">
+					<ul>
+						<li><a class="btn-foteer" href="spectech.html">О компании</a></li>
+						<li><a class="btn-foteer" href="technichs.html">Услуги</a></li>
+						<li><a class="btn-foteer" href="portfolio.html">Портфолио</a></li>
+						<li><a class="btn-foteer" href="contact.html">Контакты</a></li>
+						<li><a class="callback-nav" href="#">Заказать звонок</a></li>
+					</ul>
+				</nav>
+			</div>
+		</footer>
+
+			<!-- end content -->
+
+				</div><!-- wrapper -->
+			</div><!-- /container -->
+
+			<nav class="outer-nav right vertical">
+				<a href="#" class="icon-home">Home</a>
+				<a href="#" class="icon-news">News</a>
+				<a href="#" class="icon-image">Images</a>
+				<a href="#" class="icon-upload">Uploads</a>
+				<a href="#" class="icon-star">Favorites</a>
+				<a href="#" class="icon-mail">Messages</a>
+				<a href="#" class="icon-lock">Security</a>
+			</nav>
+		</div><!-- /perspective -->
+		<script src="../js/classie.js"></script>
+		<script src="../js/menu.js"></script>
+
+	</body>
+</html>
