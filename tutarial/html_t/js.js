@@ -8,7 +8,8 @@ $(document).ready(function() {
 			$('#content').load(toLoad)
 		}											
 	});
-
+$('head').append('<script src="syntaxhighlighter/pre.js" type="text/javascript"></script>');	
+$('body').append('<script type="text/javascript">$("pre").syntax();</script>');	
 	$('#nav li a').click(function(){
 								  
 		var toLoad = $(this).attr('href')+' #content';

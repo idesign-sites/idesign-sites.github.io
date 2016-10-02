@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Фреймворк Bootstrap</title>
+  <!-- Include *at least* the core style and default theme -->
+  <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+
+  <!-- accordion css-->
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <!--end accordion css-->
+  <link rel="stylesheet" href="../css/slidebars.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body  class="tutorial_bg">
+  <section class="content" canvas="container">
+    <button class="js-toggle-left-slidebar">МЕНЮ</button>
+    <h1>Построение сеток в Bootstrap.</h1>
+    <h2>Сетка и классы</h2>
+    <p>
+      Построение сетки на боотстрап возможно в соответствии с макетом настроеным на колоночную верстку
+    </p>
+    <p>
+      Стандартно этот фреймворк настроен на 12 колоночную сетку с возможностью перенастройки на увеличение количества колонок, ширины контейнера и прочее
+    </p>
+    <p>
+      Фреймворк рассчитан на построение адаптивного дизайна с правилами CSS в виде медиа запросов позволяющих перестраивать блоки в потоке в зависимости
+           от текущих разрешений экранов, имеет классы для возможности перемещения элементов внутри ряда и их центровки
+    </p>
+    <p>
+      Работа с фреймворком начинается с необходимых настроек на сайте http://getbootstrap.com/customize/, этот ресурс разработчика боотстрап позволяет подключить стили и настроить все необходимые элементы и блоки будущей страницы(формы, таблицы, кнопки, модальные окна и тд)
+    </p>
+    <p>
+      Завершающим этапом является скачивание готового файла-библиотеки и подключение его к странице HTML.
+    </p>
+    <section>
+      <h3>Классы Bootstrap для построения сеток</h3>
+      <table>
+        <tbody>
+          <tr>
+            <th width="120">Bootstrap</th>
+            <th>Назначение</th>
+          </tr>
+
+            <tr><td>.container</td><td>Помещаю ряды и колонки страницы в контейнер (блок с классом.container). Ширина этого блока имеет на различных контрольных точках (благодоря наличию медиа запросов) разную ширину для соответствия с системой разметки макета.Также в этом классе по умолчанию имеется padding-и.</td></tr> 
+            <tr><td>.container-fluid</td><td>Если есть необходимость и макет расчитан на переменную ширину контента, применяю класс который использует 100% ширины окна браузера.
+            Класс .container-fluid устанавливает значение свойства margin, равное auto от левого и правого края контейнера до границ элемента body (т.е margin-left: auto и margin-right: auto). Этим он выравнивает элемент (.container-fluid) по горизонтали.
+            Класс .container-fluid задает отступы с помощью свойства CSS padding от левого и право края элемента до его содержимого на 15px (т.е. padding-left: 15px, padding-right: 15px).</td></tr>
+            <tr><td>.row</td><td></td></tr>
+            <tr><td>.col-xs-#</td><td></td></tr>
+            <tr><td>.col-sm-#</td><td></td></tr>
+            <tr><td>.col-md-#</td><td></td></tr>
+            <tr><td>.col-lg-#</td><td></td></tr>
+            <tr><td>.col-xs-offset-#</td><td></td></tr>
+            <tr><td>.col-sm-offset-#</td><td></td></tr>
+            <tr><td>.col-md-offset-#</td><td></td></tr>
+            <tr><td>.col-lg-offset-#</td><td></td></tr>
+          
+        </tbody>
+      </table>
+    </section>
+    <!--   Часто используемые классы для стилизации  -->
+    <h3>Адаптивные таблицы</h3>
+
+    <p>
+      Таблицы, используемые для отображения данных, также адаптивны в Bootstrap.
+      Для использования стилей таблиц Bootstrap мы используем класс .table, которому соответствует следующий CSS-код:
+    </p>
+
+    <pre class="brush: css">
+          .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+          }
+      </pre>
+    Применяя ширину в 100%, Bootstrap обеспечивает заполнение таблицами всей ширины родительского элемента. Но есть одна проблема. Таблицы с несколькими столбцами сжимаются на небольших устройствах, и могут не читаться.
+        Чтобы исправить это, Bootstrap содержит другой класс <b><ins>table-responsive</ins></b> 
+    <br>
+    Вот его CSS-код:
+    <pre class="brush: css">
+          .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+            border: 1px solid #ddd;
+          }
+      </pre>
+    Эти стили преобразуют столбцы таблицы в горизонтально прокручиваемые на небольших устройствах.
+    <h3>Адаптивные изображения</h3>
+    Большие изображения могут стать проблемой для небольших устройств. Bootstrap использует класс .img, что сделать любое изображение адаптивным:
+    <pre class="brush: css">
+              .img-responsive {
+                display: block;
+                max-width: 100%;
+                height: auto;
+              }
+      </pre>
+    Комбинация объявлений <b>max-width: 100% и height: auto</b>
+    <br>
+    обеспечивает то, что изображения пропорционально уменьшаются на небольших устройствах, оставаясь в рамках ограничений родительского элемента на больших устройствах.
+  </section>
+  <div off-canvas="slidebar-1 left reveal" id="menu_pop">
+    <nav class="outer-nav right vertical">
+      <ul id="nav" >
+        <li>
+          <div class="first">
+            Вертикальное расположение
+            <br>
+            и выравнивание элементов
+            <span class="button_podtext">block, inline, inline-block</span>
+          </div>
+          <ul>
+            <li>
+              <a href="v_block.html">block</a>
+            </li>
+            <li>
+              <a href="v_inline.html">inline</a>
+            </li>
+            <li>
+              <a href="v_inline_block.html">inline-block</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="first">
+            Горизонтальное расположение
+            <br>
+            и выравнивание элементов
+            <span class="button_podtext">block, inline, inline-block</span>
+          </div>
+          <ul>
+            <li>
+              <a href="g_inline.html">inline</a>
+            </li>
+            <li>
+              <a href="g_block.html">block</a>
+            </li>
+            <li>
+              <a href="g_inline_block.html">inline-block</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            Построение сеток
+            <br>
+            <span class="button_podtext">Bootstrap, Flex, Foundation</span>
+          </div>
+          <ul>
+            <li>
+              <a href="frame_bootstrap.html">Bootstrap</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 2</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            Основное
+            <br>
+            <span class="button_podtext">Блог, Тесты, Форум</span>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Ссылка 1</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 2</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="../js/slidebars.js"></script>
+  <script src="../js/scripts.js"></script>
+
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all()</script>
+  <script src="slider.js"></script>
+
+</body>
+</html>

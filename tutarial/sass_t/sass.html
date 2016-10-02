@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>mmm... Ajax!</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+    <h1>ajax ... nettuts</h1>
+    <ul id="nav">
+        <li><a href="index.html">welcome</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact</a></li>
+        <li><a href="terms.html">terms</a></li>
+    </ul>
+    <div id="content">
+<article id="post-820" class="post-820 post type-post status-publish format-standard hentry category-html-css tag-editor tag-sass tag-scss tag-sublime tag-312 tag-308">
+    <header class="entry-header">
+        <h1 class="entry-title">Sublime Text 3 &#8212; установка и настройка препроцессора SASS/SCSS</h1>
+
+        <div class="entry-meta">
+            <span class="posted-on"><i class="fa fa-calendar"></i>&nbsp;<a href="http://nosensus.com/sublime-ustanovka-sass-scss/" rel="bookmark"><time class="entry-date published" datetime="2014-07-18T11:17:23+00:00">18.07.2014</time></a></span>&nbsp;<span class="byline"><i class="fa fa-user"></i>&nbsp;<span class="author vcard"><a class="url fn n" href="http://nosensus.com/author/admin/">nosensus</a></span></span>     </div><!-- .entry-meta -->
+    </header><!-- .entry-header -->
+    
+            
+    <div class="entry-content">
+        <p><a href="http://nosensus.com/wp-content/uploads/2014/07/sass_sublime.jpg"><img class="alignleft size-medium wp-image-821" alt="sass_sublime" src="http://nosensus.com/wp-content/uploads/2014/07/sass_sublime-300x85.jpg" width="300" height="85" /></a></p>
+<p>И так работая с препроцессором SASS/SCSS возникла необходимость повесить пакет и компилятор на редактор Sublime Text 3. В посте ранее я рассказывал <a title="Установка дополнительного пакета в Sublime Text 3" href="http://nosensus.com/sublime-ustanovka-paketa/" target="_blank">как установить дополнительные пакеты в Sublime Text 3</a>. Теперь расскажу как установить пакет SASS/SCSS.</p>
+<p>1. Ставим дополнительный пакет <span style="color: #ff6600;">SCSS</span>.</p>
+<p>2. Ставим дополнительный пакет <span style="color: #ff6600;">Compass</span></p>
+<p>2. В консоли устанавливаем SASS/SCSS синтаксис (Syntax Highlighting)</p>
+<pre class="brush: php; title: ; notranslate" title="">
+
+import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+
+</pre>
+<p>3. После в корне проекта необходимо создать файл <span style="color: #ff6600;">config.rb</span>, увы пока не нашел способ по автоматическому созданию данного конфига. Поэтому создаем ручками и впихиваем следующее</p>
+<pre class="brush: php; title: ; notranslate" title="">
+
+# Require any additional compass plugins here.
+
+# Set this to the root of your project when deployed:
+http_path = &quot;/&quot;
+css_dir = &quot;css&quot;
+sass_dir = &quot;sass&quot;
+images_dir = &quot;images&quot;
+javascripts_dir = &quot;javascripts&quot;
+
+# You can select your preferred output style here (can be overridden via the command line):
+# output_style = :expanded or :nested or :compact or :compressed
+
+# To enable relative paths to assets via compass helper functions. Uncomment:
+# relative_assets = true
+
+# To disable debugging comments that display the original location of your selectors. Uncomment:
+line_comments = false
+
+
+# If you prefer the indented syntax, you might want to regenerate this
+# project again passing --syntax sass, or you can uncomment this:
+# preferred_syntax = :sass
+# and then run:
+# sass-convert -R --from scss --to sass sass scss &amp;&amp; rm -rf sass &amp;&amp; mv scss sass
+
+</pre>
+<p>Ну теперь можно создать файл с расширением <span style="text-decoration: underline;">*.scss</span> и чтобы скомпилировать в <span style="text-decoration: underline;">*.css</span> нажмите сочетание клавиш <span style="color: #ff6600;">CTRL + B</span> либо <span style="color: #ff6600;">Tools -&gt; Build</span></p>
+<p><span style="color: #000000;">P.S. не забываем, что ruby должен быть установлен. В статье<a title="sass/scss обзор и установка" href="http://nosensus.com/sass-scss-obzor-i-ustanovka/" target="_blank"> sass/scss обзор и установка я рассказывал</a> как установить руби и его пакеты.</span></p>
+            </div><!-- .entry-content -->
+
+    <footer class="entry-footer">
+        <i class="fa fa-folder"></i> <a href="http://nosensus.com/category/html-css/" rel="category tag">HTML и СSS</a> <i class="fa fa-tag"></i> <a href="http://nosensus.com/tag/editor/" rel="tag">editor</a>, <a href="http://nosensus.com/tag/sass/" rel="tag">sass</a>, <a href="http://nosensus.com/tag/scss/" rel="tag">scss</a>, <a href="http://nosensus.com/tag/sublime/" rel="tag">sublime</a>, <a href="http://nosensus.com/tag/%d0%bf%d1%80%d0%b5%d0%bf%d1%80%d0%be%d1%86%d0%b5%d1%81%d1%81%d0%be%d1%80/" rel="tag">препроцессор</a>, <a href="http://nosensus.com/tag/%d1%80%d0%b5%d0%b4%d0%b0%d0%ba%d1%82%d0%be%d1%80/" rel="tag">редактор</a> <i class="fa fa-link"></i> <a href="http://nosensus.com/sublime-ustanovka-sass-scss/" rel="bookmark">permalink</a>
+            </footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+            
+            
+                <nav class="navigation post-navigation" role="navigation">
+        <h1 class="screen-reader-text">Post navigation</h1>
+        <div class="nav-links">
+            <div class="nav-previous"><a href="http://nosensus.com/sublime-ustanovka-paketa/" rel="prev"><span class="meta-nav"><i class="fa fa-long-arrow-left"></i></span> Sublime Text 3 &#8212; установка дополнительных пакетов</a></div><div class="nav-next"><a href="http://nosensus.com/sublime-text-3-hot-keys/" rel="next">Sublime Text 3 &#8212; Горячие клавиши <span class="meta-nav"><i class="fa fa-long-arrow-right"></i></span></a></div>     </div><!-- .nav-links -->
+    </nav><!-- .navigation -->
+    
+
+    <div id="foot">Tutorial by James for NETTUTS</div>
+</div>
+</body>
+</html>

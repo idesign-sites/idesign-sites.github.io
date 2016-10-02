@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Блочные элементы вертикальное движение</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+           <h1>Вертикальное расположение и выравнивание элементов в HTML документе.</h1>     
+            <h2>Блочные HTML элементы</h2>
+            <p>Расположение таких элементов в документе (в нормальном потоке) возможно при применении следующих правил CSS: </p>
+            <ul>
+                <li>margin-(top,bottom): +-px;</li> 
+                
+            </ul>
+            <p>Применение правил CSS изменяющих нормальный поток элементов:</p>
+            <ol>
+                <li>position: (absolute, relative)</li>
+                <li>transform: translate(y)</li>
+            </ol>
+            <p>Центрирование блочных элементов</p>
+                <ol>
+                    <li>line-height; (...); задаем высоту строки равную высоте родительского блока</li>
+                    <li>Использовать преобразование через display: table-cell; vertical-align: middle;
+                        
+                        <div style="display: table-cell; vertical-align: middle;  height: 100px; border: 1px solid red">
+  <button>Кнопка<br>с любой высотой<br>и шириной</button>
+</div>
+                    </li>
+                    <li>Если высота родительского блока не задана можно использовать CSS правило padding:
+                        <pre>       .outer_block {
+                                    padding: 5% 0;
+                                }
+                        .inner_block {
+                                    padding: 10% 0;
+                                }</pre>
+                        <pre>Если высота внутреннего блока известна то можно задать фиксированные значения паддингов
+                        Например: высота блока 600px, внутреннего 200px, тогда отступы нужны в 200px сверху и снизу.</pre>
+                    </li>
+                    <li></li>
+                </ol>
+        </div>
+    </div>
+
+</body>
+</html>

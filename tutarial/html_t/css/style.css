@@ -1,0 +1,158 @@
+/* ----------------------------------  font ------------------------------------- */
+
+@font-face {
+    font-family: "Robotolight";
+    src: url("../font/Robotolight.ttf");
+    url("../font/Robotolight.woff") format("woff"),
+    url("../font/Robotolight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Robotoblack";
+    src: url("../font/robotoblack.ttf");
+    url("../font/robotoblack.woff") format("woff"),
+    url("../font/robotoblack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* ----------------------------------  end font ------------------------------------- */
+.tutorial_bg{
+margin: 10px 0 0 10px;
+
+}
+#menu_pop {
+ margin:10px auto ;
+ width: 280px;
+ background: url('../img/wood.jpg');
+ padding: 7px;
+ box-shadow:  0px 1px 5px #000;
+ z-index: 10;
+}
+#menu_pop:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background: url(iStock.png);
+}
+#menu_pop:after {
+content: "";
+    position: absolute;
+    display: block;
+    width: 280px;
+    height: 255px;
+    bottom: 119px;
+    left: 0;
+    background: url(../img/nail.png);
+    background-size: 50%;
+        z-index: -1;
+}
+#nav {
+ list-style: none;
+ padding: 0px;
+ margin: 0px;
+}
+#nav .button_podtext {
+ font-size: 9px;
+ color: #b1b1b1;
+}
+#nav div {
+ display: block;
+ cursor: pointer;
+ text-decoration: none;
+ display: block;
+ padding: 8px 0px 8px 11px;
+ background: #000;
+ color: #fff;
+ font-size: 12px;
+ font-family: tahoma;
+ background: url('../img/bg.png') 0px 0px;
+ text-shadow: 0px 1px 0px rgba( 0, 0, 0, 0.6);
+ list-style: circle;
+}
+#nav div:hover {
+ background: url('../img/bg.png') 0px -44px;
+}
+.first {
+ border-radius: 3px 3px 0px 0px;
+}
+#nav ul a {
+ color: #777;
+}
+#nav ul {
+ list-style: none;
+ padding: 5px;
+ font-size: 10px;
+ font-family: Tahoma;
+ background: #1a1a1a;
+ box-shadow: inset 0px 3px 6px rgba( 0, 0, 0, 0.7);
+ display: none;
+}
+#nav ul li {
+ font-weight: normal;
+ cursor: auto;
+ padding: 3px 7px;
+}
+#nav a {
+ text-decoration: none;
+}
+#nav a:hover {
+ text-decoration: underline;
+}
+#menu_pop .menu_bottom {
+ display: block;
+ padding: 3px 6px 3px;
+ background: #000;
+ color: #fff;
+ font-size: 9px;
+ border-radius: 0px 0px 3px 3px;
+ font-family: georgia;
+ background: url('../img/bg_bottom.png') 0px 0px;
+ text-align: right;
+ text-shadow: 0px 1px 0px rgba( 0, 0, 0, 0.6);
+}
+
+/* main_rerait */
+.outer-nav{
+	position: absolute;
+    width: 266px;
+}
+/* Классы Bootstrap для построения сеток */
+.content table {
+    width: 100%;
+    margin: 1.5em 0;
+    clear: both;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+.content tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.content tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.content table td, .content table th {
+    padding: .3em;
+    word-break: break-word;
+    border: 1px solid #ccc;
+}
+/* footer tutarial */
+footer {
+	position: relative;
+	bottom: 0;
+	height: 10px;
+	width: 100%;
+	background: url(../../../assets/img/opilki.jpg);
+	opacity: 0.4;
+}

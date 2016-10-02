@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Инлайн блочные (преобразованые) элементы</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style type="text/css">@import url(tutarial/css/style.css);</style>
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+        <h1>Вертикальное расположение и выравнивание элементов в HTML документе.</h1>
+            <h2 class="title_content">Инлайн-блочные (inline-block) модифицированые элементы</h2>
+            <h3 class="title_content--item">
+                Расположение таких элементов в документе (в нормальном потоке) возможно при применении следующих правил CSS:
+            </h3>
+            <ul>
+                <li>margin-(top,bottom): +-px;</li>
+                <li>
+                    line-height; (...);   увеличение или уменьшение высоты строки, чаще применяется при установке inline элементов в горизонтальном меню
+                </li>
+            </ul>
+            <p>Применение правил CSS изменяющих нормальный поток элементов:</p>
+            <ol>
+                <li>position: (absolute, relative)</li>
+                <li>transform: translate(y)</li>
+            </ol>
+
+            <h3 class="title_content--item">Центрирование инлайн блочных элементов</h3>
+            <ol>
+                <li>
+                    line-height; (...); задаем высоту строки равную высоте родительского блока
+                </li>
+                <li>
+                    Если высота родительского блока не задана можно использовать CSS правило padding:
+                            <section class="code_descriptions code_descriptions--h">
+                                <ol class="line">
+                                    <li class="L0">
+                                        <code>
+                                            <span class="tag">&lt;div</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"outer_block"</span>
+                                            <span class="tag">&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L1">
+                                        <code>
+                                            <span class="pln">&nbsp; </span>
+                                            <span class="tag">&lt;span</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"inner_block"</span>
+                                            <span class="tag">&gt; &lt;input/</span><span class="tag">&gt;&lt;/span&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L2">
+                                        <code>
+                                            <span class="probel"></span>
+                                            <span class="tag">&lt;/div&gt;</span>
+                                        </code>
+                                    </li>
+                                </ol>
+                            </section>
+                            <section class="t_block_result">
+                                <div class="code_descriptions code_descriptions--c">
+                                    <ol class="line">
+                                        <li class="L0">
+                                            <code>
+                                                <span class="name_class">".outer_block"</span>
+                                                <span class="ops">{</span>
+                                                <p class="prv">padding: <span class="prv_v">5% 0;</span></p>
+                                                <span class="ops">}</span><br>
+                                            </code>
+                                        </li>
+                                        <li class="L1">
+                                            <code>
+                                                <span class="name_class">".inner_block"</span>
+                                                <span class="ops">{</span>
+                                                <p class="prv">padding:<span class="prv_v"> 10% 0;</span></p>
+                                                <span class="ops">}</span>
+                                            </code>
+                                        </li>
+
+                                    </ol>
+                                </div>
+                                <div class="code_descriptions code_descriptions--r">
+                                    <style>
+                                    .outer_block1 {padding: 5% 0; width: 200px;border: 1px solid #ccc;background: #fff;}
+                                    .inner_block1 {
+                                        padding: 10% 0;
+                                    }
+                                    </style>
+                                    <div class="outer_block1">
+                                        <div class="inner_block1">внутренний элемент </div>
+                                    </div>
+                                
+                                </div>
+                            </section>
+
+                    </li>
+                    <li>Если высота внутреннего блока известна то можно задать фиксированные значения паддингов.<br>
+                        Например: высота блока 600px, внутреннего 200px, тогда отступы нужны в 200px сверху и снизу.</li>
+                </ol>
+                <h3 class="title_content--item">Для элементов форм</h3>
+                    <ul>
+                        <li>Использую свойство vertical-align и display: table ,display: table-cell; 
+                            устанавливаем табличный вывод для родительского элемента div, а вложенный элемент input оборачиваем в тег выводим как ячейку таблицы. <br>
+                            Теперь можно использовать свойство vertical-align для внутреннего контейнера. <br>
+                            Все, что находится в нем, будет центрироваться по вертикали.
+                            
+                            <section class="code_descriptions code_descriptions--h">
+                                <ol class="line">
+                                    <li class="L0">
+                                        <code>
+                                            <span class="tag">&lt;div</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"outer_block"</span>
+                                            <span class="tag">&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L1">
+                                        <code>
+                                            <span class="pln">&nbsp; </span>
+                                            <span class="tag">&lt;span</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"inner_block"</span>
+                                            <span class="tag">&gt; &lt;input/</span><span class="tag">&gt;&lt;/span&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L2">
+                                        <code>
+                                            <span class="probel"></span>
+                                            <span class="tag">&lt;/div&gt;</span>
+                                        </code>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section class="t_block_result">
+                                <div class="code_descriptions code_descriptions--c">
+                                    <ol class="line">
+                                        <li class="L0">
+                                            <code>
+                                                <span class="name_class">".outer_block"</span>
+                                                <span class="ops">{</span>
+                                                <p class="prv">display: <span class="prv_v">table;</span></p>
+                                                <p class="prv">width: <span class="prv_v">200px;</span></p>
+                                                <p class="prv">height: <span class="prv_v">150px;</span></p>
+                                                <p class="prv">border: <span class="prv_v">1px solid #ccc;</span></p>
+                                                <span class="ops">}</span><br>
+                                            </code>
+                                        </li>
+                                        <li class="L1">
+                                            <code>
+                                                <span class="name_class">".inner_block"</span>
+                                                <span class="ops">{</span>
+                                                <p class="prv">display:<span class="prv_v"> table-cell;</span></p>
+                                                <p class="prv">vertical-align:<span class="prv_v"> middle;</span></p>
+                                                <span class="ops">}</span>
+                                            </code>
+                                        </li>
+
+                                    </ol>
+                                </div>
+                                <div class="code_descriptions code_descriptions--r">
+                                    <style>
+                                    .outer_block2 {display: table;height: 150px; width: 200px;border: 1px solid #ccc;background: #fff;}
+                                    .inner_block2 {
+                                        display: table-cell;
+                                        vertical-align: middle;
+                                    }
+                                    </style>
+                                    <div class="outer_block2">
+                                        <span class="inner_block2"><input  type="text" placeholder="внутренний элемент формы" /></span>
+                                    </div>
+                                
+                                </div>
+                            </section>
+                        </li>
+                    </ul>
+          
+        </div>
+
+    </div>
+</body>
+</html>

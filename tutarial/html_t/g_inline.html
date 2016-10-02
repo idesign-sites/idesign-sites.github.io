@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Строчные элементы вертикальное движение.</title>
+<script type="text/javascript" src="jquery.js"></script>
+<style type="text/css">
+@import url(css.css);
+</style>
+<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+        <h1>Горизонтальное расположение и выравнивание элементов в HTML документе.</h1>
+           <h2>Строчные HTML элементы</h2>
+            <p>Расположение таких элементов в документе (в нормальном потоке) возможно при применении следующих правил CSS: </p>
+                <ul>
+                    <li>text-align; (left, right, center);   значение устанавливается для родительского элемента(если строчный элемент не является анонимным)</li>
+                            <section class="code_descriptions code_descriptions--h">
+                                <ol class="line">
+                                    <li class="L0">
+                                        <code>
+                                            <span class="tag">&lt;p</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"outer_block"</span>
+                                            <span class="tag">&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L1">
+                                        <code>
+                                            <span class="pln">&nbsp; </span>
+                                            <span class="tag">&lt;span</span>
+                                            <span class="probel"> </span>
+                                            <span class="item_class">class</span>
+                                            <span class="raven">=</span>
+                                            <span class="name_class">"inner_block"</span>
+                                            <span class="tag">&gt; строчный элемент &lt;/span&gt;</span>
+                                            <span class="probel"></span><br>
+                                        </code>
+                                    </li>
+                                    <li class="L2">
+                                        <code>
+                                            <span class="probel"></span>
+                                            <span class="tag">&lt;/p&gt;</span>
+                                        </code>
+                                    </li>
+                                </ol>
+                            </section>
+                            <section class="t_block_result">
+                                <div class="code_descriptions code_descriptions--c">
+                                    <ol class="line">
+                                        <li class="L0">
+                                            <code>
+                                                <span class="name_class">.outer_block</span>
+                                                <span class="ops">{</span>
+                                                <p class="prv">text-align: <span class="prv_v">center;</span></p>
+                                                <span class="ops">}</span><br>
+                                            </code>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="code_descriptions code_descriptions--r">
+                                    <style>
+                                    .outer_block4 { text-align: center; width: 100%;border: 1px solid #ccc;background: #fff;}
+                                    
+                                    </style>
+                                    <p class="outer_block4">
+                                        <span class="inner_block4">строчный элемент </span>
+                                    </p>
+                                
+                                </div>
+                            </section>
+                    </li>
+                    <li>
+                        padding: left(right);
+                    </li>
+                    <li>
+                        margin: left(right);
+                    </li>
+                </ul>
+                <p>Применение правил CSS изменяющих нормальный поток элементов:</p>
+                <ul>                    
+                    <li>position: (absolute, relative);</li>
+                    <li>float: right(left);</li>
+                </ul>
+                
+        </div>
+    </div>
+</body>
+</html>
