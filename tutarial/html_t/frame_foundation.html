@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Фреймворк Foundation</title>
+  <!-- Include *at least* the core style and default theme -->
+  <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <!-- accordion css-->
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <!--end accordion css-->
+  <link rel="stylesheet" href="../css/slidebars.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body  class="tutorial_bg">
+  <section class="content" canvas="container">
+    <button class="js-toggle-left-slidebar">МЕНЮ</button>
+    <h1>Построение сеток в Foundation.</h1>
+  </section>
+   <div off-canvas="slidebar-1 left reveal" id="menu_pop">
+    <nav class="outer-nav right vertical">
+      <ul id="nav" >
+        <li>
+          <div class="first">
+            Вертикальное расположение
+            <br>
+            и выравнивание элементов
+            <span class="button_podtext">block, inline, inline-block</span>
+          </div>
+          <ul>
+            <li>
+              <a href="v_block.html">block</a>
+            </li>
+            <li>
+              <a href="v_inline.html">inline</a>
+            </li>
+            <li>
+              <a href="v_inline_block.html">inline-block</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div class="first">
+            Горизонтальное расположение
+            <br>
+            и выравнивание элементов
+            <span class="button_podtext">block, inline, inline-block</span>
+          </div>
+          <ul>
+            <li>
+              <a href="g_inline.html">inline</a>
+            </li>
+            <li>
+              <a href="g_block.html">block</a>
+            </li>
+            <li>
+              <a href="g_inline_block.html">inline-block</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            Построение сеток
+            <br>
+            <span class="button_podtext">Bootstrap, Flex, Foundation</span>
+          </div>
+          <ul>
+            <li>
+              <a href="frame_bootstrap.html">Bootstrap</a>
+            </li>
+            <li>
+              <a href="frame_foundation.html">Foundation</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 3</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            Основное
+            <br>
+            <span class="button_podtext">Блог, Тесты, Форум</span>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Ссылка 1</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 2</a>
+            </li>
+            <li>
+              <a href="#">Ссылка 3</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    <script src="../js/slidebars.js"></script>
+  <script src="../js/scripts.js"></script>
+
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all()</script>
+  <script src="slider.js"></script>
+
+</body>
+</html>

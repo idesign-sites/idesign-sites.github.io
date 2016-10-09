@@ -17,9 +17,18 @@
     font-weight: normal;
 }
 /* ----------------------------------  end font ------------------------------------- */
+
 .tutorial_bg{
 margin: 10px 0 0 10px;
-
+line-height: normal;
+}
+.js-toggle-left-slidebar{
+    padding: 6px ;
+    border: 1px solid #a7a5a5;
+    border-radius: 2px;
+    line-height: normal;
+    background: #dfe4e4;
+    outline: none;
 }
 #menu_pop {
  margin:10px auto ;
@@ -73,6 +82,7 @@ content: "";
  background: url('../img/bg.png') 0px 0px;
  text-shadow: 0px 1px 0px rgba( 0, 0, 0, 0.6);
  list-style: circle;
+ line-height: 13px;
 }
 #nav div:hover {
  background: url('../img/bg.png') 0px -44px;
@@ -91,6 +101,9 @@ content: "";
  background: #1a1a1a;
  box-shadow: inset 0px 3px 6px rgba( 0, 0, 0, 0.7);
  display: none;
+ padding-left: 0;
+ margin-left: 0;
+ line-height: normal;
 }
 #nav ul li {
  font-weight: normal;
@@ -122,6 +135,9 @@ content: "";
     width: 266px;
 }
 /* Классы Bootstrap для построения сеток */
+.manual_b_s{
+    margin-bottom: 80px;
+}
 .content table {
     width: 100%;
     margin: 1.5em 0;
@@ -146,6 +162,84 @@ content: "";
     padding: .3em;
     word-break: break-word;
     border: 1px solid #ccc;
+    background: #edf3d8;
+}
+.content .description-text__bg{
+    background: rgba(247, 224, 238, 0.72);
+}
+.content table .rw_pr--bg{
+    background: #efefef;
+}
+/* ---------------------- */
+[class*="col-"] {
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+.contr_pr,
+.padd_pr,
+.rw_pr{
+    position: relative;
+    text-align: center;  
+}
+.contr_pr{
+    font-size: 18px;  
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.padd_pr{
+    font-size: 14px;  
+    text-transform: lowercase;
+    line-height: 100px;
+}
+.padd_pr:after,
+.padd_pr:before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 100%;
+    background: #edf3d8;
+    top: 0;
+}
+.padd_pr:after{
+    right: 0px;
+}
+.padd_pr:before{
+    left: 0px;
+}
+.contr_pr:before{
+    position: absolute;
+    content: "контейнер";
+    width: 100%;
+    height:40px;
+    background: #edf3d8;
+    top: -42px;
+    left: 0;
+    border: 1px solid;
+    border-width: 1px 1px 0px 1px;
+}
+.rw_pr:after,
+.rw_pr:before{
+    position: absolute;
+    width: 100%;
+    height:40px;
+    background: #efefef;
+    top: 101px;
+}
+.rw_pr:after{
+    right: 0px;
+    content:"<<15px<<row>>15px>>";
+    border: 1px solid;
+    border-width: 0 15px 0 15px;
+}
+.rw_pr:before{
+    left: 0px;
+    content:"<row>";
+}
+.title_pr{
+    margin: 30px 0 72px;
+    font-size: 18px;
 }
 /* footer tutarial */
 footer {

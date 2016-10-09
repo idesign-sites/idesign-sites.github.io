@@ -6,7 +6,8 @@
   <!-- Include *at least* the core style and default theme -->
   <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
   <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
-
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- accordion css-->
   <link href="css/style.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -37,7 +38,7 @@
     <p>
       Завершающим этапом является скачивание готового файла-библиотеки и подключение его к странице HTML.
     </p>
-    <section>
+    <section class="manual_b_s clearfix">
       <h3>Классы Bootstrap для построения сеток</h3>
       <table>
         <tbody>
@@ -50,19 +51,45 @@
             <tr><td>.container-fluid</td><td>Если есть необходимость и макет расчитан на переменную ширину контента, применяю класс который использует 100% ширины окна браузера.
             Класс .container-fluid устанавливает значение свойства margin, равное auto от левого и правого края контейнера до границ элемента body (т.е margin-left: auto и margin-right: auto). Этим он выравнивает элемент (.container-fluid) по горизонтали.
             Класс .container-fluid задает отступы с помощью свойства CSS padding от левого и право края элемента до его содержимого на 15px (т.е. padding-left: 15px, padding-right: 15px).</td></tr>
-            <tr><td>.row</td><td></td></tr>
-            <tr><td>.col-xs-#</td><td></td></tr>
-            <tr><td>.col-sm-#</td><td></td></tr>
-            <tr><td>.col-md-#</td><td></td></tr>
-            <tr><td>.col-lg-#</td><td></td></tr>
-            <tr><td>.col-xs-offset-#</td><td></td></tr>
-            <tr><td>.col-sm-offset-#</td><td></td></tr>
-            <tr><td>.col-md-offset-#</td><td></td></tr>
-            <tr><td>.col-lg-offset-#</td><td></td></tr>
+            <tr><td class="rw_pr--bg">.row</td><td class="rw_pr--bg">Класс является обязательным при построении сетки на этом фреймворке, так как колонки col- имеют паддинги внешние паддинги данный класс компенсирует отрицательным маржином(слева и справа), с этого класса начинается построение сетки(ряда)</td></tr>
+            <tr><td>.col-xs-#</td><td>класс для колонки в ряду подключается на разрешении экрана менее 768px</td></tr>
+            <tr><td>.col-sm-#</td><td>класс для колонки в ряду подключается на разрешении экрана от 768px до 992px</td></tr>
+            <tr><td>.col-md-#</td><td>класс для колонки в ряду подключается на разрешении экрана от 992px до 1200px</td></tr>
+            <tr><td>.col-lg-#</td>
+            <td>класс для колонки в ряду подключается на разрешении экрана от 1200px</td>
+            </tr>
+            <tr>
+            <td>.col-xs-offset-#</td>
+            <td>добавляет дополнительный margin_left  менее 768px</td>
+            <td rowspan="4" class="description-text__bg">Эти классы используют когда количество колонок в ряду по макету менее 12</td>
+            </tr>
+            <tr><td>.col-sm-offset-#</td><td>добавляет дополнительный margin_left на разрешении экрана от 768px до 992px</td></tr>
+            <tr><td>.col-md-offset-#</td><td>добавляет дополнительный margin_left на разрешении экрана от 992px до 1200px</td></tr>
+            <tr><td>.col-lg-offset-#</td><td>добавляет дополнительный margin_left на разрешении экрана от 1200px</td></tr>
           
         </tbody>
       </table>
+
+      <h4 class="title_pr text-center">Наглядный пример сетки</h4>
+      <div class="container contr_pr">
+        <div class="row rw_pr">
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+            <div class="col-sm-2 padd_pr">col-sm-2</div>
+            <div class="col-sm-2 padd_pr">col-sm-2</div>
+            <div class="col-sm-2 padd_pr">col-sm-2</div>
+
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+            <div class="col-sm-1 padd_pr">col-sm-1</div>
+        </div>
+      </div>
     </section>
+    <!--  Классы помощники в построении сетки -->
+
+    <h3>Класс .clearfix</h3>
+    <p>Класс .clearfix использую если блоки в ряду имеют различную высоту и нужно отменить обтекание свойственное "флоченым" элементам, класс создаёт некую "планку" в потоке и не даёт всем элементам под ней обтекать верхний блок</p>
     <!--   Часто используемые классы для стилизации  -->
     <h3>Адаптивные таблицы</h3>
 
@@ -77,7 +104,7 @@
             max-width: 100%;
             margin-bottom: 20px;
           }
-      </pre>
+    </pre>
     Применяя ширину в 100%, Bootstrap обеспечивает заполнение таблицами всей ширины родительского элемента. Но есть одна проблема. Таблицы с несколькими столбцами сжимаются на небольших устройствах, и могут не читаться.
         Чтобы исправить это, Bootstrap содержит другой класс <b><ins>table-responsive</ins></b> 
     <br>
@@ -158,7 +185,7 @@
               <a href="frame_bootstrap.html">Bootstrap</a>
             </li>
             <li>
-              <a href="#">Ссылка 2</a>
+              <a href="frame_foundation.html">Foundation</a>
             </li>
             <li>
               <a href="#">Ссылка 3</a>
