@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>CMS Bitrix</title>
+  <!-- Include *at least* the core style and default theme -->
+  <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+  <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <!-- accordion css-->
+  <link href="css/style.css" type="text/css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <!--end accordion css-->
+  <link rel="stylesheet" href="../css/slidebars.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+<body  class="tutorial_bg">
+  <section class="content" canvas="container">
+    <button class="js-toggle-left-slidebar">МЕНЮ</button>
+    <h1>CMS Bitrix --- блокнот</h1>
+    	<h2>Часто используемые, в процессе создания сайтов на Битрикс фрагменты кода. </h2>
+
+<h3>В основном шаблоне:</h3>
+<pre class="brush: css ">
+<?$APPLICATION->ShowTitle()?> - собственно вывод тайтла в основном шаблоне сайта
+
+	<?$APPLICATION->ShowHead()?> - <p>подключение для вывода в шаблоне сайта основных полей тега :<br> мета-теги Content-Type, robots, keywords, description; стили CSS; скрипты</p>
+
+<?$APPLICATION->ShowPanel();?> - выводит панель управления администратора
+
+<?=SITE_TEMPLATE_PATH?> - подставляет путь к шаблону
+
+<?$APPLICATION->ShowTitle(false);?> - заголовок (в h1 например использовать)
+
+<?$APPLICATION->SetAdditionalCSS("/bitrix/templates/".SITE_TEMPLATE_ID."/filename.css");?> - Дополнительные файлы стилей
+ </pre>
+<h3>ShowHead разбить на составляющие:</h3>
+<pre class="brush: css">
+
+<meta http-equiv="Content-Type" content="text/html; charset=<?=LANG_CHARSET;?>" /> - Установка кодировки сайта
+
+<? $APPLICATION->ShowMeta("keywords") ?> - Вывод мета тега keywords
+
+<? $APPLICATION->ShowMeta("description") ?> - Вывод мета тега description
+
+<? $APPLICATION->ShowCSS(); ?> - Подключение основных файлов стилей template_styles.css и styles.css
+
+<? $APPLICATION->ShowHeadStrings() ?> - Отображает специальные стили, JavaScript
+
+<? $APPLICATION->ShowHeadScripts() ?> - Вывода служебных скриптов
+</pre>
+
+<h3>В шаблонах компонентов:</h3>
+<pre class="brush: css">
+<img src="<?=$arSection["PICTURE"]["SRC"]?>" title="<?=$arSection["NAME"]?>" border="0"/> - картинка раздела инфоблока.
+
+<?=$arSection["DESCRIPTION"]?> - описание раздела инфоблока
+
+<?echo $arItem["NAME"]?> - название
+
+<?echo $arItem["DETAIL_PAGE_URL"]?> - ссылка на детальную новость (статью)
+
+<?echo $arItem["PREVIEW_TEXT"];?> - текст анонса
+
+<?echo $arResult["DETAIL_TEXT"];?> - детальный текст
+
+<?=$arItem["PREVIEW_PICTURE"]["SRC"]?> - изображение анонса
+
+<?=$arItem["DETAIL_PICTURE"]["SRC"]?> - изображение детальное
+
+<?=$arResult['DISPLAY_ACTIVE_FROM']?> - дата начала активности
+
+<?=$arItem['DATE_CREATE']?> - Дата создания элемента инфолока
+</pre>
+
+<h3>Полезные условия</h3>
+<h4>Если картинки нет- то вывести "нет картинки"</h4>
+<pre class="brush: css">
+<?if (strlen($arItem["DETAIL_PICTURE"]["SRC"])>0):?> 
+      <img src="<?=$arItem["DETAIL_PICTURE"]["SRC"]?>"/> 
+<?else:?> 
+       нет картинки 
+<?endif?>
+</pre>
+
+<h4>Включаемая область в режиме php.</h4>
+<pre class="brush: css">
+<? 
+        $APPLICATION->IncludeFile( 
+        SITE_DIR."include/flash.php", 
+        Array(), 
+        Array("MODE"=>"php") 
+       ); 
+?>
+</pre>
+<h4>Количество товара на складе в списке товаров:</h4>
+<pre class="brush: css">
+<? 
+          $ar_res = CCatalogProduct::GetByID($arElement['ID']); 
+          echo "<br>На складе: "; 
+          print_r($ar_res['QUANTITY']); 
+          echo " шт."; 
+?>
+</pre>
+<h4>В подробной карточке товара, с подменой цифрового значения на выражение:</h4>
+<pre class="brush: css">
+<?	 
+	$quantity= $arElement[CATALOG_QUANTITY]; 
+	if (!$quantity){?>нет<?} 
+	if ($quantity!=0 && $quantity<=10){?>мало<?} 
+	if ($quantity!=0 && $quantity>10 && $quantity<=100){?>достаточно<?} 
+	if ($quantity>100){?>много 
+<?}?><?=$arResult[CATALOG_QUANTITY];?>	 
+</pre>
+
+<h4>Вывести название раздела внутри элемента. Например в детальной новости, указать к какому из разделов она относится:</h4>
+<pre class="brush: css">
+ <?echo $arResult["SECTION"]["PATH"][0]["NAME"]?>
+</pre>
+
+<h4>Вывести меню нужного типа в шаблоне битрикс</h4>
+<pre class="brush: css">
+
+ <? 
+$APPLICATION->IncludeComponent("bitrix:menu", "top_menu", array( 
+"ROOT_MENU_TYPE" => "top",  //В данном случаее меню типа top 
+"MENU_CACHE_TYPE" => "A", 
+"MENU_CACHE_TIME" => "3600", 
+"MENU_CACHE_USE_GROUPS" => "Y", 
+"MENU_CACHE_GET_VARS" => array( 
+), 
+"MAX_LEVEL" => "1", 
+"CHILD_MENU_TYPE" => "left", 
+"USE_EXT" => "N", 
+"DELAY" => "N", 
+"ALLOW_MULTI_SELECT" => "N" 
+), 
+false 
+); 
+?>
+</pre>
+
+<h4>Подключение веб мессенджера в шаблоне сайта</h4>
+<pre class="brush: css">
+<?$APPLICATION->IncludeComponent("bitrix:im.messenger", "", Array(), null, array("HIDE_ICONS" => "N"));?>
+</pre>
+<h4>Вывести текст описания свойства инфоблока. Например, в форме добавления/редактирования элемента инфоблока для пользователей:</h4>
+<pre class="brush: css">
+
+<?=$arResult["PROPERTY_LIST_FULL"][$propertyID]["HINT"]?>
+</pre>
+<h4>Вывести текущую дату из установленной на сервере</h4>
+<pre class="brush: css">
+<? echo date($DB->DateFormatToPHP(CSite::GetDateFormat("FULL")), time()); ?>
+</pre>
+  </section>
+   <div off-canvas="slidebar-1 left reveal" id="menu_pop">
+    <nav class="outer-nav right vertical">
+      <ul id="nav" >
+        <li>
+          <div class="first">
+            <span class="button_podtext">CMS --- интеграция вёрстки</span>
+          </div>
+          <ul>
+            <li>
+              <a href="cms_bitrix.html">Bitrix</a>
+              <ul>
+                <li><a href="cms_bitrix_menu.html">Меню</a></li>
+                <li><a href="cms_bitrix_infblocks.html">Инфоблоки</a></li>
+                <li><a href="cms_bitrix_inblok.html">Включаемые области</a></li>
+                <li><a href="cms_bitrix_slider.html">Слайдер</a></li>
+                <li><a href="cms_bitrix_search.html">Поиск по сайту</a></li>
+                <li><a href="cms_bitrix_form.html">Авторизация</a></li>
+                <li><a href="cms_bitrix_room.html">Кабинет пользователя</a></li>
+                <li><a href="cms_bitrix_addhost.html">Перенос сайта на хост</a></li>
+                <li><a href="cms_bitrix_county.html">Счётчик метрики</a></li>
+                <li><a href="cms_bitrix_ld.html">Полезные ссылки и файлы</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="cms_modx.html">MODX(rev.)</a>
+            </li>
+            <li>
+              <a href="cms_wordpress.html">Wordpress</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+    <script src="../js/slidebars.js"></script>
+  <script src="../js/scripts.js"></script>
+
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.all()</script>
+  <script src="slider.js"></script>
+</body>
+</html>
