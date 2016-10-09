@@ -244,6 +244,14 @@ a:focus {
 #h i {
 	font-size: 50px;
 }
+#h .go_cms_link a{
+	color: #fff;
+    font-weight: 400;
+    font-family: inherit;
+}
+#h .go_cms_link:hover a{
+	color: #ccc;
+}
 
 /* руководствуюсь  правилами  */
 #g {
