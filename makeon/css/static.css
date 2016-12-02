@@ -1,0 +1,137 @@
+/* = Menu
+-------------------------------------------------------------- */
+
+nav ul {
+	list-style: none; 
+	margin: 0; padding: 0;	
+}
+
+	nav li {
+		float: left;
+		position: relative;
+		width: 30px;
+		margin: 0 3px;
+	}
+
+		nav li a {
+			display: block;
+			background: url(../img/icons.png) no-repeat;
+			width: 30px; height: 40px;
+		}
+
+		nav li a.download				{ background-position: 0 0; }
+		nav li a.download:hover			{ background-position: 0 -90px; }
+
+		nav li a.home					{ background-position: 0 -180px; }
+		nav li a.home:hover				{ background-position: 0 -270px; }
+
+		nav li a.contact				{ background-position: 0 -360px; }
+		nav li a.contact:hover			{ background-position: 0 -450px; }
+
+		nav li a.show_all				{ background-position: 0 -540px; }
+		nav li a.show_all:hover			{ background-position: 0 -630px; }
+
+		nav li a.zoom_auto				{ background-position: 0 -720px; }
+		nav li a.zoom_auto:hover		{ background-position: 0 -810px; }
+	
+		nav li a.zoom_in				{ background-position: 0 -900px; }
+		nav li a.zoom_in:hover			{ background-position: 0 -990px; }
+	
+		nav li a.zoom_original			{ background-position: 0 -1080px; }
+		nav li a.zoom_original:hover	{ background-position: 0 -1170px; }
+
+		nav li a.zoom_out				{ background-position: 0 -1260px; }
+		nav li a.zoom_out:hover			{ background-position: 0 -1350px; }
+
+
+
+nav#center {
+	width: 260px;
+	margin: 10px auto 0 auto;
+}
+
+nav#right {
+	float: right;
+	width: 180px;
+	margin: 0 20px 0 0;
+}
+
+	nav li.goto {
+		position: relative;
+		width: auto;
+		margin: -4px 0 0 0;
+		padding: 6px 0 0 10px;
+	}
+
+		nav li.goto label {
+			float: left;
+			margin: 7px 5px 0 0;
+			line-height: 12px;
+			font-size: 10px; font-weight: bold;
+			color: #5f6f7b;
+			-webkit-font-smoothing: antialiased;
+		}
+
+
+	nav li.goto input[type='text'] {
+		background: #141f28;
+		width: 28px; height: 13px;
+		border: 1px solid #1e2f3c;
+		box-shadow: inset 0 0 3px #0a1014;
+		padding: 0 20px 0 0;
+		text-align: center;
+		font-size: 9px;
+		color: #bababa;
+	}
+	
+	nav li.goto button {
+		position: absolute; right: 2px; top: 14px;
+		font-size: 9px; font-weight: bold;
+		padding: 0 1px;
+		background:#2b3e4d;background:-moz-linear-gradient(top,#2b3e4d 0,#1f303d 100%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#2b3e4d),color-stop(100%,#1f303d));background:-webkit-linear-gradient(top,#2b3e4d 0,#1f303d 100%);background:-o-linear-gradient(top,#2b3e4d 0,#1f303d 100%);background:-ms-linear-gradient(top,#2b3e4d 0,#1f303d 100%);background:linear-gradient(to bottom,#2b3e4d 0,#1f303d 100%);filter:progid:dximagetransform.Microsoft.gradient(startcolorstr='#2b3e4d',endcolorstr='#1f303d',gradienttype=0);
+		color: #5f6f7b;
+	}
+
+.ui-btn-text { display: none; }
+
+
+/* = Tooltip
+-------------------------------------------------------------- */
+
+.tooltip {
+	position: absolute; left: 0; top: -25px; z-index: 5;
+	display: none;
+	padding: 2px 10px;
+	background: #64c8d3;
+	white-space: nowrap;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: white;
+}
+	.tooltip b {
+		position: absolute; left: 6px; bottom: -6px;
+		display: block;
+		background: url(../img/arrow-tooltip.png) no-repeat;
+		width: 7px; height: 6px;
+	}
+
+
+/* = Footer
+-------------------------------------------------------------- */
+
+footer#footer {
+	position: fixed; bottom: 0; z-index: 15;
+	background: url(../img/bg-footer.png);
+	/*background-color: rgba(0, 0, 0, .7);
+	border-top: 1px solid #053149;*/
+	width: 100%; height: 60px;
+	margin: 0; padding: 0;
+
+}
+
+	#logo {
+		position: absolute; left: 30px; top: 10px; z-index: 5;
+	}
+
+
