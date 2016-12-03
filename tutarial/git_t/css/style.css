@@ -1,0 +1,45 @@
+.git-bg-color{
+background: -moz-linear-gradient(272deg, rgba(194,109,56,1) 0%, rgba(242,242,242,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(194,109,56,1)), color-stop(100%, rgba(242,242,242,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(272deg, rgba(194,109,56,1) 0%, rgba(242,242,242,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(272deg, rgba(194,109,56,1) 0%, rgba(242,242,242,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(272deg, rgba(194,109,56,1) 0%, rgba(242,242,242,1) 100%); /* ie10+ */
+background: linear-gradient(178deg, rgba(194,109,56,1) 0%, rgba(242,242,242,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C26D38', endColorstr='#F2F2F2',GradientType=0 ); /* ie6-9 */
+}
+.git-text-green{
+	color: green;
+}
+.git-text-red{
+	color: red;
+}
+.git-text-orange{
+	color: orange;
+}
+.first{
+    font-size: 20px;
+    color: #0e0e0e;
+    text-shadow: 1px 1px #dbb298;
+    background-color: #dedede;
+    padding: 9px;
+    border-radius: 3px;
+}
+ul{
+	padding-left: 5px;
+}
+#nav ul{
+	padding: 0;
+}
+#nav ul li:hover{
+	padding-left: 2px;
+	-webkit-transition: .5s ease-out;
+    -moz-transition: .5s ease-out;
+    -o-transition: .5s ease-out;
+	transition: .5s ease-out;
+}
+#nav ul li a{
+	font-size: 14px;
+    color: #000;
+    line-height: 27px;
+    text-shadow: 1px 1px #dbb298;
+}

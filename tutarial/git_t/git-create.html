@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Распределённая система контроля версий - Git</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="../css/slidebars.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- accordion css-->
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <!--end accordion css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+</head>
+
+<body class="tutorial_bg">
+    <div canvas="container">
+        <p><button class="js-toggle-left-slidebar">МЕНЮ</button></p>
+        <div id="content">
+          <h1>Создание репозитория в Git</h1>
+            <h4>Репозиторий это проект который хранится на диске(в папке)</h4>
+      
+            <p>Создать в папке проекта репозиторий можно командой </p>
+      
+                  <pre class="brush: css">
+                     git init
+                  </pre>
+            <p>Создать в конкретной папке можно командой</p>
+                   <pre class="brush: css">
+                   git init Project
+                  </pre> 
+                  <p>-------------------------------------------------- </p>
+                <pre class="brush: css">
+                    $ cd project
+                    $ git init
+                    Initialized empty Git repository in /home/michail/project/.git/
+                </pre>                  
+                  <h4>В папке проекта создастся файл <span class="git-text-green">.git</span> <span>в которой будет храниться файлы настройки проекта (config)</span></h4> 
+                <pre class="brush: css">  
+                  [core]
+                        repositoryformatversion = 0
+                        filemode = false
+                        bare = false
+                        logallrefupdates = true
+                </pre>
+                <p> <span class="git-text-orange">filemode</span> режим слежения за файлами установить в  <span class="git-text-red">false</span></p> 
+
+                <p>-------------------------------------------------- </p>
+
+                <h4>Проверка статуса проекта в Git</h4> 
+                <pre class="brush: css">
+                     $ git status
+                </pre>   
+                      <pre class="">         
+                    # On <span class="git-text-red">branch</span> <span class="git-text-orange">master</span>
+                    #
+                    # Initial commit
+                    #
+                    nothing to commit (create/copy files and use "git add" to track)
+                        </pre>  
+                    <p>Изначально новый проект всегда создаётся в ветке <span class="git-text-orange">MASTER</span> эта команда в данном случае показала
+						что папка репозитория пуста и файлов там нет</p> 
+				<p>-------------------------------------------------- </p>
+				<h4>Создание файлов из консоли TOUCH</h4>
+				<pre class="brush: css">
+                     touch index.html
+                </pre>   
+				<p></p>
+        </div>
+    </div>
+    <div off-canvas="slidebar-1 left reveal" id="menu_pop" class="git-bg-color">
+        <nav class="outer-nav right vertical">
+            <ul id="nav">
+                <li>
+                <div class="first">Git и репозиторий</div>
+                        
+                    <ul>
+                        <li><a href="git-setup.html">Настройка</a></li>
+                        <li><a href="git-create.html">Создание репозитория</a></li>
+                        <li><a href="git-parametr.html">Параметры репозитория</a></li>
+                        <li><a href="git-work.html">Работа в Git(репозитории)</a></li>
+                        <li><a href="git-chekout.html">Переключения между ветками</a></li>
+                        <li><a href="git-merge">Слияние веток</a></li>
+                        <li><a href="git-merge">Перемещение</a></li>
+                        <li><a href="git-merge">Удаление веток и перемещение файлов</a></li>
+                        <li><a href="git-merge">Игнорирование веток</a></li>
+                        <li><a href="git-merge">Отмена изменений</a></li>
+                        <li><a href="git-merge">Исправление коммитов и их удаление</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="first">многопользователь-<br> ская работа в git</div>
+                    <ul>
+                        <li><a href="git-merge">Создание главного репозитория</a></li>
+                        <li><a href="git-merge">Клонирование репозитория</a></li>
+                        <li><a href="git-merge">Подключение главного репозитория</a></li>
+                        <li><a href="git-merge">Синхронизация изменений</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="first">совместная разработка</div>
+                    <ul>
+                        <li><a href="git-merge">Создание SSH-ключа</a></li>
+                        <li><a href="git-merge">Клонирование репозитория</a></li>
+                        <li><a href="git-merge">Синхронизация изменений</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="first">дополнительные инструменты</div>
+                    <ul>
+                        <li><a href="git-merge">Прятание в «карман» (stash)</a></li>
+                        <li><a href="git-merge">Метки версий (tag)</a></li>
+                        <li><a href="git-merge">Интерактивное индексирование</a></li>
+                        <li><a href="git-merge">Слияние без fast-forward</a></li>
+                        <li><a href="git-merge">Перезапись истории</a></li>  
+                        <li><a href="git-merge">Поиск ошибок</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <div class="first">работа с GITHUB</div>
+                    <ul>
+                        <li><a href="git-merge">Регистрация на GitHub</a></li>
+                        <li><a href="git-merge">Создание репозитория</a></li>
+                        <li><a href="git-merge">Подключение репозитория</a></li>
+                        <li><a href="git-merge">Клонирование</a></li>  
+                        <li><a href="git-merge">Создание и отправка Pull Request</a></li>  
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="../js/slidebars.js"></script>
+    <script src="../js/scripts.js"></script>
+    <!-- accordion -->
+    <!-- accordion -->
+    <script type="text/javascript">
+    $("#nav > li > div").click(function() {
+        if (false == $(this).next().is(':visible')) {
+            $('#nav ul').slideUp(280);
+        }
+
+        $(this).next().slideToggle(280);
+    });
+    $('#nav ul:eq(0)').show();
+    </script>
+
+    <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all()</script>
+</body>
+
+</html>
