@@ -1,0 +1,114 @@
+
+#inline h2 {
+	font-size: 15px;
+	line-height: 43px;
+	color: #333333;
+	font-weight: bold;
+	text-shadow: 0px 1px 1px #FFF;
+	background-image: url(../img/header.png);
+	background-repeat: repeat;
+	background-position: center top;
+	height: 43px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+	position: relative;
+	margin: 0px;
+}
+
+.message {
+	display:block;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+
+}
+
+#signin_menu {
+	height: 160px;
+	border:none;
+	text-align:left;
+	margin: 0px;
+	color:#333;
+	font-size:12px;
+	background-image: url(../img/form-bg.png);
+	background-repeat: repeat-y;
+	background-position: center bottom;
+	overflow: hidden;
+	padding-top: 0px;
+	padding-right: 20px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+#signin_menu input[type=text], #signin_menu input[type=password] {
+	float: right;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border:1px solid #C6C6C6;
+	font-size:13px;
+	margin:5px 0px 5px;
+	*margin:0px;
+	padding:5px;
+	width:180px;
+}
+#signin_menu p {
+	margin:10px 0 10px;
+	*margin:5px 0 5px;
+	clear: both;
+}
+#signin_menu a {
+	color:#6AC;
+}
+#signin_menu label {
+	margin:10px 0px 0px;
+	float: left;
+	font-weight:normal;
+}
+#signin_menu p.remember {
+	float: right;
+	clear: none;
+	padding:0;
+}
+#signin_menu a.forgot {
+	margin-top: 10px;
+	float: left;
+	display: inline;
+	line-height: 24px;
+	color: #666666;
+	text-decoration: none;
+	background-image: url(../img/reset.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 18px;
+	font-weight: bold;
+}
+
+.formcont {
+	margin: 0px;
+	overflow: hidden;
+	position: relative;
+}
+.formfooter {
+	background-image: url(../img/footer.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0px;
+	padding: 0px;
+	height: 13px;
+}
+
+a.close {
+	position: absolute;
+	background-image: url(../img/close.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 25px;
+	width: 25px;
+	text-indent: -99999px;
+	outline: none;
+	top: 10px;
+	right: 10px;
+}
+

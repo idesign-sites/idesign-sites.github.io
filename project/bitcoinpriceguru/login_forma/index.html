@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Learning jQuery: Click Event with Locked Page likes Mac</title>
+<link href="screen.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+		
+            $(document).mouseup(function() {
+				$("#loginform").mouseup(function() {
+					return false
+				});
+				
+				$("a.close").click(function(e){
+					e.preventDefault();
+					$("#loginform").hide();
+                    $(".lock").fadeIn();
+				});
+				
+                if ($("#loginform").is(":hidden"))
+                {
+                    $(".lock").fadeOut();
+                } else {
+                    $(".lock").fadeIn();
+                }				
+				$("#loginform").toggle();
+            });
+			
+			
+			// I dont want this form be submitted
+			$("form#signin").submit(function() {
+			  return false;
+			});
+			
+			// This is example of other button
+			$("input#cancel_submit").click(function(e) {
+					$("#loginform").hide();
+                    $(".lock").fadeIn();
+			});			
+			
+			
+        });
+</script>
+</head>
+<body>
+<div id="cont">
+  <div style="position:absolute; top: 20px; right: 50px;"><a href="http://aext.net/2009/08/learning-jquery-click-event-with-locked-page-likes-mac/" style="color:#FFFFFF; font-weight: bold;""> VIEW TUT </a></div>
+  <div class="box lock"> </div>
+  <div id="loginform" class="box form">
+    <h2>Authorization Required <a href="" class="close">Close it</a></h2>
+    <div class="formcont">
+      <fieldset id="signin_menu">
+      <span class="message">Please verify your account before continue</span>
+      <form method="post" id="signin" action="">
+        <label for="username">Username or email</label>
+        <input id="username" name="username" value="" title="username" class="required" tabindex="4" type="text">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input id="password" name="password" value="" title="password" class="required" tabindex="5" type="password">
+        </p>
+        <p class="clear"></p>
+        <a href="#" class="forgot" id="resend_password_link">Forgot your password?</a>
+        <p class="remember">
+          <input id="signin_submit" value="Sign in" tabindex="6" type="submit">
+          <input id="cancel_submit" value="Cancel" tabindex="7" type="button">
+        </p>
+      </form>
+      </fieldset>
+    </div>
+    <div class="formfooter"></div>
+  </div>
+</div>
+<!-- Begin Full page background technique -->
+<div id="bg">
+  <div>
+    <table cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="images/bg.jpg" alt=""/> </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!-- End Full page background technique -->
+</body>
+</html>

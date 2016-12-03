@@ -1,0 +1,108 @@
+.countdownHolder{
+	min-width:600px;
+	margin:40px auto 20px;
+	font-size: 110px;
+	text-align:center;
+	letter-spacing:-44px;
+	
+}
+
+.position{
+	display: inline-block;
+	/* height: 1.6em; */
+	overflow: hidden;
+	/* position: relative; */
+	width: 60px;
+	
+}
+
+.digit{
+	position:absolute;
+	display:block;
+	width:1em;
+	/* background-color:#fff; */
+	border-radius:0.2em;
+	text-align:center;
+	color:#349DCD;
+	letter-spacing: 45px;
+}
+
+.digit.static{
+	/* box-shadow:1px 1px 1px rgba(4, 4, 4, 0.35);
+	
+	background-image: linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -o-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -moz-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -webkit-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	background-image: -ms-linear-gradient(bottom, #3A3A3A 50%, #444444 50%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.5, #3A3A3A),
+		color-stop(0.5, #444444)
+	); */
+}
+
+/**
+ * Вы можете использовать данные классы для скрытия
+ * частей счетчика, которые не нужны.
+ */
+
+.countDays{  display:none !important;  }
+.countDiv0{  display:none !important; }
+.countHours{
+	background-color:#fff;
+	border-radius:10px;
+	position: relative;
+	padding: 8px 21px;
+-webkit-box-shadow: 0px 0px 27px 0px rgba(0, 124, 220, 1);
+-moz-box-shadow:    0px 0px 27px 0px rgba(0, 124, 220, 1);
+box-shadow:         0px 0px 27px 0px rgba(0, 124, 220, 1);
+}
+.countDiv1{}
+.countMinutes{
+	border-radius:10px;
+	position: relative;
+	background-color:#fff;
+	padding: 8px 22px;
+-webkit-box-shadow: 0px 0px 27px 0px rgba(0, 124, 220, 1);
+-moz-box-shadow:    0px 0px 27px 0px rgba(0, 124, 220, 1);
+box-shadow:         0px 0px 27px 0px rgba(0, 124, 220, 1);
+}
+.countDiv2{}
+.countSeconds{
+	background-color:#fff;
+	border-radius:10px;
+	position: relative;
+	padding: 8px 22px;
+-webkit-box-shadow: 0px 0px 27px 0px rgba(0, 124, 220, 1);
+-moz-box-shadow:    0px 0px 27px 0px rgba(0, 124, 220, 1);
+box-shadow:         0px 0px 27px 0px rgba(0, 124, 220, 1);	
+}
+
+
+.countDiv{
+	display:inline-block;
+	width:50px;
+	/* height:1.6em; */
+	position:relative;
+}
+
+.countDiv:before,
+.countDiv:after{
+	position:absolute;
+	width:10px;
+	height:10px;
+	background-color:#fff;
+	left:50%;
+	margin-left:-5px;
+	top:-27px;
+	box-shadow:1px 1px 1px rgba(4, 4, 4, 0.5);
+	content:'';
+}
+
+.countDiv:after{
+	top:-53px;
+}
