@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>CMS Bitrix - инфоблоки</title>
-  <!-- Include *at least* the core style and default theme -->
-  <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
-  <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
-  
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <!-- accordion css-->
-  <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <!--end accordion css-->
-  <link rel="stylesheet" href="../css/slidebars.css">
-  <link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8">
+	<title>CMS Bitrix - инфоблок</title>
+	<!-- Include *at least* the core style and default theme -->
+	<link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!--prettyPhoto  css-->
+	<link rel="stylesheet" href="../../assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+	<!-- grid css-->
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<!-- accordion css-->
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!--end accordion css-->
+	<link rel="stylesheet" href="../css/slidebars.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 <body  class="tutorial_bg">
-  <section class="content" canvas="container">
+  <section class="content gallery" canvas="container">
     <button class="js-toggle-left-slidebar">МЕНЮ</button>
     <h1>CMS Bitrix --- инфоблоки, карточки товара и прочее</h1>
-    	<h2> </h2>
-
+    	
+    	<p>Инфоблок  использует шаблон для вывода нужной информации на сайт, шаблон создается через "Типы информационных блоков"<p>
+      <ul> <b>В нем возможно задать для будущей новости(товара, справочника, ) различные поля и свойства</b>
+          <li>URL для анонса и расширеного описания составленого из ID или символьных кодов</li>
+          <li>Для SEO продвижения назначить общие фразы и заголовки для всех новостей блока, раздела
+           или всех страниц через подстановку шаблона</li>
+          <li>Определить что будет выводиться у каждой новости(товара), данные типа времени, цены или .... </li>
+          <li>Опредилить доступ просмотра, редактирования к контенту созданого инфоблоком</li>
+          <li><a href="img/infoblock/list-possibilities.png" rel="prettyPhoto" title="">
+              <img class="cms_img" src="img/infoblock/list-possibilities.png" alt=""></a>
+          </li>
+        </ul>	
+    <p>Создание инфоблока начинается с перехода по вкладке контент - типы инфоблоков - добавить новый тип<p>
+    <p>Назначаем ID блоку , именуем русское и ангглоязычное название типа инфоблока. <p>    
+        <a href="img/infoblock/create-infoblock.png" rel="prettyPhoto" title="">
+        <img class="cms_img" src="img/infoblock/create-infoblock.png" alt=""></a>	
+	  <p>Создаем и именуем сам блок с новостями или каталогом</p>
+        <a href="img/infoblock/create-infoblock.png" rel="prettyPhoto" title="">
+        <img class="cms_img" src="img/infoblock/create-infoblock.png" alt=""></a> 
+    <p>Создаем новость или товар в элементе инфоблока</p>
+        <a href="img/infoblock/create-infoblock.png" rel="prettyPhoto" title="">
+        <img class="cms_img" src="img/infoblock/create-infoblock.png" alt=""></a> 
   </section>
    <div off-canvas="slidebar-1 left reveal" id="menu_pop">
     <nav class="outer-nav right vertical">
@@ -60,12 +84,26 @@
   </div>
 
 
-    <script src="../js/slidebars.js"></script>
-  <script src="../js/scripts.js"></script>
+<!-- prettyPhoto.js -->
+	<script src="../../assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed:'normal',//скорость анимации
+            theme:'light_square',//тема оформления
+            slideshow:3000,//время показа слайда
+            autoplay_slideshow: false//автоматический старт слайдшоу
+        });
+    });
+	</script>
+	<!--end prettyPhoto.js -->
 
-  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
-  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
-  <script type="text/javascript">SyntaxHighlighter.all()</script>
-  <script src="slider.js"></script>
+	<script src="../js/slidebars.js"></script>
+	<script src="../js/scripts.js"></script>
+
+	<script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all()</script>
+	<script src="slider.js"></script>
 </body>
 </html>

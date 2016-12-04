@@ -1,71 +1,143 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <title>CMS Bitrix - меню</title>
-  <!-- Include *at least* the core style and default theme -->
-  <link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
-  <link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
-  
-  <link rel="stylesheet" href="css/foundation.min.css">
-  <!-- accordion css-->
-  <link href="css/style.css" type="text/css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/demo.css" />
-  <!--end accordion css-->
-  <link rel="stylesheet" href="../css/slidebars.css">
-  <link rel="stylesheet" href="../css/style.css">
+	<meta charset="utf-8">
+	<title>CMS Bitrix - меню</title>
+	<!-- Include *at least* the core style and default theme -->
+	<link href="../SyntaxHighLighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+	<link href="../SyntaxHighLighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<!--prettyPhoto  css-->
+	<link rel="stylesheet" href="../../assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+	<!-- grid css-->
+	<link rel="stylesheet" href="css/foundation.min.css">
+	<!-- accordion css-->
+	<link href="css/style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<!--end accordion css-->
+	<link rel="stylesheet" href="../css/slidebars.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
 </head>
 <body  class="tutorial_bg">
-  <section class="content" canvas="container">
-    <button class="js-toggle-left-slidebar">МЕНЮ</button>
-    <h1>CMS Bitrix --- создание навигационого меню</h1>
-    	<h2> </h2>
+	<section class="content gallery" canvas="container">
+		<button class="js-toggle-left-slidebar">МЕНЮ</button>
+		<h1>CMS Bitrix --- создание навигационого меню</h1>
+		<p>
+			Меню навигации на сайте создаётся в пункте настрока - настройка модулей - управление структурой
+		</p>
+		<a href="img/menu/setup_first.png" rel="prettyPhoto" title="">
+			<img class="cms_img" src="img/menu/setup_first.png" alt=""></a>
+		<p>Именуем тип меню и сохраняем</p>
+		<a href="img/menu/setup_first_item.png" rel="prettyPhoto" title="">
+			<img class="cms_img" src="img/menu/setup_first_item.png" alt="" >
+			<p>Переходим на сайт и в режиме правки копируем код меню</p>
+		</a>
+		<a href="img/menu/code_menu.png" rel="prettyPhoto" title="">
+			<img class="cms_img" src="img/menu/code_menu.png" alt=""></a>
+		<p>
+			Скопированый код меню вставляю в шаблон всего сайта или в раздел страницы где нужно меню
+		</p>
+		<p>Создаём разделы для каждого пункта меню по макету</p>
+		<a href="img/menu/razde-menu.png" rel="prettyPhoto" title="">
+			<img class="cms_img" src="img/menu/razde-menu.png" alt="" ></a>
+		<p>
+			Далее произвожу стилизацию путем подстановки классов из готовой верстки макета в код PHP меню так как стили компонента не подходят под макет
+		</p>
+		<p>
+			При включенном режиме правки активируем меню для редактирования меню шаблона компонента
+		</p>
+		<p>
+			Определяем настройки компонента, указываем размещение в нужной папке
+		</p>
+		<a href="img/menu/setup-component-menu-ta.png" rel="prettyPhoto" title="">
+		<img class="cms_img" src="img/menu/setup-component-menu-ta.png" alt=""></a>
 
-  </section>
-   <div off-canvas="slidebar-1 left reveal" id="menu_pop">
-    <nav class="outer-nav right vertical">
-      <ul id="nav" >
-        <li>
-          <div class="first">
-            <span class="button_podtext">CMS --- интеграция вёрстки</span>
-          </div>
-          <ul>
-            <li>
-              <a href="cms_bitrix.html">Bitrix</a>
-              <ul>
-              	<li><a href="cms_bitrix_menu.html">Меню</a></li>
-                <li><a href="cms_bitrix_infblocks.html">Инфоблоки</a></li>
-                <li><a href="cms_bitrix_inblok.html">Включаемые области</a></li>
-                <li><a href="cms_bitrix_slider.html">Слайдер</a></li>
-                <li><a href="cms_bitrix_search.html">Поиск по сайту</a></li>
-                <li><a href="cms_bitrix_form.html">Авторизация</a></li>
-                <li><a href="cms_bitrix_room.html">Кабинет пользователя</a></li>
-                <li><a href="cms_bitrix_addhost.html">Перенос сайта на хост</a></li>
-                <li><a href="cms_bitrix_county.html">Счётчик метрики</a></li>
-                <li><a href="cms_bitrix_ld.html">Полезные ссылки и файлы</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="cms_modx.html">MODX(rev.)</a>
-            </li>
-            <li>
-              <a href="cms_wordpress.html">Wordpress</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </div>
+		<p>
+			И прописываем нужные классы, приводим к нужному нам виду боковое меню
+		</p>
+		<a href="img/menu/css_menu-class.png" rel="prettyPhoto" title="">
+		<img class="cms_img" src="img/menu/css_menu-class.png" alt=""></a>
 
+		</section>
+	<div off-canvas="slidebar-1 left reveal" id="menu_pop">
+		<nav class="outer-nav right vertical">
+			<ul id="nav" >
+				<li>
+					<div class="first">
+						<span class="button_podtext">CMS --- интеграция вёрстки</span>
+					</div>
+					<ul>
+						<li>
+							<a href="cms_bitrix.html">Bitrix</a>
+							<ul>
+								<li>
+									<a href="cms_bitrix_menu.html">Меню</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_infblocks.html">Инфоблоки</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_inblok.html">Включаемые области</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_slider.html">Слайдер</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_search.html">Поиск по сайту</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_form.html">Авторизация</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_room.html">Кабинет пользователя</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_addhost.html">Перенос сайта на хост</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_county.html">Счётчик метрики</a>
+								</li>
+								<li>
+									<a href="cms_bitrix_ld.html">Полезные ссылки и файлы</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="cms_modx.html">MODX(rev.)</a>
+						</li>
+						<li>
+							<a href="cms_wordpress.html">Wordpress</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</div>
 
-    <script src="../js/slidebars.js"></script>
-  <script src="../js/scripts.js"></script>
+	<!-- prettyPhoto.js -->
+	<script src="../../assets/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+        $(".gallery:first a[rel^='prettyPhoto']").prettyPhoto({
+            animation_speed:'normal',//скорость анимации
+            theme:'light_square',//тема оформления
+            slideshow:3000,//время показа слайда
+            autoplay_slideshow: false//автоматический старт слайдшоу
+        });
+    });
+	</script>
+	<!--end prettyPhoto.js -->
 
-  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
-  <script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
-  <script type="text/javascript">SyntaxHighlighter.all()</script>
-  <script src="slider.js"></script>
+	<script src="../js/slidebars.js"></script>
+	<script src="../js/scripts.js"></script>
+
+	<script type="text/javascript" src="../SyntaxHighLighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="../SyntaxHighLighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all()</script>
+	<script src="slider.js"></script>
 </body>
 </html>
