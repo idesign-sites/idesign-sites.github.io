@@ -53,8 +53,8 @@
                         <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
                           <ul class="nav navbar-nav navbar-right">
                             <li><a href="#home" class="scroll">Я</a><span> </span></li>
-                            <li class="top-nav__b"><a href="#g" class="scroll"  >Портфолио</a></li>
-                            <li class="top-nav__b"><a href="#sep" class="scroll"  >Контакты</a></li>
+                            <li class="top-nav__b"><a href="#g" class="scroll ancLinks"  >Портфолио</a></li>
+                            <li class="top-nav__b"><a href="#sep" class="scroll ancLinks"  >Контакты</a></li>
                            </ul>
                         </div>
                     </nav>
@@ -415,6 +415,15 @@
     $(window).on('resize', function () { 
     setPortfolio();          
   });
+   
+     
+    $(".ancLinks").click(function () { 
+      var elementClick = $(this).attr("href");
+      var destination = $(elementClick).offset().top;
+      $('html,body').animate( { scrollTop: destination }, 1100 );
+      return false;
+    });
+
 })(jQuery);
 </script>
   </body>
