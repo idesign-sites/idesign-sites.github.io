@@ -520,7 +520,7 @@
 /**/
 
 .reviews {
-    width: 637px;
+    max-width: 637px;
     margin: 10px auto 0;
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
@@ -601,7 +601,30 @@
     transition: transform 1.5s;
     transition: transform 1.5s, -webkit-transform 1.5s;
 }
-
+.adv-item:focus .adv-img{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+}
+.adv-item:hover .adv-img .img{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+}
+.adv-img:hover .img{
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
+}
 .adv-img:after {
     position: absolute;
     content: "";
