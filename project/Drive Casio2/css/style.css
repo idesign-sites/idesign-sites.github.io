@@ -188,12 +188,12 @@
     background-image: -webkit-linear-gradient(bottom, #f5a322, #ffd700);
     background-image: linear-gradient(to top, #f5a322, #ffd700);
     -moz-transform-origin: 50% 100%;
-    -moz-transform: perspective(400px) rotateX(25deg);
+    -moz-transform: perspective(400px) rotateX(28deg);
     -webkit-transform-origin: 50% 100%;
-    -webkit-transform: perspective(400px) rotateX(25deg);
+    -webkit-transform: perspective(400px) rotateX(28deg);
     transform-origin: 50% 100%;
-    -webkit-transform: perspective(200px) rotateX(20deg);
-    transform: perspective(200px) rotateX(20deg);
+    -webkit-transform: perspective(200px) rotateX(28deg);
+    transform: perspective(200px) rotateX(28deg);
     text-align: center;
 
     text-shadow: 1px 1px #fff;
@@ -201,7 +201,7 @@
     line-height: 75px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 38px;
     text-transform: uppercase;
     border-radius: 7px;
     -webkit-text-shadow: 1px 1px rgba(255, 255, 255, .75), inset 1px 1px 1px rgba(0, 0, 1, .75);
@@ -520,7 +520,7 @@
 /**/
 
 .reviews {
-    width: 600px;
+    width: 637px;
     margin: 10px auto 0;
     font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
@@ -538,13 +538,14 @@
 }
 .reviews-item {
     overflow: hidden;
-    margin: 5px 0 70px 0;
-    min-height: 125px;
+   /*  margin: 5px 0 70px 0; */
+    min-height: 120px;
 }
 .reviews-text {
     border: 0;
     color: #fff;
     font-size: 18px;
+    line-height: 23px;
     margin: 1px 0 0px 4px;
     padding: 0 0px;
 }
@@ -565,7 +566,9 @@
     font-family: 'Roboto Condensed', sans-serif;
     margin: 15px auto 30px;
 }
-
+.overview-items-text__fh{
+    margin-top: 65px;
+}
 .title-advantage {
     font-size: 34px;
     font-weight: bold;
@@ -578,9 +581,11 @@
 
 .adv-item p {
     min-height: 70px;
-    margin: 15px 0 5px;
+    margin: 8px 0 5px;
     color: #989bdf;
     font-size: 16px;
+    line-height: 19px;
+    padding: 0 25px;
 }
 
 .adv-img {
@@ -645,7 +650,7 @@
 }
 .btn-play {
     position: relative;
-    margin: 5px 0 0 0 ;
+    margin: 14px 0 0 0 ;
     width: 307px;
     height: 74px;
     border-radius: 5px;
@@ -666,10 +671,7 @@
 .btn-play:hover  {
     background-image: -webkit-linear-gradient(bottom, #ffd700, #ffd700);
     background-image: linear-gradient(to top,  #ffd700, #ffd700);
-    margin: 2px 0 0 0;
-}
-.btn-play:hover {
-    margin: 2px 0 0 0;
+    margin: 11px 0 0 0;
 }
 .shadow-play:after{
     content: "";
@@ -679,12 +681,12 @@
     width: 332px;
     height: 37px;
     display: inline-block;
-    top: 85px;
+    top: 77px;
     right: -3px;
     opacity: 0.14;
 }
 .shadow-play:hover:after{
-    top: 88px;
+    top: 80px;
     opacity: 0.34;
 }
    
@@ -705,7 +707,7 @@
         width: 63px;
     height: 53px;
     display: inline-block;
-    top: 0;
+    top: -4px;
     right: 0;
     cursor: pointer;
 }
