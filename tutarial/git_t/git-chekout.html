@@ -21,26 +21,20 @@
         <p><button class="js-toggle-left-slidebar">МЕНЮ</button></p>
         <div id="content">
           <h1>Git --- Распределённая система контроля версий</h1>
-            <h3>Клонирование удаленного репозитория в папку пк</h3>
+            <h3>Создание и слияния веток</h3>
       
-      
-              <h4>В папке проекта скачаются файлы проекта и <span class="git-text-green">.git</span> <span>в которой будет храниться файлы настройки проекта (config)</span></h4> 
-                 
-                <h4>Комманда для закачивания файлов с удаленного репозитория</h4> 
-                <p>  <span class="git-text-orange">$ git clone https://github.com/idesign-sites/idesign-sites.github.io.git</span> </p>
+                <h4>Команда для создания ветки </h4> 
+                <p>  <span class="git-text-orange">$ git branch two</span> </p>
+                  <pre class="brush: css">
+                     
+                  </pre>
+                <h4>Команда для перехода в ветку 'two' </h4> 
+                <p>  <span class="git-text-orange">$ git checkout two</span> </p>
+                  <pre class="brush: css">
+                     Switched to branch 'two'
 
-                <pre class="brush: css">   
-                    Cloning into 'idesign-sites.github.io'...
-                    remote: Counting objects: 1000, done.
-                    remote: Compressing objects: 100% (30/30), done.
-                    remote: Total 1000 (delta 15), reused 0 (delta 0), pack-reused 970
-                    Receiving objects: 100% (1000/1000), 44.67 MiB | 28.00 KiB/s, done.
-                    Resolving deltas: 100% (251/251), done.
-                    Checking out files: 100% (824/824), done.
+                  </pre>
 
-                </pre>
-
-                <h4>В файл можно перепрописать параметры конфига для текущего рпозитория , например настройки логина и почты от рабочего репозитория</h4> 
         </div>
     </div>
     <div off-canvas="slidebar-1 left reveal" id="menu_pop" class="git-bg-color">
