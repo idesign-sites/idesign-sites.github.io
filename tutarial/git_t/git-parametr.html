@@ -24,11 +24,16 @@
             <h3>Настройка Git , и файлы настройки</h3>
       
       
-                  <pre class="brush: css">
-                     
-                  </pre>
+              <h4>В папке проекта создастся файл <span class="git-text-green">.git</span> <span>в которой будет храниться файлы настройки проекта (config)</span></h4> 
+                <pre class="brush: css">  
+                  [core]
+                        repositoryformatversion = 0
+                        filemode = false
+                        bare = false
+                        logallrefupdates = true
+                </pre>
 
-
+                <h4>В файл можно перепрописать параметры конфига для текущего рпозитория , например настройки логина и почты от рабочего репозитория</h4> 
         </div>
     </div>
     <div off-canvas="slidebar-1 left reveal" id="menu_pop" class="git-bg-color">
@@ -55,7 +60,7 @@
                     <div class="first">многопользователь-<br> ская работа в git</div>
                     <ul>
                         <li><a href="git-merge">Создание главного репозитория</a></li>
-                        <li><a href="git-merge">Клонирование репозитория</a></li>
+                        <li><a href="git-clone.html">Клонирование репозитория</a></li>
                         <li><a href="git-merge">Подключение главного репозитория</a></li>
                         <li><a href="git-merge">Синхронизация изменений</a></li>
                     </ul>
