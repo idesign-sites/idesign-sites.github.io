@@ -162,6 +162,21 @@
 	background: #777;
 }
 
+.perspective-block{
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+}
+.perspective-block a{
+
+	text-align: left;
+	
+}
+.perspective-block .icon-lock::before {
+    content: "\e606" !important;
+    position: relative;
+}
 .perspective_btn {
 	background: #ed8151;
 }
