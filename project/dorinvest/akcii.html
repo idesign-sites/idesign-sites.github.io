@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>DorInvest</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    
+    -->
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sprite.css">
+  </head>
+  <body>
+    <div id="TB_overlay"></div>
+    <header class="header header-vv header-ap">
+      <div class="header-top">
+        <table class="container">
+          <div class="row">
+            <tr>
+              <td class="col-xs-1 col-sm-4 col-md-4 col-lg-4">
+                <div class="ht-contact hidden-xs">
+                  <p class="small-text icon-map">197706 Санкт-Петербург<br>наб. реки Сестры д.51 лит. Б</p>
+                  <p class="small-text icon-email">dorinvest-spb@yandex.ru</p>
+                </div>
+              </td>
+             <td class="col-xs-10 col-sm-4 col-md-4 col-lg-4"><a href="index.html"><img src="img/logo.png" alt="аренда спецтехники ДОРИНВЕСТ"></a>
+                <p class="small-text-u visible-xs">Заказ спецтранспорта для вывоза мусора, снега, уборки территорий, выравнивание дороги и пр.</p>
+              </td>
+              <td class="col-xs-1 col-sm-4 col-md-4 col-lg-4">   
+                <div class="ht-phone hidden-xs">
+                  <p class="small-text"><span class="icon-phone">+7 921 / </span><span>756 32 32</span></p>
+                  <p class="small-text"><span>+7 950 /</span><span>014 05 34                        </span></p>
+                </div>
+              </td>
+            </tr>
+          </div>
+        </table>
+      </div>
+      <div class="menu-top"><a href="index.html"><img src="img/logo-fixed.png" alt="" class="logo-mobile"></a>
+        <div role="banner" class="navbar navbar-inverse bs-docs-nav">
+          <div class="container">
+            <div class="row">
+              <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+              </div>
+              <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class=""><a href="index.html"> <span>Главная</span></a></li>
+                  <li><a href="contacti.html"> <span>Контакты</span></a></li>
+                  <li><a href="#" data-toggle="dropdown" class="dropdown-toggle"> <span>Услуги</span><b class="icon-arrow"></b></a>
+                    <div class="dropdown-menu bg_menu">
+                      <ul class="dm-table">
+                        <li><a href="/dor-invest/vyvoz.html"> <img src="img/sprites/trush.png" alt=""><span>Вывоз мусора</span></a></li>
+                        <li><a href="vyvoz.html"><img src="img/sprites/snow.png" alt=""><span>Вывоз снега</span></a></li>
+                        <li><a href="vyvoz.html"><img src="img/sprites/trush2.png" alt=""><span>Уборка территории</span></a></li>
+                        <li><a href="vyvoz.html"> <img src="img/sprites/road.png" alt=""><span>Выравнивание дорог</span></a></li>
+                        <li><a href="vyvoz.html"><img src="img/sprites/well.png" alt=""><span>Осушение колодцев</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="autopark.html"> <span>Автопарк</span></a></li>
+                  <li><a href="payment.html"> <span>Способ оплаты</span></a></li>
+                  <li class="last active"><a href="akcii.html"> <span>Акции и скидки</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="content vv akcii">
+      <div class="container"> 
+        <div class="promo-v akcii-block clearfix">
+          <h3 class="title"> <span>Вывоз мусора</span></h3>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="akcii-img">
+              <tr> 
+                <td><img src="img/akcii/a-1.jpg" alt=""></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table>
+              <tr>
+                <td>
+                  <h4 class="akcii-title">Подача машины бесплатно!</h4>
+                  <p class="small-text">Только в июне срочная подача машины бесплатно. Акция действует при заказе машины через форму обратной связи и при условии наличия машин  в указаное время.</p>
+                  <button class="btn yellow-btn">Заказать</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="promo-v akcii-block clearfix">
+          <h3 class="title"> <span>Вывоз соседей</span></h3>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="akcii-img">
+              <tr> 
+                <td><img src="img/akcii/a-2.jpg" alt=""></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table>
+              <tr>
+                <td>
+                  <h4 class="akcii-title">Вывоз шумных соседей!</h4>
+                  <p class="small-text">Всё лето при заказе вывоза мебели в ночное время, вывезем ВАШИХ ШУМНЫХ СОСЕДЕЙ БЕСПЛАТНО!</p>
+                  <button class="btn yellow-btn">Заказать</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="promo-v akcii-block clearfix">
+          <h3 class="title"> <span>Вывоз мусора</span></h3>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="akcii-img">
+              <tr> 
+                <td><img src="img/akcii/a-1.jpg" alt=""></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table>
+              <tr>
+                <td>
+                  <h4 class="akcii-title">Подача машины бесплатно</h4>
+                  <p class="small-text">Только в июне срочная подача машины бесплатно. Акция действует при заказе машины через форму обратной связи и при условии наличия машин  в указаное время.</p>
+                  <button class="btn yellow-btn">Заказать</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="promo-v akcii-block clearfix">
+          <h3 class="title"> <span>Вывоз мусора</span></h3>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table class="akcii-img">
+              <tr> 
+                <td><img src="img/akcii/a-2.jpg" alt=""></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <table>
+              <tr>
+                <td>
+                  <h4 class="akcii-title">Подача машины бесплатно</h4>
+                  <p class="small-text">Только в июне срочная подача машины бесплатно. Акция действует при заказе машины через форму обратной связи и при условии наличия машин  в указаное время.</p>
+                  <button class="btn yellow-btn">Заказать</button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="form-vv">
+        <div class="container">
+          <form action="" method="" role="form" class="clearfix">
+            <div class="col-xs-12 form-zakaz cd-panel">
+              <legend class="title">Выберите тип машины                    </legend>
+              <div class="form-slider"><span class="sf-button-container"></span>
+                <div class="slider-for">
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/1tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Беларус </p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/2tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Ford Cargo</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/3tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Volvo BL-7</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/4tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Terex 970</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/5tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Volvo BL-5</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/3tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Volvo BL-7</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/1tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Беларус  </p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/2tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Ford Cargo</p>
+                    </div>
+                  </div>
+                  <div class="sf-item">
+                    <div class="form-pic"><img src="img/autopark/3tr-400.png" alt=""></div>
+                    <div class="form-group">
+                      <input type="checkbox" id="" class="form-check">
+                      <p class="sf-title">Volvo BL-7                                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 form-zakaz cd-panel">
+              <div class="time-who clearfix">
+                <legend class="title">Когда подать машину</legend>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <div class="form-group checkbx-krug">
+                      <input type="checkbox" id="" class="form-check">
+                      <label class="title">Выберу самостоятельно</label>
+                    </div>
+                    <div class="tw-date">
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">  
+                        <select>
+                          <option value="" disabled="disabled" selected="selected">Время подачи</option>
+                          <option value="">9 - 12</option>
+                          <option value="">12 - 15</option>
+                          <option value="">15 - 18</option>
+                          <option value="">18 - 21</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> 
+                        <div class="icon-calendar-form">
+                          <input type="text" placeholder="Дата подачи" class="form-control js-datetimepicker">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <div class="form-group checkbx-krug">
+                      <input type="checkbox" id="" class="form-check">
+                      <label class="title">Как можно быстрее</label>
+                    </div>
+                    <div class="form-group">
+                      <p class="tw-annot">*Подача в течении <span class="fi-text">30</span><span class="tw-annot"> минут                                </span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-in clearfix">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                  <div class="form-group">
+                    <select>
+                      <option value="" disabled="disabled" selected="selected">Груз/Работа</option>
+                      <option value="">Погрузка</option>
+                      <option value="">Разгрузка</option>
+                      <option value="">Такелаж</option>
+                      <option value="">Уборка</option>
+                    </select>
+                  </div>
+                  <div class="form-group">                                
+                    <select>
+                      <option value="" disabled="disabled" selected="selected">Масса</option>
+                      <option value="">до 500кг</option>
+                      <option value="">от 500кг до 1000кг</option>
+                      <option value="">свыше 1000кг</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                               
+                  <div class="form-group">
+                    <input type="text" placeholder="Адрес">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Как к вам обращаться">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" placeholder="Ваш телефон">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                               
+                  <div class="form-itog">
+                    <p class="fi-text">Стоимость</p>
+                    <p class="fi-price icon-rub-form">3280</p>
+                    <button type="submit" class="btn red-btn">Отправить заявку</button>
+                    <p class="tw-annot">*Мы вам перезвоним в течении 10 минут</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="menu-bottom">
+          <div class="visible-lg">
+            <div role="banner" class="navbar navbar-inverse bs-docs-nav">
+              <div class="container">
+                <div class="row">
+                  <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target=".bs-navbar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                  </div>
+                  <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="/"> <span>Главная</span></a></li>
+                      <li><a href="/contacti.html"> <span>Контакты</span></a></li>
+                      <li><a href="#" data-toggle="dropdown" class="dropdown-toggle"> <span>Услуги</span><b class="icon-arrow"></b></a>
+                        <div class="dropdown-menu bg_menu">
+                          <ul class="dm-table">
+                            <li>                  <a href="/dor-invest/vyvoz.html"> <img src="img/sprites/trush.png" alt=""><span>Вывоз мусора</span></a></li>
+                            <li><a href="#"><img src="img/sprites/snow.png" alt=""><span>Вывоз снега</span></a></li>
+                            <li><a href="#"><img src="img/sprites/trush2.png" alt=""><span>Уборка территории</span></a></li>
+                            <li><a href="#"> <img src="img/sprites/road.png" alt=""><span>Выравнивание дорог</span></a></li>
+                            <li><a href="#"><img src="img/sprites/well.png" alt=""><span>Осушение колодцев</span></a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><a href="/dor-invest/autopark.html"> <span>Автопарк</span></a></li>
+                      <li><a href="/payment.html"> <span>Способ оплаты</span></a></li>
+                      <li class="last"><a href="/akcii.html"> <span>Акции и скидки</span></a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-block">
+            <div class="container">
+              <div class="row">           
+                <div class="footer-bl col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <div class="description-company">
+                    <p class="small-text">ООО «Доринвест+» ИНН 7843006200, </p>
+                    <p class="small-text">КПП 784301001 ОГРН 1167847099155 </p>
+                    <p class="small-text">Предложения и цены, размещенные на сайте, не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ. </p>
+                  </div>
+                </div>
+                <div class="footer-bl col-xs-12 col-sm-4 col-md-4 col-lg-4 hidden-sm hidden xs visible-lg visible-md">
+                  <div class="ht-phone">
+                    <p class="small-text"><span class="icon-phone-br">+7 950 / </span><span>012-12-34</span></p>
+                    <p class="small-text"><span>+7 921 /</span><span>756-32-32  </span></p><img src="img/ft-list-sov.png" alt="" class="hidden-sm hidden-xs visible-lg visible-md">
+                  </div>
+                </div>
+                <div class="footer-bl col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <div class="ht-contact">
+                    <p class="small-text icon-map-br">197706 Санкт-Петербург<br>наб. реки Сестры д.51 лит. Б</p>
+                    <p class="small-text icon-email-br">dorinvest-spb@yandex.ru</p>
+                  </div>
+                  <div class="ht-phone visible-sm visible-xs">
+                    <p class="small-text"><span class="icon-phone-br">+7 950 / </span><span>012-12-34</span></p>
+                    <p class="small-text"><span>+7 921 /</span><span>756-32-32  </span></p><img src="img/ft-list-sov.png" alt="" class="hidden-sm hidden-xs">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/scripts.min.js"></script>
+    <script src="js/moment-with-locales.min.js">       </script>
+    <script src="js/bootstrap-datetimepicker.min.js">   </script>
+    <script src="js/parallax.min.js"> </script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.sliderPro.min.js"></script>
+    <script src="js/jquery.formstyler.min.js">            </script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>
