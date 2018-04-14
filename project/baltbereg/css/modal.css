@@ -1,0 +1,97 @@
+.mymodal_booking .modal-dialog {
+    width: 80%;
+    max-width: 920px;
+    height: 70%;
+    max-height: 620px;
+    margin: 30px auto;
+    text-align: center;
+}
+.mymodal_booking .modal-header {
+    padding: 15px 15px 5px 15px;
+}
+.mymodal_booking .booking-label{
+	color: #b79370;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 100%;
+}
+.mymodal_booking select,
+.mymodal_booking option,
+.mymodal_booking textarea,
+.mymodal_booking input{
+    margin: 5px 0;
+    border: 1px solid #b79370;
+    border-radius: 0;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515959 !important;
+    padding-right: 5px;
+}
+
+
+::-webkit-input-placeholder {
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515959 !important;
+
+	}/* webkit */
+::-moz-placeholder{
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515959 !important;
+
+}
+:-moz-placeholder{
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515959 !important;
+}
+:-ms-input-placeholder{
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 20px;
+    color: #515959  !important;
+}
+
+.mm-booking-top{
+	margin: 15px auto 20px;
+}
+.mm-booking-mid{
+margin: 15px auto;
+}
+.mm-booking-b{
+margin: 45px auto 15px;
+}
+.mymodal_booking .datepick-img{
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+    top: 8px;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    width: auto;
+}
+.mymodal_booking .input-group.date{
+	width: 100%;
+}
+@media (max-width: 582px){
+    .mymodal_booking [class*="col-"]{
+        width: 100%;
+    }}
+@media (max-width: 414px){
+    .mymodal_booking{
+		margin-left: -15px; 
+    	}
+    .mymodal_booking .modal-dialog {
+	    width: 100%;
+}}    

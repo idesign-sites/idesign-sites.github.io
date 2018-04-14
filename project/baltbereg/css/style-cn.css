@@ -1,0 +1,344 @@
+/* <!-- MAIN PIC + ХЛЕБНЫЕ КРОШКИ --> */
+
+.main-pic{
+
+}
+.main-pic-in{
+	position: relative;
+	min-height: 200px;
+}
+/*  <!-- MAIN PIC + ХЛЕБНЫЕ КРОШКИ + ВЕРХНИЙ СЛАЙДЕР-->  */
+
+.main-pic.cnom .bb-breadcrumbs{
+	width: 670px;
+}
+
+/*  БЛОКИ НОВОСТЕЙ  */
+
+.news{
+	margin: 20px auto;
+}
+.block-news{
+    height: 246px;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+    
+}
+.news [class*="col-"]{
+	
+}
+.news [class*="col-"]:nth-child(3n) .block-news{
+	 float: right;
+	border: none;	 
+	margin-right: 0;
+	padding-left: 30px;	 
+}
+.news [class*="col-"]:nth-child(3n+1) .block-news{
+	padding-right: 30px;
+	border-right: 1px dashed #ccc4be;	 
+}
+.news [class*="col-"]:nth-child(3n+2) .block-news{
+	padding:0 30px;
+	    border-right: 1px dashed #ccc4be;	 
+}
+
+.block-news:nth-child(3n){
+	border: none;
+}
+.block-news-h{
+	background-color: #102c40;
+	padding: 5px;
+}
+.block-news-h span{
+	color: #ffffff;
+
+}
+.block-news-date{
+
+}
+.block-news-item{
+	padding: 10px;
+	/* text-align: justify; */
+	color: #071d2e;
+}
+
+.block-news-title{
+ 	color: #071d2e;
+ 	text-decoration: underline;
+ 	height: 86px;
+    display: inline-block;
+ 	transition: all 0.4s;
+ 	padding-bottom: 10px;
+}
+
+.block-news-text{
+	height: 86px;
+}
+
+@media (min-width: 533px) and (max-width: 1200px){
+	.news [class*="col-"]:nth-child(even) .block-news{
+	    padding: 0 0 0 30px;
+	    border: 0;
+	}
+	.news [class*="col-"]:nth-child(odd) .block-news{
+	    padding: 0 30px 0 0;
+	    border-right: 1px dashed #ccc4be;	 
+	}
+}
+@media (max-width: 533px){
+	.news [class*="col-"]{
+		width: 100%;
+	}
+	.news [class*="col-"] .block-news{
+	    padding: 0 !important;
+	    border-right: 0 !important;
+	}
+}
+/* <!-- АНТИСТРЕСС ТЕКСТ1 --> */
+.astress-text-one, .astress-text-two{
+	font-family: "Helvetica Neue Cyr";
+	margin: 25px auto;
+}
+.astress-text-one h2{
+	font-size: 100%;
+	font-weight: 400;
+}
+.astress-text-one h3{
+	color: #12334a;
+	font-family: Lato;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+ /* <!-- АНТИСТРЕСС ТЕКСТ2 --> */
+
+.astress-text-two .bb-table{
+	max-width: 660px;
+	margin: 0 auto;
+}
+.bb-table th,
+.bb-table tr,
+.bb-table td{
+	border: 1px solid #b79370  !important;
+	vertical-align: middle;
+	text-align: center;
+}
+.bb-table th{
+	color: #b79370;
+	font-family: "Helvetica Neue Cyr";
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 31px;
+	text-transform: uppercase;
+	vertical-align: top !important;
+	background-color: #f0eae4;
+}
+.astress-text-two tr td:nth-child(1){
+	text-align: left;
+	padding-left: 20px;
+}
+.astress-text-two h3{
+	margin:0 0 35px 0;
+}
+.bb-table td,
+.astress-text-two h3 {
+	color: #515959;
+	font-family: "Helvetica Neue Cyr";
+	font-size: 12px;
+	font-weight: 400;
+	padding: 5px !important;
+}
+
+/* <!-- ВЫБРАТЬ НОМЕР --> */
+.stock-offerings.cn{
+	margin: 20px auto 0px;
+	font-family: "Helvetica Neue Cyr";	
+	font-size: 100%;	
+	line-height: 20px;
+}
+.sb-title-bg{
+	color: #12334a;
+	font-family: Lato;
+	font-size: 21px;
+	font-weight: 300;
+	line-height: 25px;
+	text-transform: uppercase;
+	background-color: #f0eae4;
+    margin: 1px;
+    padding: 18px;
+}
+.stock-offerings.cn .cn-desc-title{
+	color: #b79370;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: relative;
+	margin: 14px auto;
+}
+.stock-offerings.cn .cn-desc-text{
+	color: #515959;
+	font-weight: 400;
+	margin: 25px auto;
+	padding: 0 5px;
+}
+.stock-offerings.cn .bb-table,
+.stock-offerings.cn .cn-option{
+	margin: 0 auto 10px;
+    max-width: 95%;
+}
+.stock-offerings.cn .btn-fram{
+	margin: 15px auto 15px;
+}
+
+.cn-option ul li{
+	min-height: 35px;
+    text-align: left;
+}
+.cn-option .t-cell{
+	min-height: 45px;
+	display: table;
+	padding-left: 40px;
+}
+.cn-option .t-cell span{
+	vertical-align: middle;
+	display: table-cell;
+	position: relative;
+	line-height: 20px;
+}
+.cn-option .t-cell span .sprite_card{
+	top: 50%;
+	left: -20px;
+    transform: translate(-50%,-50%);
+}
+.sprite_card{
+	position: absolute;
+	top: 0;
+	left: -30px;
+} 
+@media (min-width: 768px) and (min-width: 1200px){
+	.cn-option .t-cell {
+    padding-left: 53px;
+}}
+@media (min-width: 768px) and (max-width: 1200px){
+	.stock-offerings.cn .bb-table,
+	.stock-offerings.cn .cn-option {
+    padding-left: 45px;
+    padding-top: 20px;
+}}
+@media (max-width: 768px) {
+    .stock-offerings.cn .cn-option ul{
+        float: none;        
+    }
+    .stock-offerings.cn .cn-option{
+        display: table;
+        text-align: center;
+    }
+}
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+
+/* СЛАЙДЕР */
+.cn-slider .flex-direction-nav {
+position: absolute;
+}
+.cn-slider .flex-control-nav {
+    bottom: 5px;
+}
+
+/* ТЕКСТ НОВОСТИ */
+.text-news.tn{
+	margin: 45px auto;
+}
+.text-news.tn ol li{
+	color: #b79370;
+}
+.small-text{
+	font-family: "Helvetica Neue Cyr";
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 20px;
+	color: #515959;
+	margin:0 0 25px 0;
+}
+.small-text-b{
+	font-weight: bold;
+}
+.medium-text{
+	font-family: "Helvetica Neue Cyr";
+	font-size: 100%;
+	font-weight: 400;
+	line-height: 20px;
+	display: inline-block;
+	color: #b79370;
+	text-transform: uppercase;	
+	margin: 0 0 15px 0;
+}
+.tn .cn-text{
+	padding-left: 15px;
+}
+.tn .cn-text li{
+	display: list-item;
+	list-style: disc;
+	color: #b79370;
+}
+
+/* <!--  КНОПКИ --> */
+.bb-block-btn{
+	text-align: center;
+}
+.bb-block-btn .btn-fram{
+	display: inline-block;	
+
+}
+.btn-black-op{
+	background: white;
+	color: #071e2f;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+	border: 1px solid #071e2f;
+	height: 33px;
+}
+.btn-fram-black{
+	border: 1px solid #071e2f;
+}
+/* кнопка наверх */
+#toTop {
+	text-align:center;
+	position:fixed;
+	bottom:0px;
+	right:0px;
+	cursor:pointer;
+	display:none;
+}
+.bb-block-btn .btn-black-op{
+	margin: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

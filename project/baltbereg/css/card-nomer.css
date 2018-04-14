@@ -1,0 +1,60 @@
+
+/*  <!-- MAIN PIC + ХЛЕБНЫЕ КРОШКИ + ВЕРХНИЙ СЛАЙДЕР-->  */
+
+.main-pic.cnom .bb-breadcrumbs{
+	max-width: 670px;
+}
+
+.description-nomer{
+	margin: 30px auto 10px;
+}
+.description-nomer .dn-toptext{
+	max-width: 500px;
+	margin: 30px auto;
+}
+.description-nomer .dn-desc-title{
+	color: #b79370;
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 auto;
+    font-size: 100%;
+}
+.dn-option ul{
+    margin-left: 20px;
+}
+.dn-option ul li{
+    display: block;
+    margin: 0px auto;
+    line-height: 48px;
+}
+.dn-option .t-cell span {
+    position: relative;
+}
+.dn-option .t-cell span .sprite_card {
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%,-50%);
+}
+
+.description-nomer .btn-fram{
+    float: left;
+    margin-left: 0px;
+}
+
+@media (max-width: 768px) {
+.dn-option ul {
+    margin-left: 10%;
+    width: 243px;/
+}
+.description-nomer .btn-fram {
+    float: none;
+    margin: 0 auto;
+}
+.main-pic.cnom .bb-breadcrumbs {
+    width: auto;
+}
+.main-pic-in {
+    min-height: 130px;
+}
+}

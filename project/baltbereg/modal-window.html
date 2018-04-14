@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Балтийский берег</title>     
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/modal.css"> 
+
+    <link rel="stylesheet" href="css/style.css"> 
+     <link rel="stylesheet" href="css/style-tr.css">
+
+    <link rel="stylesheet" href="css/style-cn.css">
+
+    <link rel="stylesheet" href="css/fotogalery.css">
+
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+
+    <script src="js/bootstrap.min.js"></script>  
+        <script src="js/moment-with-locales.min.js"></script>  
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+
+</head>
+<body>
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="mymodal_booking modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h2 class="tr-title text-center">Забронировать проживание</h2>
+      </div>
+
+      <div class="modal-body clearfix">
+            <div class="mm-booking-top clearfix">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <span class="booking-label">тип путёвки:</span>
+                    <select class="form-control" placeholder="Лечебная программа">
+                        <option>
+                            Лечебная программа
+                        </option>
+                        <option>
+                            Лечебная программа 2
+                        </option>
+                        <option>
+                            Лечебная программа 3
+                        </option>
+                    </select>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <span class="booking-label">номер:</span>
+                    <select class="form-control">
+                        <option>
+                            Одноместный номер
+                        </option>
+                        <option>
+                            Двухместный номер
+                        </option>
+                        <option>
+                            Трехместный номер
+                        </option>
+                    </select>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <span class="booking-label">кол-во взрослых:</span>
+                    <select class="form-control">
+                        <option>
+                            1
+                        </option>
+                        <option>
+                            2
+                        </option>
+                        <option>
+                            3
+                        </option>
+                    </select>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                    <span class="booking-label">кол-во детей:</span>
+                    <select class="form-control">
+                        <option>
+                            1
+                        </option>
+                        <option>
+                            2
+                        </option>
+                        <option>
+                            3
+                        </option>
+                        <option>
+                            4
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+        <div class="mm-booking-mid clearfix">
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3 col-sm-offset-3">
+            <span class="booking-label">дата заезда:</span>
+
+                
+
+                <div class="input-group date" id="datetimepicker1">
+                    <input type="text" class="form-control">
+                    <span class="input-group-addon datepick-img">
+                        <img src="img/sprite/datepicker.jpg" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+            <span class="booking-label ">кол-во дней:</span>
+                <select class="form-control">
+                    <option>
+                        1
+                    </option>
+                    <option>
+                        2
+                    </option>
+                    <option>
+                        3
+                    </option>
+                    <option>
+                        4
+                    </option>
+                    <option>
+                        5
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div class="mm-booking-b clearfix">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <input type="text" name="" id="input" class="form-control" value="" required="required" placeholder="Имя">
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <input type="text" name="" id="input" class="form-control" value="" required="required" placeholder="Телефон" >
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+            <input type="text" name="" id="input" class="form-control" value="" required="required" placeholder="Email">
+        </div>
+      
+        <div class="col-xs-12">
+        <textarea name="" id="input" class="form-control" rows="3" placeholder="Ваши пожелания" ></textarea>
+        </div>
+        </div>
+
+        </div>
+
+        <div class="modal-footer ">
+            <div class="col-xs-12">
+                <div class="btn-fram btn-fram-blue pull-right">
+                    <button class="btn-bb btn-blue-op">отправить<i class="sprite btn-arrow-white"></i></button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="ft-bg">
+    <div class="container">
+
+        <table class="f-table">
+            <tbody>
+                <tr>
+                    <td class="col-xs-2">
+                    <div class="logo">
+                        <img src="img/logotip.png" alt="балтийский берег">
+                    </div>
+                    </td>   
+                    
+                    <td class="col-xs-3">
+                        <nav>
+                            <ul class="bot-menu c-pad">
+                                <li><a href="">Партнёрам</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </nav>
+
+                    </td>
+                    <td class="col-xs-2">
+                      <ul class="socit c-pad">
+                        <li class="ft-fb"><a href=""><i class="sprite sprite-vk"></i> </a></li>
+                        <li class="ft-vk"><a href=""><i class="sprite sprite-facebook "></i> </a></li>
+                    </ul>   
+
+                    </td>
+                    <td class="col-xs-5">
+                    <ul class="info c-pad">
+                        <li>&copy 2017</li>
+                        <li>Санаторий
+                            <q>Балтийский берег</q>
+                        </li>
+                        <li>Сделано в <span class="made-design"><a href="http://image-mg.com/" target="_blank">Image Media</span></a>
+                        </li>
+                    </ul>
+
+                    </td>                        
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</footer> 
+    <!-- /* кнопка наверх */ -->
+    <div id="toTop"><img src="img/btn-top.jpg" alt="балт берег"></div>
+    
+<!--     <div class="input-group date" id="datetimepicker1">
+  <input type="text" class="form-control">
+  <span class="input-group-addon">
+    <span class=""></span>
+  </span>
+</div> -->
+
+<script>
+    $(function () {
+        $('#datetimepicker1').datetimepicker({
+            language: 'ru',
+            minuteStepping:10,
+            defaultDate:"09.02.2017",
+            daysOfWeekDisabled:[0,6]
+        });
+    });
+
+</script>
+</body>
+</html>

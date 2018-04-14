@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'lato';
+  src: url('../fonts/latolight.woff') format('woff'),
+       url('../fonts/latolight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: url("../fonts/HelveticaNeueCyr-Light.otf");
+    src: url("../fonts/HelveticaNeueCyr-Light.eot")format("embedded-opentype"),
+    url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+    url("../fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'impact';
+    src: url("../fonts/Impact.otf");
+    src: url("../fonts/impact.eot")format("embedded-opentype"),
+    url("../fonts/Impact.woff") format("woff"),
+    url("../fonts/impact.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "ft 40";
+    src: url("../fonts/ft40-Roman.otf");
+    src: url("../fonts/ft40.eot")format("embedded-opentype"),
+    url("../fonts/ft40-Roman.woff") format("woff"),
+    url("../fonts/ft40-Roman.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

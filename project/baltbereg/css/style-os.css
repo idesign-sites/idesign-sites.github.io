@@ -1,0 +1,308 @@
+.descsanat-text-one,
+.descsanat-advateges {
+    margin: 40px auto 30px;
+}
+
+.small-text__bi {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.descsanat-advateges p {
+    color: #9d8a66 !important;
+    text-transform: uppercase;
+    min-height: 30px;
+    margin-bottom: 0;
+}
+
+.descsanat-advateges [class*="col-"] {
+    border-right: 1px solid #d1d1c6;
+    min-height: 185px;
+    margin-top: 20px;
+}
+
+.descsanat-advateges .row [class*="col-"]:last-child {
+    border-right: 0;
+}
+
+.block-adv {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+    max-width: 275px;
+}
+
+
+
+/* БЛОКИ */
+.section-block {
+    background-color: #e8e8e8;
+    margin: 25px auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.block-table [class*="col-"]{
+    position: relative;
+}
+
+.section-block .sb-bg {
+    margin: 15px auto;
+    padding: 0;
+    background-color: white;
+}
+@media (max-width: 992px) {
+    .block-table [class*="col-"]{
+        float: left;
+    }
+}
+  
+
+
+/* КОНТАКТЫ */
+
+.contact-block .mbuild{
+    vertical-align: top;
+    padding: 0;
+}
+.contact-block .c-list{
+    text-align: left;
+    margin: 20px 5px 45px 45px;
+}
+.c-list dt, .c-list p{
+    position: relative;
+}
+.c-list dt i,
+.c-list p i,
+.contact-block .c-list-sale dt i{
+    position: absolute;
+    left: -24px;
+    top: 0;
+}
+.contact-block .bb-listing li{
+    margin:0 0 20px 15px;
+
+}
+.contact-block .how-get{
+    padding: 0 0 0 20px;
+}
+
+.contact-block .stokof-img{
+    max-height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+}
+.contact-block [class*="col-"] {
+    position: relative;
+    overflow: hidden;
+}
+.contact-block .stokof-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contact-block .c-list-sale{
+    text-align: left;
+    padding: 20px 5px 0 45px;
+    color: #646e6e;
+    font-family: "Helvetica Neue Cyr";
+}
+.contact-block .c-list-sale dt{
+    position: relative;
+}
+.cls-day{
+    display: inline-block;
+    min-width: 65px;
+}
+.cls-phone{
+    font-size: 16px;
+}
+.cls-time{
+    font-size: 100%;
+}
+
+
+/* форма обратной связи */
+.form-call{
+    margin: 40px auto 0;
+    padding: 0 10px;
+}
+.form-call form{
+    overflow: hidden;
+    margin: 40px auto 5px;
+}
+.form-call input, .form-call textarea{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border: 1px solid #b79370;
+}
+.form-call textarea{
+    min-height: 134px;
+    border-radius: 0;
+}
+.form-call .button{
+    float: right;
+    border: 1px solid #b79370;
+    padding: 8px;
+    background: transparent;
+    width: 206px;
+    color: #b79370;
+    font-family: "Helvetica Neue Cyr";
+    font-size: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.form-submit{
+    position: relative;
+    overflow: hidden;
+}
+.form-submit i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+}
+
+
+/* <!-- ГЛАВНЫЙ КОРПУС --> */
+.main-building-block .mb-block-t ul {
+    margin: 20px auto;
+}
+
+.main-building-block .mb-title {
+    color: #12334a;
+    font-family: Lato;
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+@media (max-width: 767px) {
+    .form-call .p-l-0{
+        padding-right: 0 ;
+    }}
+/* <!-- О ЗЕЛЕНОГОРСКЕ --> */
+
+.about-city-text .tr-title {
+    margin: 0 auto 45px;
+}
+
+@media (max-width: 992px) {
+    .descsanat-advateges .row [class*="col-"]:nth-child(2) {
+        border-right: 0;
+    }
+    .main-building-block [class*="col-"] {
+        float: left;
+    }
+    .mb-table .mb-img-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .descsanat-advateges [class*="col-"] {
+        border-right: 0;
+    }
+}
+
+/* новое sub меню */
+.n-topmenu{
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.block-l-sm{
+    margin: 5px auto;
+}
+.block-l-sm .row{
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+.block-l-sm .col{
+    display: table-cell;
+    vertical-align: middle;
+    border-right: 1px solid #23658c;
+}
+.block-l-sm .col:last-child{
+    border-right: 0;
+}
+.block-l-sm .col:last-child .l-sm-inner{
+    float: right;
+}
+
+
+.l-sm-inner{
+    padding: 10px 0;
+
+}
+.l-sm-inner .tel-contacts{
+    padding: 0;
+}
+.n-topmenu .rating-advisor{
+    padding: 0;
+}
+.sub-head{
+
+}
+
+.head.hm .navbar-default .navbar-collapse {
+border-color: transparent;
+}
+
+ .head .os-menu ul li a{
+    margin-right: 43px;
+ }
+  .head .os-menu ul li:last-child a{
+    margin-right: 0px;
+ }
+@media (min-width: 1200px) {
+    .block-l-sm .col:last-child {
+        width: 30%;
+}}
+
+@media (max-width: 1200px) {
+    .n-topmenu .rating-advisor {
+        padding-left: 15px;
+    }
+}
+@media (max-width: 992px) {
+    .n-logo {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+        .block-l-sm .col:last-child .l-sm-inner{
+    float: none;
+}}
+@media (max-width: 553px) {
+.block-l-sm .col {
+    display: block;
+}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
