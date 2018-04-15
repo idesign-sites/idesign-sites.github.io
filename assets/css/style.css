@@ -220,7 +220,7 @@ a:focus {
 	line-height: 6px;
 }
 #h .title_promo{
-	width: 670px;
+	/*width: 670px;*/
 }
 
 #h .logo .logo_title{
@@ -260,6 +260,9 @@ a:focus {
 	background: #f5f5f5;
 }
 
+.multiple-items{
+	margin-bottom: 65px;
+}
 .portfolio {
 	padding:0 !important;
 	margin:0 !important;
@@ -272,6 +275,40 @@ a:focus {
 .portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
 
 
+.description_portfolio .slick-dots{
+	text-align: center;
+	margin: 25px 0 0 0;
+	position: absolute;
+	width: 100%;
+	bottom: -45px;	
+}
+.description_portfolio .slick-dots li{
+	display: inline-block;
+	margin: 0 14px;
+
+}
+.description_portfolio .slick-dots li button{
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	background-color: transparent;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	font-family: robotomono;
+	font-size: 14px;
+	outline: none;
+}
+.description_portfolio .slick-dots li button:hover{
+	border-color: #777;
+	color: #777;
+	transition: border-color 0.3s;
+
+}
+.description_portfolio .slick-dots li.slick-active button{
+	border-color: #777;
+
+
+}
 .tpl6 h3
 {
 	color:#fff;
@@ -302,7 +339,7 @@ a:focus {
 .work_princip--item{
 	font-family: "robotomono";
 	font-size: 20px;
-	color: #000
+	color: #000;
 	list-style-image: url(images/book.png);
 }
 
@@ -453,3 +490,5 @@ input {
 	-webkit-appearance: none;
 	font-weight: normal !important;
 }
+
+
