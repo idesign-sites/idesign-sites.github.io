@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Cтройпроект</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    
+    -->
+
+        <link rel="stylesheet" type="text/css" href="../../assets/css/ionicons.min.css" />      
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="sprite/sprite.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+<!-- button description --> 
+        <div class="btn-menu-perspective">
+            <button class="perspective_btn" title="Посмотреть описание" id="showMenu"><i class="ion-ios7-help-empty"></i></button>
+            <button onclick="location.href = '/'" class="perspective_btn--back" title="Обратно" id="showMenu"><i class="ion-ios7-arrow-thin-left"></i></button>
+        </div>
+    <!-- end button description --> 
+
+        <div id="perspective" class="perspective effect-rotateleft">
+            <div class="perspective_container">
+                <div class="perspective_wrapper"><!-- wrapper needed for scroll -->
+                    <!-- /main -->
+
+            <!-- content -->
+
+
+    <div class="_overlay"></div>
+    <div class="wrapper">
+      <header class="sp-header">
+        <div class="container wrap">
+          <div class="row middle-xs between-xs mp-header__nav">
+            <div class="col-xs-3"><a href="/" title="Стройпроект" class="ff-segoe sph-logo"><img src="img/logo-header.png" alt="Стройпроект"></a></div>
+            <div class="col-xs-6">
+              <nav class="ff-segoe sph-top-menu"><a href="/stroyproject/" title="О компании" class="ff-segoe cph-link start-sm"> <span class="icon-home-icon-header">О компании</span></a><a href="/stroyproject/realestate.html" title="Недвижимость" class="ff-segoe cph-link center-xs"><span class="icon-projects-icon-header">Недвижимость        </span></a><a href="/stroyproject/contacti.html" title="Контакты" class="ff-segoe cph-link end-sm"><span class="icon-envelope-icon-header">Контакты  </span></a></nav>
+            </div>
+            <div class="col-xs-3 end-sm"><a href="tel:+88122440789" class="ff-segoe sph-fhone"> <span class="ff-segoe icon-phone-icon-header">+7(812) </span><span class="ff-segoe">244-07-89 </span></a></div>
+          </div>
+        </div>
+        <div class="mp-header__controls"><a href="/" title="Стройпроект" class="ff-segoe sph-logo"><img src="img/logo-header.png" alt="Стройпроект"></a><a href="#" class="mp-header__mobile-menu js-menu-open">Меню</a><a href="#" class="mp-header__btn mp-header__burger js-menu-open">
+            <svg width="26px" height="26px" viewbox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+              <path style="fill:" d="M4.5,7.25c-0.414,0 -0.75,-0.336 -0.75,-0.75c0,-0.414 0.336,-0.75 0.75,-0.75l17,0c0.414,0 0.75,0.336 0.75,0.75c0,0.414 -0.336,0.75 -0.75,0.75l-17,0Zm0,14c-0.414,0 -0.75,-0.336 -0.75,-0.75c0,-0.414 0.336,-0.75 0.75,-0.75l17,0c0.414,0 0.75,0.336 0.75,0.75c0,0.414 -0.336,0.75 -0.75,0.75l-17,0Zm0,-7c-0.414,0 -0.75,-0.336 -0.75,-0.75c0,-0.414 0.336,-0.75 0.75,-0.75l13,0c0.414,0 0.75,0.336 0.75,0.75c0,0.414 -0.336,0.75 -0.75,0.75l-13,0Z"></path>
+            </svg></a></div>
+      </header>
+      <aside class="pf-m-menu js-m-aside">
+        <div class="pf-m-menu__wrap">
+          <button class="pf-m-aside-close js-aside-close"></button>
+          <nav class="pf-m-nav"><a href="/compani" class="pf-m-nav__link">О компании</a><a href="/price" class="pf-m-nav__link">Недвижимость</a><a href="/contacts" class="pf-m-nav__link">Контакты</a></nav>
+          <div class="pf-m-fhone">
+            <h3 class="pf-m-fhone__title">Телефон:</h3>
+            <ul class="pf-m-fhone__list">
+              <li class="pf-m-fhone__item"><a href="tel:88122440789" class="pf-m-fhone__link"><span class="ff-segoe">+7(812) </span><span class="ff-segoe">244-07-89 </span></a></li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <main class="content">
+        <div class="top-block">
+          <div class="container-fluid wrap">
+            <div class="promo">
+              <table class="sp-table">
+                <tr>
+                  <td class="sp-td">
+                    <h2 class="title-promo-text ff-segoe">Группа строительных компаний <span class="fw">«СтройПроект»</span></h2>
+                    <h3 class="desc-promo-text ff-segoe">Cтроительство сложных комплексных объектов промышленного и жилого назначения</h3>
+                  </td>
+                </tr>
+              </table><a href="#" class="tb-link sp-btn btn-green"> <span>Все наши проекты</span></a>
+            </div>
+            <div class="basic-proposals row between-sm"> 
+              <div class="col-xs-12 col-sm-4">
+                <div class="bpr-item posr"> 
+                  <header class="bgcolor-sbm">
+                    <h3 class="bpr-item-title">ЖК «Шуваловский PARK»</h3>
+                  </header>
+                  <main>
+                    <table class="bpr-item-price color-sbm">
+                      <tr class="bpr-line">
+                        <td class="bpr-1s">от</td>
+                        <td class="bpr-2s">85</td>
+                        <td> 
+                          <table>
+                            <tr>
+                              <td class="bpr-3s">700</td>
+                            </tr>
+                            <tr>
+                              <td><span class="bpr-1s">руб. м</span><span class="bpr-1s"> <sup>2</sup></span></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table><img src="img/sprites/sign-sbm.png" alt="">
+                  </main>
+                  <address class="bpr-item-address-object">
+                    <h4 class="bpr-address-title color-sbm">М. Проспект Просвещения</h4>
+                    <p class="bpr-address-desk">Санкт-Петербург, Выборгский район, ул. Прокофьева, д. 7                                    </p>
+                  </address>
+                  <footer><img src="img/top-block/bpr-1.png" alt="" class="bpr-object-preview-pic"></footer>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="bpr-item posr">           
+                  <header class="bgcolor-t">
+                    <h3 class="bpr-item-title">ЖК «Добрыня»</h3>
+                  </header>
+                  <main>
+                    <table class="bpr-item-price color-t">
+                      <tr class="bpr-line">
+                        <td class="bpr-1s">от</td>
+                        <td class="bpr-2s">85</td>
+                        <td> 
+                          <table>
+                            <tr>
+                              <td class="bpr-3s">700</td>
+                            </tr>
+                            <tr>
+                              <td><span class="bpr-1s">руб. м</span><span class="bpr-1s"> <sup>2</sup></span></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table><img src="img/sprites/sign-t.png" alt="">
+                  </main>
+                  <address class="bpr-item-address-object">
+                    <h4 class="bpr-address-title color-t">Пос. Ленсоветовский</h4>
+                    <p class="bpr-address-desk">Санкт-Петербург, Пушкинский район, пос. Ленсоветовский, уч. 113</p>
+                  </address>
+                  <footer><img src="img/top-block/bpr-2.png" alt="" class="bpr-object-preview-pic"></footer>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-4">
+                <div class="bpr-item posr">     
+                  <header class="bgcolor-dyb">
+                    <h3 class="bpr-item-title">М. Удельная</h3>
+                  </header>
+                  <main>
+                    <table class="bpr-item-price color-dyb">
+                      <tr class="bpr-line">
+                        <td class="bpr-1s">от</td>
+                        <td class="bpr-2s">85</td>
+                        <td> 
+                          <table>
+                            <tr>
+                              <td class="bpr-3s">700</td>
+                            </tr>
+                            <tr>
+                              <td><span class="bpr-1s">руб. м</span><span class="bpr-1s"> <sup>2</sup></span></td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table><img src="img/sprites/sign-dyg.png" alt="">
+                  </main>
+                  <address class="bpr-item-address-object">
+                    <h4 class="bpr-address-title color-dyb">М. Удельная</h4>
+                    <p class="bpr-address-desk">Санкт-Петербург, Ярославский, пр. д. 39                                                                  </p>
+                  </address>
+                  <footer><img src="img/top-block/bpr-3.png" alt="" class="bpr-object-preview-pic"></footer>
+                </div>
+              </div>
+            </div>
+            <form class="search-room">
+              <h4 class="search-room-title line-bottom">Подбор квартир по параметрам</h4>
+              <div class="search-room-block">
+                <div class="search-room-group">
+                  <label class="search-room-sel">Объекты</label>
+                  <select>
+                    <option value="0">Все объекты                                   </option>
+                    <option value="1">ЖК «Шуваловский PARK»</option>
+                    <option value="2">ЖК «Добрыня»   </option>
+                    <option value="3">ЖК «Ярославский удел»</option>
+                  </select>
+                </div>
+                <div class="search-room-group">
+                  <label class="search-room-sel">Тип квартиры                              </label>
+                  <select> 
+                    <option value="3">Студии</option>
+                    <option value="4">Однокомнатные</option>
+                    <option value="5">Двухкомнатные</option>
+                    <option value="6">Трёхкомнатные</option>
+                  </select>
+                </div>
+                <div class="search-room-group">
+                  <label class="search-room-sel">S общая, м2</label>
+                  <div class="formCost">
+                    <label for="minCost">от</label>
+                    <input type="text" class="js-minCost-area">
+                    <label for="maxCost">до</label>
+                    <input type="text" class="js-maxCost-area">
+                  </div>
+                  <div class="sliderCont">
+                    <div class="js-slide-area"></div>
+                  </div>
+                </div>
+                <div class="search-room-group">
+                  <label class="search-room-sel">Цена, руб. </label>
+                  <div class="formCost">
+                    <label for="minCost">от</label>
+                    <input type="text" class="js-minCost-price">
+                    <label for="maxCost">до</label>
+                    <input type="text" class="js-maxCost-price">
+                  </div>
+                  <div class="sliderCont">
+                    <div class="js-slide-price"></div>
+                  </div>
+                </div>
+                <div class="search-room-group">
+                  <input type="submit" value="Начать поиск" class="search-room-btn sp-btn btn-green">
+                </div>
+              </div>
+            </form>
+            <div class="action owl-theme">
+              <div class="act-slider owl-carousel">
+                <div class="action-block"><img src="img/action/act-1.png" alt=""></div>
+                <div class="action-block"><img src="img/action/act-1.png" alt=""></div>
+                <div class="action-block"><img src="img/action/act-1.png" alt=""></div>
+                <div class="action-block"><img src="img/action/act-1.png" alt=""></div>
+              </div>
+              <div class="slider-nav">
+                <div class="owl-dots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-block">
+          <div class="container-fluid wrap">
+            <div class="about row">
+              <div class="about-title-block">
+                <h2 class="title line-bottom">Коротко о нас</h2>
+              </div>
+              <div class="about-text-block">
+                <p class="small-text"> <b>Группа строительных компаний «СтройПроект» («ГСК СтройПроект») </b>— это крупная генподрядная организация, руководящая строительством сложных комплексных объектов промышленного и жилого назначения, в состав которой входят организации, выполняющие следующие виды работ:</p>
+                <ul>
+                  <li>- осуществление функции генерального подрядчика при строительстве объектов капитального строительства жилого и промышленного назначения;</li>
+                  <li>- геодезические, земляные, свайные, работы;</li>
+                  <li>- устройство шпунтового ограждения и работы по осушению котлованов;</li>
+                  <li>- монтаж и устройство бетонных и железобетонных конструкций;</li>
+                  <li>- устройство ограждающих конструкций, остекление;</li>
+                  <li>- устройство внутренних и наружных инженерных систем;</li>
+                  <li>- кровельные и отделочные работы;</li>
+                  <li>- подготовка территории под строительство;</li>
+                  <li>- благоустройство территории и другие работы.</li>
+                </ul>
+              </div>
+              <div class="how-to-about owl-theme">
+                <h2 class="title text-right line-bottom">Что мы построили?</h2>
+                <div class="how-to-about-slider owl-carousel">
+                  <div class="how-to-about-block row"><img src="img/bottom-block/hta-1.png" alt="" class="hta-slider-pic">
+                    <div class="col-sm-9 col-lg-9 col-sm-offset-3">
+                      <div class="how-to-text"> 
+                        <p>— 1Жилой комплекс на пересечении Северного пр. и ул. Есенина (парк Сосновка) ЖК «Сергей Есенин», выполнение работ по каменной кладке, устройству монолитных стен и перекрытий. Заказчик – ООО «ГСО «Запад» (объединение – ЗАО «Строительный трест»).</p><a href="#" class="sp-btn btn-blue">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="how-to-about-block row"><img src="img/bottom-block/hta-1.png" alt="" class="hta-slider-pic">
+                    <div class="col-sm-9 col-lg-9 col-sm-offset-3">
+                      <div class="how-to-text"> 
+                        <p>— 2Жилой комплекс на пересечении Северного пр. и ул. Есенина (парк Сосновка) ЖК «Сергей Есенин», выполнение работ по каменной кладке, устройству монолитных стен и перекрытий. Заказчик – ООО «ГСО «Запад» (объединение – ЗАО «Строительный трест»).                                </p><a href="#" class="sp-btn btn-blue">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="how-to-about-block row"><img src="img/bottom-block/hta-1.png" alt="" class="hta-slider-pic">
+                    <div class="col-sm-9 col-lg-9 col-sm-offset-3">
+                      <div class="how-to-text"> 
+                        <p>— 3Жилой комплекс на пересечении Северного пр. и ул. Есенина (парк Сосновка) ЖК «Сергей Есенин», выполнение работ по каменной кладке, устройству монолитных стен и перекрытий. Заказчик – ООО «ГСО «Запад» (объединение – ЗАО «Строительный трест»).                                   </p><a href="#" class="sp-btn btn-blue">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-sm-offset-4 center-xs">
+                  <div class="how-slider-nav">
+                    <div class="how-owl-dots"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="how-to-about real owl-theme">
+                <h2 class="title start-sm center-xs line-bottom">Что строим сейчас?</h2>
+                <div class="real-how-to-about-slider owl-carousel">
+                  <div class="how-to-about-block row">
+                    <div class="col-lg-9 col-sm-8">
+                      <div class="how-to-text"> 
+                        <p>— 1— В качестве генерального подрядчика выполняются работы по строительству 9-этажного жилого дома со встроенными нежилыми помещениями на первом этаже и с устройством подземной автостоянки, расположенного по строительному адресу: г. Санкт-Петербург, Ярославский пр., д. 39, лит. А. Заказчик ООО «Новые Коломяги». ЖК «Ярославский Удел».</p><a href="#" class="sp-btn btn-green">Подробнее</a>
+                      </div>
+                    </div><img src="img/bottom-block/hta-2.png" alt="" class="hta-slider-pic">
+                  </div>
+                  <div class="how-to-about-block row">
+                    <div class="col-lg-9 col-sm-8">
+                      <div class="how-to-text"> 
+                        <p>— 2— В качестве генерального подрядчика выполняются работы по строительству 9-этажного жилого дома со встроенными нежилыми помещениями на первом этаже и с устройством подземной автостоянки, расположенного по строительному адресу: г. Санкт-Петербург, Ярославский пр., д. 39, лит. А. Заказчик ООО «Новые Коломяги». ЖК «Ярославский Удел».                                </p><a href="#" class="sp-btn btn-green">Подробнее</a>
+                      </div>
+                    </div><img src="img/bottom-block/hta-2.png" alt="" class="hta-slider-pic">
+                  </div>
+                  <div class="how-to-about-block row">
+                    <div class="col-lg-9 col-sm-8">
+                      <div class="how-to-text"> 
+                        <p>— 3— В качестве генерального подрядчика выполняются работы по строительству 9-этажного жилого дома со встроенными нежилыми помещениями на первом этаже и с устройством подземной автостоянки, расположенного по строительному адресу: г. Санкт-Петербург, Ярославский пр., д. 39, лит. А. Заказчик ООО «Новые Коломяги». ЖК «Ярославский Удел».                                   </p><a href="#" class="sp-btn btn-green">Подробнее</a>
+                      </div>
+                    </div><img src="img/bottom-block/hta-2.png" alt="" class="hta-slider-pic">
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 center-xs start-sm center-lg">
+                  <div class="real-slider-nav">
+                    <div class="real-owl-dots">  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="advantages">
+              <div class="row">
+                <div class="adv-block col-xs-12 col-sm-4"><img src="img/advantages/adv-quality-icon.png" alt="" class="adv-pic">
+                  <h3 class="adv-title">Качество</h3>
+                  <p class="adv-text">Наша компания при реализации проектов делает ставку на передовые строительные технологии и материалы, а также предъявляет высокие требования к квалификации сотрудников всех специальностей, что в конечном итоге отличает наши объекты высоким качеством исполнения.</p>
+                </div>
+                <div class="adv-block col-xs-12 col-sm-4"><img src="img/advantages/adv-comfort-icon.png" alt="" class="adv-pic">
+                  <h3 class="adv-title">Комфорт</h3>
+                  <p class="adv-text">Наши проекты учитывают все современные требвания предъявляемые к комфорту доступности, проживания в них, обеспеченности бытовых услуг, учреждений социально-бытового назначения. Мы формируем комфортную среду проживания. </p>
+                </div>
+                <div class="adv-block col-xs-12 col-sm-4"><img src="img/advantages/adv-credibility-icon.png" alt="" class="adv-pic">
+                  <h3 class="adv-title">Надежность</h3>
+                  <p class="adv-text">Релизация объектов недвижимости производится в строгом соответствии с федеральным законом №214-ФЗ "Об участии в долевом строительстве..." с обязательным страхованием ответственности за передачу объектов в сроки, установленные договором.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="sp-footer">
+        <div class="container wrap">
+          <div class="row middle-xs between-xs">
+            <div class="col-lg-3 col-xs-12"><a href="#" title="Стройпроект" class="ff-segoe sph-logo"><img src="img/logo-footer.png" alt="Стройпроект"></a></div>
+            <div class="col-lg-6 col-sm-8 col-xs-12">
+              <nav class="ff-segoe sph-top-menu"><a href="#" title="О компании" class="ff-segoe cph-link start-sm"> <img src="img/sprites/home-icon-footer.png" alt=""><span>О компании</span></a><a href="#" title="Недвижимость" class="ff-segoe cph-link center-xs"> <img src="img/sprites/projects-icon-footer.png" alt=""><span>Недвижимость</span></a><a href="#" title="Контакты" class="ff-segoe cph-link end-sm"> <img src="img/sprites/envelope-icon-footer.png" alt=""><span>Контакты  </span></a></nav>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-xs-12 start-sm end-sm"><a href="tel:+88122440789" class="ff-segoe sph-fhone"><img src="img/sprites/phone-icon-footer.png" alt="" class="fhone-icon-pic"><span class="ff-segoe">+7(812) </span><span class="ff-segoe">244-07-89 </span></a></div>
+          </div>
+          <div class="row footer-contacts">
+            <div class="col-xs-12 col-lg-9 col-lg-offset-3 offset-border-top">
+              <div class="row around-xs">
+                <div class="col-xs-12 col-lg-6 col-sm-4">
+                  <p class="f-title"> Адрес центрального офиса:</p>
+                  <address class="f-text">
+                    г. Санкт-Петербург, ул. Планерная д.15, лит. А, офис 301.
+                    метро "Старая Деревня"
+                  </address>
+                </div>
+                <div class="col-xs-12 col-lg-4 col-sm-4">
+                  <p class="f-title">Режим работы:</p>
+                  <p class="f-text">Пн-Пт 9:00-18:00</p>
+                  <p class="f-text">Сб-Вс по заявкам</p>
+                </div>
+                <div class="col-xs-12 col-lg-2 col-sm-4 center-xs end-lg center-sm">
+                  <p class="f-title text-left">E-mail:</p>
+                  <p class="f-text text-left">sale@gsksp.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.formstyler.min.js">        </script>
+    <script src="js/m-menu.js"> </script>
+    <script src="js/owl.carousel.js">        </script>
+    <script src="js/jquery-ui.min.js"> </script>
+    <script src="js/main.js"></script>
+
+                </div><!-- wrapper -->
+            </div><!-- /container -->
+            <div class="perspective-block">
+                <p class="perspective-title">В проекте задействованы следущие технологии</p>
+                <nav class="outer-nav right vertical">
+                    <a href="#" class="icon-home">HTML</a>
+                    <a href="#" class="icon-news">JADE</a>
+                    <a href="#" class="icon-image">CSS</a>
+                    <a href="#" class="icon-upload">SASS</a>
+                    <a href="#" class="icon-star">JQUERY</a>
+                    <a href="#" class="icon-mail">GIT</a>
+                    <a href="#" class="icon-lock">SPRITE</a>
+                    <a href="#" class="icon-lock">SPRITE</a>     
+                    <a href="#" class="icon-lock">MODX(cms)</a>                                    
+                </nav>
+            </div>    
+        </div><!-- /perspective -->
+        <script src="../js/classie.js"></script>
+        <script src="../js/menu.js"></script>
+
+    
+  </body>
+</html>
