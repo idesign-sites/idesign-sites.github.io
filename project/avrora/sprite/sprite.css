@@ -1,0 +1,32 @@
+
+.icon-left-arrow-white{
+	position: relative;
+}
+
+.icon-left-arrow-white:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: 0px 0px;
+	width: 11px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-right-arrow-white{
+	position: relative;
+}
+
+.icon-right-arrow-white:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -11px 0px;
+	width: 11px;
+	height: 18px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

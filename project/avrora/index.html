@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>База отдыха Аврора</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+      
+    -->
+        <link rel="stylesheet" type="text/css" href="../../assets/css/ionicons.min.css" />      
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu-mobile.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+<!-- button description --> 
+        <div class="btn-menu-perspective">
+            <button class="perspective_btn" title="Посмотреть описание" id="showMenu"><i class="ion-ios7-help-empty"></i></button>
+            <button onclick="location.href = '/'" class="perspective_btn--back" title="Обратно" id="showMenu"><i class="ion-ios7-arrow-thin-left"></i></button>
+        </div>
+    <!-- end button description --> 
+
+        <div id="perspective" class="perspective effect-rotateleft">
+            <div class="perspective_container">
+                <div class="perspective_wrapper"><!-- wrapper needed for scroll -->
+                    <!-- /main -->
+
+            <!-- content -->
+
+
+
+
+    <div class="overlay"></div>
+    <div class="menu-wrap">
+      <nav class="menu">
+        <div class="icon-list"><a href="#cottage" class="menu-mobile__link"><i class="fa fa-fw fa-star-o"></i><span>Коттеджи</span></a><a href="#pastime" class="menu-mobile__link"><i class="fa fa-fw fa-bell-o"></i><span>Услуги</span></a><a href="#price" class="menu-mobile__link"><i class="fa fa-fw fa-envelope-o"></i><span>Цены </span></a><a href="#location" class="menu-mobile__link"><i class="fa fa-fw fa-comment-o"></i><span>Место</span></a><a href="#foto" class="menu-mobile__link"><i class="fa fa-fw fa-newspaper-o"></i><span>Фото         </span></a><a href="#contacts" class="menu-mobile__link"><i class="fa fa-fw fa-bar-chart-o"></i><span>Контакты</span></a></div>
+      </nav>
+      <button id="close-button" class="close-button">Закрыть</button>
+    </div>
+    <button id="open-button" class="menu-button">Открыть</button>
+    <header class="header"><img src="img/header/bg-header.jpg" alt="База отдыха Аврора" class="header__back-fon">
+      <div class="header__logo"><a href="" title="База отдыха Аврора"><img src="img/logo-header-white.png" alt="База отдыха Аврора" class="header__logo-pic"></a></div>
+      <div class="header__tel">               
+        <ul class="block">
+          <li class="block-item"><a href="tel:+88122979391" title="телефон База отдыха Аврора" class="header__tel-link">+7 (812) 297 93 91 </a></li>
+          <li class="block-item"><a href="tel:+89313188863" title="телефон База отдыха Аврора" class="header__tel-link">+7 (931) 31 888 63     </a></li>
+          <li class="block-item"><a href="tel:+89315410434" title="телефон База отдыха Аврора" class="header__tel-link">+7 (931) 54 104 34  </a></li>
+        </ul>
+      </div>
+      <div class="header__order">
+        <div class="header__order-block">
+          <h2 class="title-white-middle">ОСТАВИТЬ ОНЛАЙН ЗАЯВКУ:</h2>
+          <form action="" class="fofm header__order-form js-validate-form"> 
+            <div class="form-group rline">
+              <input type="text" placeholder="Имя" class="form-control rfield user_name">
+            </div>
+            <div class="form-group rline">
+              <input type="tel" placeholder="Телефон" class="form-control rfield phone-validate user_phone">
+            </div>
+            <div class="form-group rline">
+              <input type="email" placeholder="E-mail" class="form-control rfield user_email">
+            </div>
+            <div class="form-group">    
+              <input type="submit" placeholder="ОТПРАВИТЬ" title="Отправить" class="avr-btn btn-gray js-btnsubmit">
+            </div>
+            <input type="hidden" name="t_forms" value="cb" class="t_forms">
+          </form>
+          <div class="messages"></div>
+        </div>
+      </div>
+      <div class="header__container default">
+        <div class="header__menu">
+          <ul class="header__block-menu">
+            <li class="header__menu-item"><a href="#cottage" title="Коттеджи" class="header__menu-link">Коттеджи</a></li>
+            <li class="header__menu-item"><a href="#pastime" title="Услуги" class="header__menu-link">Услуги</a></li>
+            <li class="header__menu-item"> <a href="#price" title="Цены" class="header__menu-link">Цены</a></li>
+            <li class="header__menu-item"><a href="#location" title="Место" class="header__menu-link">Место</a></li>
+            <li class="header__menu-item"><a href="#foto" title="Фото" class="header__menu-link">Фото                        </a></li>
+            <li class="header__menu-item"><a href="#contacts" title="Контакты" class="header__menu-link">Контакты  </a></li>
+          </ul>
+          <div class="header__block-r"><a href="#" title="Обратный звонок" class="open_modal btn-consultant"> <span>Оставить заявку</span></a></div>
+        </div>
+      </div>
+    </header>
+    <main class="content">
+      <div class="promo center-xs"> 
+        <div class="container">
+          <h1 class="title-gray-big mb35">Незабываемый отдых</h1><strong class="title-gray-middle mb45">Вдали от шума города наедине с природой</strong>
+          <p class="text-small mb45"> Современная комфортабельная база отдыха “Аврора” располагается в экологически чистом районе Ленинградской области  на берегу красивейшего озера «Нахимовское» , что позволяет не только вырваться из городской суеты и комфортно провести время,  но и насладиться окружающим пейзажем в сочетании с отличным сервисом. Аренда наших коттеджей – это прекрасная возможность для встречи с друзьями, отдыха с семьей или длительного проживания. В каждом из 8 коттеджей, площадью 131 кв.м. свободно разместятся 7 человек. </p>
+          <div class="promo__akcii-btn mb45">
+            <button class="avr-btn btn-akcii title-white-middle open_modal">Коттедж на 3 дня по цене 4-х!</button>
+          </div>
+          <div class="block">
+            <div class="block-item"><img src="img/promo/sun.png" alt="Зимой База отдыха Аврора">
+              <h3 class="title-gray-middle">Летом</h3>
+              <p class="text-small">Чистый песчаный пляж . Путешествия на лодках по озерным просторам . Теннис, бадминтон, игры на свежем воздухе , рыбалка.</p>
+            </div>
+            <div class="block-item"><img src="img/promo/snowflake.png" alt="Зимой База отдыха Аврора">
+              <h3 class="title-gray-middle">Зимой</h3>
+              <p class="text-small">Прогулки на лыжах . Санки и «ватрушки», большая деревянная горка. "Озерный" каток.</p>
+            </div>
+            <div class="block-item"><img src="img/promo/all-snow.png" alt="Зимой База отдыха Аврора">
+              <h3 class="title-gray-middle">Всегда</h3>
+              <p class="text-small">Мангалы . Оборудованные детские площадки . Собственные террасы с видом на озеро.        </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="cottage" class="cottage">
+        <div class="container">
+          <h1 class="title-gray-big mb35">КОТТЕДЖИ</h1>
+          <p class="text-small mb45"> 8 коттеджей, каждый площадью 131 кв.м., рассчитаны на 7-10 человек.  Комфортное проживание в нашем комплексе предусматривает размещение 72 гостей. Каждый коттедж оснащен электричеством, горячим и холодным водоснабжением, системой отопления с возможностью регулировки температуры.</p>
+          <div class="cottage-block">
+            <div class="js-cottage-slider owl-carousel owl-theme">
+              <figure>   <a href="img/cottage/c1.jpg" alt="коттедж База отдыха Аврора" title="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c1.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c10.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c10.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c2.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c2.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c3.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c3.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure>                   <a href="img/cottage/c4.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c4.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c5.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c5.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c6.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c6.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure>                   <a href="img/cottage/c7.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c7.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c8.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c8.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+              <figure><a href="img/cottage/c9.jpg" alt="коттедж База отдыха Аврора" class="js-fancybox"><img src="img/cottage/c9.jpg" alt="коттедж База отдыха Аврора"></a></figure>
+            </div>
+          </div>
+          <div class="cottage-block__text">
+            <div class="js-cottage-slider-text owl-carousel owl-theme">
+              <p class="text-small">4 отдельные спальни на  2 этаже, двуспальные и  односпальные кровати</p>
+              <p class="text-small">Уютная гостиная 25 кв.м.  с видовым камином на  дровах, мягким диваном,  плазменной панелью</p>
+              <p class="text-small">2 санузла на двух этажах  с душевыми кабинами</p>
+              <p class="text-small">Внешняя открытая  терраса с видом на озеро,  летняя мебель</p>
+              <p class="text-small">Кухня со всей  необходимой посудой и  бытовой техникой</p>
+              <p class="text-small">Сауна</p>
+              <p class="text-small">4 отдельные спальни на  2 этаже, двуспальные и  односпальные кровати</p>
+              <p class="text-small">Уютная гостиная 25 кв.м.  с видовым камином на  дровах, мягким диваном,  плазменной панелью</p>
+              <p class="text-small">2 санузла на двух этажах  с душевыми кабинами</p>
+              <p class="text-small">Внешняя открытая  терраса с видом на озеро,  летняя мебель</p>
+              <p class="text-small">Кухня со всей  необходимой посудой и  бытовой техникой</p>
+              <p class="text-small">Сауна</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plans-cottage">
+        <div class="container">           
+          <div class="block">
+            <div class="block-item">
+              <h3 class="plans-cottage__layout-title text-small">1 этаж</h3><img src="img/plans/plan1.png" alt="1этаж коттеджей База отдыха Аврора" class="plans-cottage__layout-pic">
+            </div>
+            <div class="block-item"> 
+              <h3 class="plans-cottage__layout-title text-small">2 этаж</h3><img src="img/plans/plan2.png" alt="2этаж коттеджей База отдыха Аврора" class="plans-cottage__layout-pic">
+            </div>
+            <div class="block-item">
+              <h3 class="plans-cottage__description-title title-gray-middle">В стоимость включено:</h3>
+              <ul class="plans-cottage__description-list">
+                <li class="plans-cottage__description-list-item">- проживание 7 человек </li>
+                <li class="plans-cottage__description-list-item">- круглосуточная охрана </li>
+                <li class="plans-cottage__description-list-item">- парковочные места </li>
+                <li class="plans-cottage__description-list-item">- мангал у коттеджа, шампура и решетка для барбекю </li>
+                <li class="plans-cottage__description-list-item">- постельное белье, полотенца, простыни для сауны </li>
+                <li class="plans-cottage__description-list-item">- посещение сауны (3 часа в день бесплатно) </li>
+                <li class="plans-cottage__description-list-item">- финальная уборка - вязанка дров для камина </li>
+                <li class="plans-cottage__description-list-item">- Мы принимаем гостей с животными* </li>
+              </ul>
+              <p class="plans-cottage__description-text text-small">При необходимости предоставляется бесплатно детская  кроватка (60*120) с бельем и стульчик для кормления  (эту услугу необходимо бронировать заранее)  </p>
+              <p class="plans-cottage__description-text text-small">Угли, дрова и розжиг вы можете привезти с собой  или приобрести у администратора</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pastime" class="pastime">
+        <div class="container"> 
+          <h2 class="pastime-title title-gray-big">развлечения</h2>
+          <p class="pastime-description text-small">База отдыха “Аврора ” находится на берегу озера Нахимовское  с песчаным дном и оборудованным пляжем, где вы можете искупаться или порыбачить на лодке.  Для тех, кто любит более активный образ жизни и не любит сидеть на месте мы предлагаем разнообразные варианты проведения досуга.</p>
+          <div class="block">
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/1py.png" alt="Ватрушки и санки База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Ватрушки и санки</h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Зимой на территории базы отдыха мы  подготавливаем горку для зимних  развлечений.</p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/2py.png" alt=" База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Футбол-волейбол</h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Просторная открытая площадка для игр с мячом.</p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/3py.png" alt=" База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title"> Езда на велосипедах</h4>
+              </div>
+              <hr>
+              <p class="pastime-block-item__text text-small">Устройте себе прогулку по лесу на своих  или арендованных у нас велосипедах.  Что может лучше отвлечь от проблем  и суеты большого города?                        </p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/4py.png" alt="Катания на лыжах База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Катания на лыжах</h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Лыжные походы по заснеженному лесу –  это великолепные пейзажи и снег,  хрустящий под ногами, зимний лес -  лучшее место для лыжных прогулок. </p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/5py.png" alt=" База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Русский бильярд</h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">"На свете есть и пул, и карамболь, есть  фишки и английский снукер, но есть -  любовь моя и боль - бильярд  с названием "Русский".</p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/6py.png" alt="Катания на лодках База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Катания на лодках </h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Неспешная прогулка по водной глади  озера "на веслах", живописные берега  и приятный плеск воды - это отличное  приключение.</p>
+            </div>
+          </div>
+          <div class="block">
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/7py.png" alt="Озерный каток  База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">"Озерный" каток  </h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">"Фигурное катанье на коньках похоже  на витание в облаках! Похоже на  стремительный полет, как будто всюду  небо, а не лед." </p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/8py.png" alt=" База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Настольный теннис  и бадминтон  </h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Стол для настольного тенниса  расположен на улице под тентом - Вы  можете использовать свои ракетки и  мячики или арендовать их у нас.                    </p>
+            </div>
+            <div class="block-item">
+              <div class="pastime__block"><img src="img/pastime/9py.png" alt=" База отдыха Аврора" class="pastime__block-item-pic">
+                <h4 class="pastime__block-item-title">Норвежская ходьба</h4>
+              </div>
+              <hr class="pastime-divider">
+              <p class="pastime-block-item__text text-small">Полчаса  ходьбы сжигают около 300 ккал  и добавляют хорошего настроения.                           </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="price" class="regulations-food">
+        <div class="container">
+          <h2 class="regulations-food-title title-gray-big">Мы вас накормим</h2>
+          <p class="regulations-food-price__item text-small">Дорогие гости! </p>
+          <p class="regulations-food-description text-small">Вас порадует наше домашнее меню. Любые блюда из меню мы доставим Вам в коттедж или порадуем вас интерьером нашего уютного кафе. У нас можно вкусно пообедать горячим, ароматным супом и сочной отбивной, побаловать себя блинчиками или домашним свежеиспеченным хлебом и вкуснейшим ягодным морсом.  </p>
+          <ul class="regulations-food__block">
+            <li class="regulations-food__round"><img src="img/reg-food/1rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+            <li class="regulations-food__round"><img src="img/reg-food/2rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+            <li class="regulations-food__round"><img src="img/reg-food/3rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+            <li class="regulations-food__round"><img src="img/reg-food/4rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+            <li class="regulations-food__round"><img src="img/reg-food/5rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+            <li class="regulations-food__round"><img src="img/reg-food/6rg.png" alt=" База отдыха Аврора" class="regulations-food__pic"></li>
+          </ul>
+          <div class="regulations-food-price">
+            <h4 class="regulations-food-price__title title-gray-big">Комплексное 3-х разовое питание</h4>
+            
+            <h5 class="regulations-food-price__item text-small">ВСЕ ВМЕСТЕ</h5>
+            <p class="regulations-food-price__digit">900</p><span class="title-gray-big">/</span><span class="regulations-food-price__digit-label">день</span>
+          </div>
+        </div>
+      </div>
+      <div id="location" class="location">
+        <div class="container">
+          <h2 class="location-title title-gray-big">РАСПОЛОЖЕНИЕ</h2>
+          <p class="location-description text-small">
+            База отдыха "Аврора" находится в Выборгском районе Ленинградской области.  
+            На берегу озера Нахимовское, в окружении леса и живописной природы. 
+          </p>
+          <p class="location-item"> <a href="https://yandex.ru/maps/?um=constructor%3A5672ec5b3d9fb395a13536d1926b8657ab0980284e3a2db6adeeed0b23f27238&amp;source=constructorLink&amp;mode=usermaps" title="Перейти на большую карту" target="_blank" class="location-item__ref text-small">Посмотреть на карте</a>
+          </p>
+          <div class="location__routing">
+            <table class="location__routing-block">
+              <tr>
+                <td><a href="#map-auto" class="js-maps-window location__routing-map-btn fancybox iframe"> <img src="img/location/car.png" alt=" База отдыха Аврора" class="location__routing-pic">
+                    <p class="location__routing-transport text-small">НА АВТОМОБИЛЕ</p>
+                    <p class="text-small">Маршрут на карте </p></a></td>
+                <td>
+                  <p class="location__routing-text text-small">Следовать из города по Выборгскому шоссе, по указателю на “Выборг”, повернуть направо.  Затем, после столба (85 км), по указателю «Пушное» повернуть направо. На Т-образном  перекрестке  с главной дорогой повернуть направо. Ехать  прямо по направлению к поселку  “Пушное” . Не доезжая поселка (когда увидите его название), поворачиваете направо.  Едете прямо, въезжаете в дачный поселок, на развилке, у магазина, поворачиваете налево.  Двигайтесь прямо 1200 м . Большие коричневые железные ворота справа. </p>
+                </td>
+              </tr>
+            </table>
+            <table class="location__routing-block">
+              <td><a href="#map-train" class="js-maps-window location__routing-map-btn fancybox iframe"> <img src="img/location/train.png" alt=" База отдыха Аврора" class="location__routing-pic">
+                  <p class="location__routing-transport text-small">НА ЭЛЕКТРИЧКЕ</p>
+                  <p class="text-small">Маршрут на карте </p></a></td>
+              <td>
+                <p class="location__routing-text text-small">С Финляндского вокзала, направление на Выборг, до станции "Каннельярви". <br>От станции по расписанию прибытия электрички на Выборг, ходит автобус №129 до поселка Пушное. <br>Второй вариант сразу взять такси на станции до ворот базы отдыха - ориентировочная стоимость 500 руб.   </p>
+              </td>
+            </table>
+            <div class="location__routing-map text-center"><span id="map-auto" class="location__routing-map-content">
+                <iframe src="https://yandex.by/map-widget/v1/-/CBaSAJQRLC" width="100%" height="400" frameborder="0"></iframe></span><span id="map-train" class="location__routing-map-content">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A36e6d257a89650e37ca228e6f70b19faff4b356b8d1ff479032d60674239506b&amp;amp;width=100%&amp;amp;height=400&amp;amp;lang=ru_RU&amp;amp;scroll=true"></script></span></div>
+          </div>
+        </div>
+      </div>
+      <div id="foto" class="fotogallery">
+        <h2 class="fotogallery-title title-gray-big">Фотогалерея  </h2>
+        <div class="container">
+          <p class="fotogallery-description text-small">На базе отдыха “Аврора” много зеленых насаждений, есть оборудованные детские площадки с горками и песочницами, кафе, рестораны с меню на все вкусы, столики у озера,пристань, бильярд, тенисная площадка и многое многое другое, просто посмотрите на это:</p>
+          <div class="fotogallery-block posr"><span class="button-container"> 
+              <button class="slick-arrow prev-arrow">   <img src="img/sprites/left-arrow-white.png" alt="" class="fotogallery-arrow-pic"></button>
+              <button class="slick-arrow next-arrow">   <img src="img/sprites/right-arrow-white.png" alt="" class="fotogallery-arrow-pic"></button></span>
+            <div class="js-fotogallery">
+              <div class="fotogallery-item"><a href="img/fotogallery/f1.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Детские площадки" class="js-fancybox"><img src="img/fotogallery/f1.jpg" alt=" База отдыха Аврора" title="Детские площадки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f2.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Удобные места отдыха" class="js-fancybox"><img src="img/fotogallery/f2.jpg" alt=" База отдыха Аврора" title="Удобные места отдыха"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f3.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Горки" class="js-fancybox"><img src="img/fotogallery/f3.jpg" alt=" База отдыха Аврора" title="Горки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f4.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Игровые площадки" class="js-fancybox"><img src="img/fotogallery/f4.jpg" alt=" База отдыха Аврора" title="Игровые площадки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f5.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Коттеджи в окружении леса" class="js-fancybox"><img src="img/fotogallery/f5.jpg" alt=" База отдыха Аврора" title="Коттеджи в окружении леса"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f6.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Много зелени и свободного пространства" class="js-fancybox"><img src="img/fotogallery/f6.jpg" alt=" База отдыха Аврора" title="Много зелени и свободного пространства"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f7.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Отдельные входы в коттеджи" class="js-fancybox"><img src="img/fotogallery/f7.jpg" alt=" База отдыха Аврора" title="Отдельные входы в коттеджи"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f8.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Свободные столики кафе в окружении леса" class="js-fancybox"><img src="img/fotogallery/f8.jpg" alt=" База отдыха Аврора" title="Свободные столики кафе в окружении леса"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f9.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Мангалы в любое время года" class="js-fancybox"><img src="img/fotogallery/f9.jpg" alt=" База отдыха Аврора" title="Мангалы в любое время года"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f10.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Удобные дорожки на берегу озера" class="js-fancybox"><img src="img/fotogallery/f10.jpg" alt=" База отдыха Аврора" title="Удобные дорожки на берегу озера"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f11.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Фотографии зимних коттеджей" class="js-fancybox"><img src="img/fotogallery/f11.jpg" alt=" База отдыха Аврора" title="Фотографии зимних коттеджей"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f12.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Пристань с лодками" class="js-fancybox"><img src="img/fotogallery/f12.jpg" alt=" База отдыха Аврора" title="Пристань с лодками"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f13.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Камины на 1ом этаже" class="js-fancybox"><img src="img/fotogallery/f13.jpg" alt=" База отдыха Аврора" title="Камины на 1ом этаже"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f14.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Бильярдные комнаты" class="js-fancybox"><img src="img/fotogallery/f14.jpg" alt=" База отдыха Аврора" title="Бильярдные комнаты"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f15.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Холодные закуски" class="js-fancybox"><img src="img/fotogallery/f15.jpg" alt=" База отдыха Аврора" title="Холодные закуски"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f16.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Морепродукты на вашем столе" class="js-fancybox"><img src="img/fotogallery/f16.jpg" alt=" База отдыха Аврора" title="Морепродукты на вашем столе"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f17.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Елки и скамейки" class="js-fancybox"><img src="img/fotogallery/f17.jpg" alt=" База отдыха Аврора" title="Елки и скамейки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f18.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Еда на любой вкус" class="js-fancybox"><img src="img/fotogallery/f18.jpg" alt=" База отдыха Аврора" title="Еда на любой вкус"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f19.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Своя кухня в коттедже" class="js-fancybox"><img src="img/fotogallery/f19.jpg" alt=" База отдыха Аврора" title="Своя кухня в коттедже"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f20.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Зимняя рыбалка" class="js-fancybox"><img src="img/fotogallery/f20.jpg" alt=" База отдыха Аврора" title="Зимняя рыбалка"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f21.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Каток зимой" class="js-fancybox"><img src="img/fotogallery/f21.jpg" alt=" База отдыха Аврора" title="Каток зимой"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f22.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Лодки" class="js-fancybox"><img src="img/fotogallery/f22.jpg" alt=" База отдыха Аврора" title="Лодки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f23.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Лодочная станция" class="js-fancybox"><img src="img/fotogallery/f23.jpg" alt=" База отдыха Аврора" title="Лодочная станция"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f24.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Тихие посиделки на природе" class="js-fancybox"><img src="img/fotogallery/f24.jpg" alt=" База отдыха Аврора" title="Тихие посиделки на природе"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f25.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Безопасные пристани" class="js-fancybox"><img src="img/fotogallery/f25.jpg" alt=" База отдыха Аврора" title="Безопасные пристани"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f26.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Детская площадка" class="js-fancybox"><img src="img/fotogallery/f26.jpg" alt=" База отдыха Аврора" title="Детская площадка"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f27.jpg" alt="коттедж База отдыха Аврора" rel="group" title="ШоуРум комнаты в коттедже" class="js-fancybox"><img src="img/fotogallery/f27.jpg" alt=" База отдыха Аврора" title="ШоуРум комнаты в коттедже"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f28.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Лучшая еда" class="js-fancybox"><img src="img/fotogallery/f28.jpg" alt=" База отдыха Аврора" title="Лучшая еда"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f29.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Мостики для рыбалки" class="js-fancybox"><img src="img/fotogallery/f29.jpg" alt=" База отдыха Аврора" title="Мостики для рыбалки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f30.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Бильярдная комната" class="js-fancybox"><img src="img/fotogallery/f30.jpg" alt=" База отдыха Аврора" title="Бильярдная комната"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f31.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Коттеджи" class="js-fancybox"><img src="img/fotogallery/f31.jpg" alt=" База отдыха Аврора" title="Коттеджи"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f32.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Безопасные лесенки" class="js-fancybox"><img src="img/fotogallery/f32.jpg" alt=" База отдыха Аврора" title="Безопасные лесенки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f33.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Фотографии зимнего пирса" class="js-fancybox"><img src="img/fotogallery/f33.jpg" alt=" База отдыха Аврора" title="Фотографии зимнего пирса"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f34.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Коттеджи зимой" class="js-fancybox"><img src="img/fotogallery/f34.jpg" alt=" База отдыха Аврора" title="Коттеджи зимой"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f35.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Где спускаются с горки" class="js-fancybox"><img src="img/fotogallery/f35.jpg" alt=" База отдыха Аврора" title="Где спускаются с горки"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f36.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Коттеджи круглый год" class="js-fancybox"><img src="img/fotogallery/f36.jpg" alt=" База отдыха Аврора" title="Коттеджи круглый год"></a></div>
+              <div class="fotogallery-item"><a href="img/fotogallery/f37.jpg" alt="коттедж База отдыха Аврора" rel="group" title="Сауна" class="js-fancybox"><img src="img/fotogallery/f37.jpg" alt=" База отдыха Аврора" title="Сауна"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="contacts" class="footer">
+      <div class="container">
+        <div class="block contacts-items">
+          <div class="block-item start-xs">
+            <div class="footer__contacts-city">
+              <p class="footer__contacts-city-title text-small">ОФИС : </p>
+              <p class="footer__contacts-city-text text-small">
+                Санкт-Петербург, ул. КАРБЫШЕВА, д.15,  
+                <br>
+                первый этаж, офис 104 
+                <br>
+                (cт. Метро: Пл. Мужества) 
+              </p>
+            </div>
+            <div class="footer__worktime text-small"> 
+              <p class="footer__worktime-title small-text">ВРЕМЯ РАБОТЫ:</p>
+              <p class="footer__worktime-text">Пн-Пт с 10.00 до 18.00 </p>
+              <p class="footer__worktime-text">сб-вс – выходной</p>
+            </div>
+            <div class="footer__contacts-adm text-small">
+              <p class="footer__contacts-adm-title">АДМИНИСТРАЦИЯ БАЗЫ ОТДЫХА:</p>
+              <p class="footer__contacts-adm-text">
+                Ленинградская область, Выборгский район, 
+                <br>
+                Рощинское поселение, п. Ганино 2.
+              </p>
+              <p class="footer__contacts-adm-text">тел: </p>
+            </div><a href="tel: +89315410434" class="footer__contacts-adm-tel"> <span class="text-bold">ТЕЛ: </span><span class="footer__contacts-adm-tel-item">+7 (931) 541-04-34 </span><span class="text-small">(в т.ч. выходные)</span></a>
+          </div>
+          <div class="block-item center-lg posr"><img src="img/footer/office-map.png" alt="офис кампании Avrora" class="footer__office-map-pic">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1995.1035125508638!2d30.359433516099344!3d59.996777181897336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696339401187639%3A0xb7656076489ff837!2z0YPQuy4g0JrQsNGA0LHRi9GI0LXQstCwLCAxNSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5NDAyMQ!5e0!3m2!1sru!2sru!4v1510578043682" width="100%" height="350" frameborder="0" allowfullscreen="" class="footer__map"></iframe>
+          </div>
+          <div class="block-item">
+            <div class="contacts-societ"><span class="footer__contacts-city-title text-small">МЫ В КОНТАКТЕ:</span><a href="http://vk.com/kottedgiavrora" target="_blank" class="contacts-societ__ref"><img src="img/footer/vk.png" alt="база отдыха Аврора вконтакте"></a></div>
+            <!-- Gismeteo informer START-->
+            <link rel="stylesheet" type="text/css" href="https://nst1.gismeteo.ru/assets/flat-ui/legacy/css/informer.min.css">
+            <div id="gsInformerID-V1dRP2GS2I0vH7" style="width:100%;height:176px" class="gsInformer">
+              <div class="gsIContent">
+                <div id="cityLink"><a href="https://www.gismeteo.ru/weather-sankt-peterburg-4079/" target="_blank">Погода в Санкт-Петербурге</a></div>
+                <div class="gsLinks">
+                  <table>
+                    <tr>
+                      <td>
+                        <div class="leftCol"><a href="https://www.gismeteo.ru/" target="_blank"><img alt="Gismeteo" title="Gismeteo" src="https://nst1.gismeteo.ru/assets/flat-ui/img/logo-mini2.png" align="middle" border="0"><span>Gismeteo</span></a></div>
+                        <div class="rightCol"><a href="https://www.gismeteo.ru/weather-sankt-peterburg-4079/2-weeks/" target="_blank">Прогноз на 2 недели</a></div>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <script async="" src="https://www.gismeteo.ru/api/informer/getinformer/?hash=V1dRP2GS2I0vH7" type="text/javascript"></script>
+            <!-- Gismeteo informer END-->
+          </div>
+        </div>
+        <p class="footer__info">© 2013 База отдыха «Аврора», +7 (812) 297 93 91      </p>
+      </div>
+    </footer>
+    <div class="popup">
+      <form action="" class="fofm js-validate-form posr">
+        <div class="close_modal">x    </div>
+        <h5 class="popup__title small-text">Оставить заявку </h5>
+        <div class="rline">
+          <input type="text" placeholder="Имя" autofocus required="required" class="user_name rfield">
+        </div>
+        <div class="rline">
+          <input type="email" placeholder="Email" name="txtemail" required="required" class="user_email rfield">
+        </div>
+        <div class="rline">
+          <input type="tel" required="required" placeholder="Телефон" name="txtphone" class="user_phone rfield phone-validate">
+        </div>
+        <textarea name="txtmessage" placeholder="Описание" rows="10"></textarea>
+        <label>
+          <input type="checkbox"><span class="popup__nobot small-text">Я не робот</span>
+        </label>
+        <input type="hidden" name="t_forms" value="fb" class="t_forms">
+        <input type="hidden" name="valTrFal" value="valTrFal_disabled" class="valTrFal">
+        <input type="submit" value="Отправить" name="btnsend" class="js-btnsubmit avr-btn red-btn">
+        <div class="comment reglament">Нажимая кнопку "Отправить", я принимаю условия и даю своё согласие База отдыха «Аврора» на обработку моих персональных данных в соответствии с Политикой конфиденциальности.</div>
+      </form>
+    </div>
+    <div class="popup2">
+      <div class="window posr">
+        <div class="close_modal">x    </div>
+        <div class="insText">
+          <p>Ваш запрос отправлен.</p>
+          <hr>
+          <p>Наш менеджер свяжется с вами в ближайшее время!</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"> </script>
+    <script src="js/owl.carousel.js"> </script>
+    <script src="js/jquery.fancybox.pack.js">            </script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/SmoothScroll.js">    </script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="js/formcheck_v1.js"> </script>
+    <script src="js/classie.js">    </script>
+    <script src="js/main.js"> </script>
+
+                </div><!-- wrapper -->
+            </div><!-- /container -->
+            <div class="perspective-block">
+                <p class="perspective-title">В проекте задействованы следущие технологии</p>
+                <nav class="outer-nav right vertical">
+                    <a href="#" class="icon-home">HTML</a>
+                    <a href="#" class="icon-news">JADE</a>
+                    <a href="#" class="icon-image">CSS</a>
+                    <a href="#" class="icon-upload">SASS</a>
+                    <a href="#" class="icon-star">JQUERY</a>
+                    <a href="#" class="icon-mail">GIT</a>
+                    <a href="#" class="icon-lock">SPRITE</a>
+                    <a href="#" class="icon-lock">SPRITE</a>     
+                    <a href="#" class="icon-lock">MODX(cms)</a>                                    
+                </nav>
+            </div>    
+        </div><!-- /perspective -->
+        <script src="../js/classie.js"></script>
+        <script src="../js/menu.js"></script>
+
+    
+  </body>
+</html>
