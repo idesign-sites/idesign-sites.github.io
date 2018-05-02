@@ -1,0 +1,144 @@
+
+.icon-go-map{
+	position: relative;
+}
+
+.icon-go-map:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: 0px 0px;
+	width: 58px;
+	height: 47px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h1{
+	position: relative;
+}
+
+.icon-h1:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: 0px -97px;
+	width: 45px;
+	height: 29px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h2{
+	position: relative;
+}
+
+.icon-h2:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -50px -97px;
+	width: 45px;
+	height: 26px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h3{
+	position: relative;
+}
+
+.icon-h3:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -63px 0px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h4{
+	position: relative;
+}
+
+.icon-h4:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -108px 0px;
+	width: 36px;
+	height: 37px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h5{
+	position: relative;
+}
+
+.icon-h5:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: 0px -52px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h6{
+	position: relative;
+}
+
+.icon-h6:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -45px -52px;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-h7{
+	position: relative;
+}
+
+.icon-h7:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -108px -42px;
+	width: 24px;
+	height: 37px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.icon-list-style{
+	position: relative;
+}
+
+.icon-list-style:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -137px -42px;
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

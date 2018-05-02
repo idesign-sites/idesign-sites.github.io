@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Park group</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    
+    -->
+    <link rel="stylesheet" href="sprite/sprite.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-blocks group">
+        <div class="left__block"><a href="/"><img src="img/logo.png" alt="" class="logo__block-pic"></a>
+          <p title="МЕНЮ" class="left__block-btn open"></p>
+        </div>
+        <div class="open__block">
+          <nav class="menu__block">
+            <ul class="menu-list">
+              <li class="menu-list-item"> <a href="/parkovka.html">Легковые Парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Грузовые парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Аренда земли</a></li>
+              <li class="menu-list-item"> <a href="#"> Новости</a></li>
+              <li class="menu-list-item"> <a href="#"> Карта</a></li>
+              <li class="menu-list-item"> <a href="#"> Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone__block">
+            <h2 class="phone__block-title">Наши телефоны:</h2>
+            <ul class="phone-list">
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+            </ul>
+          </div>
+          <footer class="footer">   
+            <h3 class="footer__block-title">Мы в социальных сетях:</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/vk.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/instagramm.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer-researh">ГК "Парк-Групп" 2017г. Все права защищены.</p>
+          </footer>
+        </div>
+        <table class="right__block">
+          <tr>
+            <td>
+              <div class="breadcrumbs__block">
+                <ol id="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                  <li><a href="#"><span>Главная</span></a></li>
+                  <li><span>Аренда парковки</span></li>
+                </ol>
+              </div>
+              <div class="arenda__set block">
+                <div class="arenda__set-l">
+                  <div class="arenda__set-title title">ПАРКОВКА:</div>
+                  <ul class="block">
+                    <li><i class="icon park icon-h1"></i>
+                      <button class="pg-btn"> <span>Грузовая</span></button>
+                    </li>
+                    <li><i class="icon park icon-h2"></i>
+                      <button class="pg-btn"> <span>Легковая</span></button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="arenda__set-l">
+                  <div class="arenda__set-title title">СЕРВИС:</div>
+                  <ul class="block">
+                    <li><i class="icon serv icon-h3">                                      </i>
+                      <button class="pg-btn"> <span>Шиномонтаж</span></button>
+                    </li>
+                    <li><i class="icon serv icon-h4"> </i>
+                      <button class="pg-btn"> <span>Заправка</span></button>
+                    </li>
+                    <li><i class="icon serv icon-h5"> </i>
+                      <button class="pg-btn"> <span>Кафе</span></button>
+                    </li>
+                    <li><i class="icon serv icon-h6"> </i>
+                      <button class="pg-btn"> <span>Душ</span></button>
+                    </li>
+                    <li><i class="icon serv icon-h7"> </i>
+                      <button class="pg-btn"> <span>Прачечная </span></button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <main class="content menu-open">
+      <div class="wrap">
+        <div id="map" class="map"></div>
+      </div>
+    </main>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/jquery.formstyler.min.js"> </script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

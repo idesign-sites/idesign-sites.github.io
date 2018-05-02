@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Park group</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    
+    -->
+    <link rel="stylesheet" href="sprite/sprite.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">  </script>
+  </head>
+  <body>
+    <div id="before-load"><i></i></div>
+    <div class="overlay"> </div>
+    <div class="popup">
+      <form action="" class="fofm posr">
+        <div class="close_modal"> <img src="img/close.png" alt=""></div>
+        <div class="head_wrap">
+          <h5>Ваш запрос сформирован</h5>
+          <hr>
+          <table>
+            <tr>
+              <td>Адрес:</td>
+              <td>         <span>Санкт-Петербург,</span><span class="adres">Подвойского д.45 </span></td>
+            </tr>
+            <tr>
+              <td>Парковка:</td>
+              <td class="adres">Легковая</td>
+            </tr>
+            <tr>
+              <td>Парк.мест:</td>
+              <td><span class="count">9</span><span>мест</span></td>
+            </tr>
+            <tr>
+              <td>Срок аренды:</td>
+              <td><span class="period">12</span><span>месяцев</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="middle-form">
+          <div class="popup-group">
+            <label>ФИО*:</label>
+            <input type="text" required="" name="name">
+          </div>
+          <div class="popup-group">
+            <label>MAIL*:      </label>
+            <input type="email" required="" validate name="email">
+          </div>
+          <div class="popup-group">
+            <label>ТЕЛ.*:       </label>
+            <input type="tel" pattern="^((8|+7)[- ]?)?((?d{3})?[- ]?)?[d- ]{7,10}$" required="" name="phone">
+          </div>
+        </div>
+        <div class="bottom_btn">
+          <button type="submit" value="Оставить заявку" name="btnsend" class="pg-btn orange-btn"><span>Отправить</span></button>
+          <p>Поля отмеченые * обязательны к заполнению</p>
+        </div>
+      </form>
+    </div>
+    <div class="popup2">
+      <div class="close_modal"> <img src="img/close.png" alt=""></div>
+      <div class="window">
+        <div class="insText">
+          <h5>Ваш запрос отправлен.</h5>
+          <p>Наш менеджер свяжется с вами в ближайшее время!</p>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="header-blocks group">
+        <div class="left__block"><a href="/"><img src="img/logo.png" alt="" class="logo__block-pic"></a>
+          <p title="МЕНЮ" class="left__block-btn open"></p>
+        </div>
+        <div class="open__block">
+          <nav class="menu__block">
+            <ul class="menu-list">
+              <li class="menu-list-item"> <a href="/parkovka.html">Легковые Парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Грузовые парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Аренда земли</a></li>
+              <li class="menu-list-item"> <a href="#"> Новости</a></li>
+              <li class="menu-list-item"> <a href="#"> Карта</a></li>
+              <li class="menu-list-item"> <a href="#"> Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone__block">
+            <h2 class="phone__block-title">Наши телефоны:</h2>
+            <ul class="phone-list">
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+            </ul>
+          </div>
+          <footer class="footer">   
+            <h3 class="footer__block-title">Мы в социальных сетях:</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/vk.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/instagramm.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer-researh">ГК "Парк-Групп" 2017г. Все права защищены.</p>
+          </footer>
+        </div>
+        <table class="right__block">
+          <tr>
+            <td>
+              <div class="breadcrumbs__block">
+                <ol id="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                  <li><a href="#"><span>Главная</span></a></li>
+                  <li><a href="#"><span>Карта                        </span></a></li>
+                  <li><span>Аренда площадей   </span></li>
+                </ol>
+              </div>
+              <div class="form__place short">
+                <form action="" name="form-2" method="get" validate="validate" class="block">
+                  <div class="form-item">
+                    <h2 class="title">Адрес: </h2><span class="title-item">Россия, Санкт-Петербург, </span><span class="title-item">Подвойского д.45                                  </span>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-select">
+                      <label for="district" class="form-label">Мест:</label>
+                      <div class="form-control">
+                        <select name="district">
+                          <option value="2">1 парк.мест</option>
+                          <option value="2">2 парк.мест</option>
+                          <option value="2">3парк.мест</option>
+                          <option value="2">4 парк.мест</option>
+                          <option value="2">5 парк.мест</option>
+                          <option value="2">6 парк.мест</option>
+                          <option value="2">7 парк.мест</option>
+                          <option value="2">8 парк.мест</option>
+                          <option value="2">9 парк.мест</option>
+                          <option value="2">10 парк.мест</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-select">
+                      <label for="time" class="form-label">Срок:</label>
+                      <div class="form-control">
+                        <select name="time">
+                          <option value="2">12 месяцев</option>
+                          <option value="2">11 месяцев</option>
+                          <option value="2">10 месяцев</option>
+                          <option value="2">9 месяцев</option>
+                          <option value="2">8 месяцев</option>
+                          <option value="2">7 месяцев</option>
+                          <option value="2">6 месяцев</option>
+                          <option value="2">5 месяцев</option>
+                          <option value="2">4 мес.</option>
+                          <option value="2">1 мес.</option>
+                          <option value="2">1 сутки</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <button class="feedback pg-btn orange-btn open_modal"> <span>Отправить запрос</span></button>
+                  </div>
+                </form>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <main class="content menu-open">
+      <div class="wrap">
+        <div class="center__content bg-gradient"><img src="img/rent/park1.png" alt="" class="center__content-pic"></div>
+        <div class="right__content">
+          <h2>Доп. информация</h2>
+          <div title="смотреть парковки" class="rc-gallery js-open-window">              <a rel="example_group" href="img/parkovki/p1.1.JPG" title=""><img alt="" src="img/parkovki/p1.1.JPG"></a><a rel="example_group" href="img/parkovki/p1.2.JPG" title=""><img alt="" src="img/parkovki/p1.2.JPG"></a><a rel="example_group" href="img/parkovki/p1.3.JPG" title=""><img alt="" src="img/parkovki/p1.3.JPG"></a><a rel="example_group" href="img/parkovki/p1.4.JPG" title=""><img alt="" src="img/parkovki/p1.4.JPG" class="last"></a></div>
+          <ol class="right__content-list">                              
+            <li class="content-list-item">Шиномонтаж  </li>
+            <li class="content-list-item">Заправка дизельным топливом                    </li>
+            <li class="content-list-item">Кафе Душ и прачечная</li>
+          </ol>
+          <hr>
+          <h2>Сколько стоит парковочные места и от чего зависит цена</h2>
+          <p>Если Вам требуется арендовать большие площади (от 6000 тыс. м2 и более), можно говорить о специальных условиях сотрудничества. Цена указана уже с учетом всех налогов и сборов.</p>
+        </div>
+      </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="js/jquery.fancybox-1.3.4.js">   </script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

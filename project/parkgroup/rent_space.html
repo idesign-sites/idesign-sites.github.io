@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Park group</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Chrome, Firefox OS and Opera-->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone-->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- IE 8-->
+    <!--if lt IE 8
+    p.browserupgrade
+      | You are using an 
+      strong outdated
+      |  browser. Please 
+      a(href='http://browsehappy.com/') upgrade your browser
+      |  to improve your experience.
+    
+    -->
+    <link rel="stylesheet" href="sprite/sprite.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="libs/css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-blocks group">
+        <div class="left__block"><a href="/"><img src="img/logo.png" alt="" class="logo__block-pic"></a>
+          <p title="МЕНЮ" class="left__block-btn open"></p>
+        </div>
+        <div class="open__block">
+          <nav class="menu__block">
+            <ul class="menu-list">
+              <li class="menu-list-item"> <a href="/parkovka.html">Легковые Парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Грузовые парковки</a></li>
+              <li class="menu-list-item"> <a href="#"> Аренда земли</a></li>
+              <li class="menu-list-item"> <a href="#"> Новости</a></li>
+              <li class="menu-list-item"> <a href="#"> Карта</a></li>
+              <li class="menu-list-item"> <a href="#"> Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="phone__block">
+            <h2 class="phone__block-title">Наши телефоны:</h2>
+            <ul class="phone-list">
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+              <li class="phone-list-item"> <a href="tel: +88124954102">8 (812) <span>495-41-02</span></a></li>
+            </ul>
+          </div>
+          <footer class="footer">   
+            <h3 class="footer__block-title">Мы в социальных сетях:</h3>
+            <ul class="footer-list">
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/vk.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/instagramm.png" alt=""></a></li>
+              <li class="footer-list-item"> <a href="#"> <img src="img/footer/facebook.png" alt=""></a></li>
+            </ul>
+            <p class="footer-researh">ГК "Парк-Групп" 2017г. Все права защищены.</p>
+          </footer>
+        </div>
+        <table class="right__block">
+          <tr>
+            <td>
+              <div class="breadcrumbs__block">
+                <ol id="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                  <li><a href="#"><span>Главная</span></a></li>
+                  <li><a href="#"><span>Карта                        </span></a></li>
+                  <li><span>Аренда площадей   </span></li>
+                </ol>
+              </div>
+              <div class="form__place">
+                <form action="" name="form-2" method="get" validate="validate" class="block">
+                  <div class="form-item">
+                    <label for="place-from" class="form-label">Площадь:</label>
+                    <div class="form-control">                                   
+                      <input type="number" name="place-from" aria-required="true" aria-invalid="false" placeholder="от">
+                      <input type="number" name="place-to" aria-required="true" aria-invalid="false" placeholder="до">
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <label for="price-from" class="form-label">Цена: </label>
+                    <div class="form-control">
+                      <input type="number" name="price-from" aria-required="true" aria-invalid="false" placeholder="от">
+                      <input type="number" name="price-to" aria-required="true" aria-invalid="false" placeholder="до">
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-select">
+                      <label for="district" class="form-label">Район:</label>
+                      <div class="form-control">
+                        <select name="district">
+                          <option value="2">Адмиралтейский</option>
+                          <option value="2">Василеостровский</option>
+                          <option value="2">Выборгский</option>
+                          <option value="2">Калининский</option>
+                          <option value="2">Кировский</option>
+                          <option value="2">Колпинский</option>
+                          <option value="2">Красногвардейский</option>
+                          <option value="2">Красносельский</option>
+                          <option value="2">Выборгская</option>
+                          <option value="2">Курортный</option>
+                          <option value="2">Ломоносовский</option>
+                          <option value="2">Московский</option>
+                          <option value="2">Невский</option>
+                          <option value="2">Павловский</option>
+                          <option value="2">Петроградский</option>
+                          <option value="2">Петродворцовый</option>
+                          <option value="2">Приморский</option>
+                          <option value="2">Пушкинский</option>
+                          <option value="2">Фрунзенский</option>
+                          <option value="2">Центральный</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-select">
+                      <label for="time" class="form-label">Срок:</label>
+                      <div class="form-control">
+                        <select name="time">
+                          <option value="2">12 месяцев</option>
+                          <option value="2">11 месяцев</option>
+                          <option value="2">10 месяцев</option>
+                          <option value="2">9 месяцев</option>
+                          <option value="2">8 месяцев</option>
+                          <option value="2">7 месяцев</option>
+                          <option value="2">6 месяцев</option>
+                          <option value="2">5 месяцев</option>
+                          <option value="2">4 мес.</option>
+                          <option value="2">3 мес.</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <button class="feedback pg-btn orange-btn"> <span>Отправить запрос</span></button>
+                  </div>
+                </form>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <main class="content menu-open">
+      <div class="wrap">
+        <div class="center__content bg-gradient"><img src="img/rent/bg-space-a.png" alt="" class="center__content-pic">
+          <div class="center__content-pos-bottom">
+            <h2>Как формируется стоимость площадей</h2>
+            <p>Для того чтобы понимать, как формируется цена аренды, нужно понимать, из чего она состоит.</p>
+            <hr>
+            <ol class="center__content-list">
+              <li class="content-list-item">Во-первых, это техническое оснащение стоянки – камеры наблюдения, датчики движения, интернет и связь и т.д.</li>
+              <li class="content-list-item">Во-вторых, зарплата персонала – от охранников до менеджеров по продажам и других специалистов.</li>
+              <li class="content-list-item">В-третьих, поддержание территории автостоянки в подобающем виде – укладка асфальта, подготовка офисных и других помещений, уборка и т.д. Кроме того, каждая компания хочет быть рентабельной, а значит, какой-то процент стоимости услуг учитывается как прибыль</li>
+            </ol>
+          </div>
+        </div>
+        <div class="right__content"><i class="icon-arrow"></i>
+          <h2>Сколько стоит аренда площадей<br>в ГК «Парк-Групп»</h2>
+          <p>Разрабатывая тарифы на наши услуги, мы решили не идти по пути быстрого обогащения. увеличив цены на свои услуги. Вместо этого мы сделали ставку на относительно низкие тарифы. Таким образом, цена на аренду в компании остается одной из наиболее низких на рынке, вдобавок может дополнительно снижаться, если арендуются большие площади:</p>
+          <hr>
+          <ol class="right__content-list">
+            <li class="content-list-item">Если площадь аренды стоянки грузовиков СПб составляет до 1000 м2, цена за 1 м2 будет - 100 рублей.                                </li>
+            <li class="content-list-item">От 1000 до 3000 м2 – 90 рублей.</li>
+            <li class="content-list-item">От 3000 до 5000 м2 – 80 рублей.</li>
+            <li class="content-list-item">Свыше 5000 м2 – 70 рублей.</li>
+          </ol>
+          <hr>
+          <p>Если Вам требуется арендовать большие площади (от 6000 тыс. м2 и более), можно говорить о специальных условиях сотрудничества. Цена указана уже с учетом всех налогов и сборов.</p>
+          <p>Сделать расчет стоимости для ваших автомобилей очень просто, в обратном письме  просто укажите количество интересующих парковочных мест или количество м2 и на какой период.</p>
+          <p>На основании информации вам в скорейшем времени будет сформировано коммерческое предложение.</p>
+        </div>
+      </div>
+    </main>
+    <script src="js/jquery.min.js"> </script>
+    <script src="js/jquery.formstyler.min.js"> </script>
+    <script src="js/main.js"> </script>
+  </body>
+</html>

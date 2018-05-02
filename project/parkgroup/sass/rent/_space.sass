@@ -1,0 +1,88 @@
+.bg-space
+	background: url(../img/rent/bg-space-a.png) no-repeat
+	background-size: 30%
+	background-position: center 180px
+.bg-gradient
+	background: linear-gradient(to bottom, #bcc9d9 0%,#d9edf2 20%,#ffffff 100%);
+	height: 100%
+
+.center__content, .right__content
+	padding: 0 30px 45px
+	min-height: 100%
+	h2
+		font-size: 24px
+		line-height: 30px
+		font-family: "open_sans_bold"
+		margin-bottom: 13px
+		text-transform: uppercase
+	p, .content-list-item
+		font-size: 15px
+		font-family: open_sans
+		margin-bottom: 13px
+	hr
+		margin-bottom: 15px
+
+.center__content
+	padding-left: 30px
+	float: left
+	max-width: 65%
+	position: relative
+.center__content-pic
+	max-width: 100%
+	padding-top: 200px
+.center__content-pos-bottom
+	position: relative
+/* 	bottom: 0 */
+
+.right__content
+	float: left
+	width: 35%
+	background-color: #FFF
+	padding-top: 200px
+
+.right__content-list , .center__content-list
+	padding-left: 60px
+	margin-bottom: 25px
+
+.icon-arrow
+	display: block
+	height: 80px
+	position: relative
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: -10px
+		left: -75px
+		background-image: url("../img/rent/arrow.png")
+		background-repeat: no-repeat
+		width: 185px
+		height: 170px
+
+
+.center__content-list, .right__content-list
+	counter-reset: myCounter;
+	padding-left: 70px;
+
+.content-list-item
+	position: relative
+	&:before
+		content: counter(myCounter);
+		counter-increment: myCounter;
+		position: absolute;
+		top: 0;
+		left: -45px;
+		width: 1.8em;
+		height: 1.8em;
+		line-height: 1.8em;
+		padding: 0px;
+		color: #fff;
+		background: #bdbdbd;
+		text-align: center;
+		border-radius: .9em;
+		z-index: 1;
+		transition: all 0.3s ease-in-out;
+
+.right__content-list			
+	.content-list-item:before
+		content: "\20BD";

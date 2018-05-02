@@ -1,0 +1,185 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+	.form__place 
+		.form-item
+			width: 30%
+			margin-bottom: 15px
+			&:last-child
+				width: 100%
+				text-align: center
+				margin-bottom: 0
+		&.short
+			.form-item
+				width: auto
+
+
+	.arenda__set .arenda__set-title
+		display: block
+	.news__block-wrap
+		&:nth-child(2n)
+			border-right: 0	
+	.form__news 
+		.form-item:first-child
+		
+		.pg-btn	
+			max-width: 280px	
+		.form-control input
+			min-width: initial
+
+
+
+@media only screen and (max-height : 850px)
+	.open__block
+		/* height: auto !important */
+	.footer
+		position: relative
+		margin-top: 25px
+		padding-left: 0
+		padding-right: 0	
+@media only screen and (max-width : 1441px)
+	.open__block
+		/* height: auto !important */
+	.arenda__set
+		.arenda__set-title
+			display: block
+			margin: 0 0 8px 8px
+		.arenda__set-l,  ul
+			margin-bottom: 25px
+
+	.breadcrumbs__block
+		margin-left: 9px
+	.form__place .form-label
+		display: block
+	.footer
+		position: relative
+		margin-top: 25px
+		padding-left: 0
+		padding-right: 0
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1025px)
+	.content
+		height: auto !important		
+	.left__block,.right__block, .header-blocks, .left__block-img, .footer
+		width: 100%
+		max-width: initial
+		float: none
+		position: relative
+		transform: translate(0)
+		left: auto
+		top: auto
+	.wrap
+		margin-left: auto !important
+		margin-right: auto
+		.block
+			text-align: center
+		.link__block
+			margin: 0 0 25px
+			&:after
+				border: 0
+
+	.open__block
+		width: 100%
+		max-width: initial
+		top: auto
+		height: auto !important
+		
+	.home-bg
+		background-image: none
+		background-color: rgba(0,0,0,.7)
+	.left__block-btn
+		border: 0 
+	.left__block-img
+		padding: 15px
+	.right__block		
+		margin-top: 25px
+		margin-left: auto !important
+	.center__content-pic , .right__content
+	 	padding-top: 35px !important
+	.center__content, .right__content
+		float: none
+		width: 100%
+		max-width: initial
+		padding: 0 15px
+	.center__content-pic
+		margin: 0
+		padding-top: 25px
+	.news__block
+		padding-top: 25px !important
+	.form__news 
+		.form-item:first-child
+			margin-bottom: 15px
+	.footer
+		padding-left: 0
+		padding-right: 0
+	.footer-researh, .phone__block
+		border: 0
+	.orange-btn span
+		font-size: 14px
+
+@media only screen and (max-width : 828px)
+	/* --- */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/* --- */
+
+@media only screen and (max-width : 582px)
+	.form__place 
+		.form-item
+			display: block
+			margin-bottom: 15px
+			width: 100%
+			&:last-child
+				width: 100%
+				text-align: center
+				margin-bottom: 0
+		.form-control 
+			width: 100%		
+			input
+				width: 100%
+		label
+			margin-bottom: 6px
+		.pg-btn
+			width: 280px
+			margin-top: 15px
+
+	.breadcrumbs__block
+		margin-left: 0
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/* --- */
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/* --- */
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/*--*/ 

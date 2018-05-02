@@ -1,0 +1,117 @@
+.form__place-title
+	display: inline-block
+.form__place.short
+	.title
+		display: inline-block
+		margin-right: 18px
+		margin-bottom: 0
+	.title-item
+		font-size: 20px
+		color: #fff
+		padding-right: 6px
+
+	.form-item
+		width: auto
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+
+
+.arenda__set
+	ul, .arenda__set-l
+		display: inline-block
+		vertical-align: middle	
+
+		&:last-child
+			margin-right: 0	
+	.arenda__set-l	
+		margin-bottom: 10px		
+	li
+		margin-right: 40px
+		width: 80px
+		height: 80px
+		border-radius: 50%
+		background-color: #FFF	
+		position: relative	
+		cursor: pointer
+		border: 1px solid #fff
+		&:last-child
+			margin-right: 0
+		&:hover
+			border: 1px solid #e52707
+			transition: 0.3s
+
+	i.icon
+		display: inline-block
+		width: 70px
+		height: 70px
+		position: absolute
+
+		border-radius: 50%	
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		&:before
+			top: 50%
+			left: 50%	
+			transform: translate(-50%,-50%)						
+	i.icon.park
+		background-color: #e52707
+	i.icon.serv
+		border: 8px solid #e52707
+
+	.pg-btn 
+		position: absolute
+		top: 100%
+		left: 50%
+		padding-top: 8px
+		transform: translate(-50%)
+		background-color: transparent
+		span
+			color: #fff
+			font-size: 16px
+			text-transform: initial
+
+	.krug-btn
+
+	.buble-btn
+
+
+
+	.arenda__set-title
+		display: inline-block
+		vertical-align: middle
+		margin: 0 70px 0 0 
+
+
+.rc-gallery
+	max-width: 400px 
+	max-height: 175px 
+	overflow: hidden  
+	margin-top: 25px
+	margin-bottom: 25px
+	cursor: pointer
+.js-open-window
+	position: relative
+
+	transition: opacity 0.3s
+	&:before
+		content: ''
+		display: block
+		width: 180px
+		height: 180px
+		position: absolute
+		opacity: 0
+		top: 0
+		right: 0
+		background-image: url(../img/parkovki/lupa.png)
+		background-repeat: no-repeat
+		transition: opacity 0.3s		
+	&:hover:before
+		opacity: 1
+
+
+
+
+ 
+
