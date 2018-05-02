@@ -1,0 +1,227 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.content-center-block
+		.ccb-item
+		    max-height: initial !important
+	.nav>.open>.dropdown-menu
+	    	margin: 10px
+	    	color: #000 
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a
+			color: #000 
+			font-size: 18px
+	.content .content-center-block
+		.h-img-line
+			transform: translate(50%,-50%);	    	
+	.content .content-right-block
+    	max-width: initial
+    	margin-left: 0
+	.content-right-block .nb-content
+    	max-width: 60%
+    	margin-top: 20px
+    	margin-bottom: 20px
+    	text-align: center
+	.content-right-block .nb-content-title 
+	   	text-align: center
+	.content-right-block .nb-f .btn-fram 
+    	margin-right: auto
+    	margin-left: auto
+	.h-line-three
+		margin-top: 65px
+		&:before
+			width: 30%	
+	.h-img-line
+		transform: translate(50%,-35%)
+	.content-order-block .shop-actions table td,
+	.content-order-block .shop-actions table th
+		min-width: initial
+		
+	.content-order-block .shop-actions table td:first-child
+		min-width: 110px
+		max-width: 90px
+		border-bottom: 0
+	.content-order-block .shop-actions table td:nth-child(2)
+		border-top: 1px dotted #e6d4c7
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.content .content-right-block
+    	margin-left: 25px
+	.content-range-block table 
+		border: 0
+		width: 95%
+	.right-menu 
+		margin: 17px 25px
+		li
+			display: block		
+	.footer 
+		[class*=col-] .made-in
+    		text-align: center
+	.footer 
+		[class*=col-]:nth-child(even)
+		    border-right: none
+		    box-shadow: none
+		.soc-block
+			text-align: left
+		[class*=col-] .icon:before 
+    		margin-left: 15px
+@media only screen and (max-width : 828px)
+	.content-range-block 
+		.option-product
+			float: none
+			width: 100%
+			ul li
+				display: inline-block
+		.shop-actions
+    		width: 95%
+	
+	.top-block
+		&:before
+			content: " "
+			display: table
+		&:after
+			content: " "
+			display: table
+			clear: both
+	.content-order-block	
+		.icon-close-table:before
+			top: 9px
+			left: 6px
+		table	
+			.btn-fram .btn-bb
+				width: 110px
+			.btn-fram
+				width: 114px
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.content .content-range-block 
+		.price-product
+			margin: 0 auto
+		.option-product
+			margin-top: 20px
+			ul
+				float: right
+				width: 43%
+		.file-product
+			float: left
+			width: 50%
+	.header 
+		.flex-control-nav
+			display: none
+		.flexslider .slides img
+	    	width: 100%		
+
+
+	.content .content-center-block, .content .content-right-block
+		margin: 0
+	.header .right-bl
+    	float: none
+    	.logo-bl img
+    		min-width: 250px
+	.content-order-block
+		.shop-actions
+			.order-price
+				float: none
+				text-align: center
+				padding: 25px 0 
+			.order-rezult
+				display: block
+				text-align: center
+@media only screen and (max-width : 582px)
+	.content .content-range-block 
+		.title-product
+			font-size: 18px
+		.price-product
+			width: 80px
+			height: 80px
+			.price-item
+				font-size: 40px
+			.icon-rub:before
+				transform: scale(0.6)
+				top: 19%
+				left: 82%
+	.img-product img
+		width: 100%
+
+	.footer [class*=col-]
+		width: 100%
+		.ab-text,.soc-block
+			text-align: center
+		.icon:before
+    		margin-left: 0px
+	.h-line-three
+		margin-top: 65px
+		&:before
+			width: 40%
+	.content-order-block .ordrez-itog span
+		display: inline-block
+		padding: 22px 0 10px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.content-right-block .nb-content
+		max-width: initial
+		padding-left: 5px
+		padding-right: 5px
+	table .rezult , table input
+    	margin-left: 5px
+    	
+	.content-order-block tr td:before
+		margin-right: 0
+	table input
+		padding: 8px 0px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	.content-order-block
+    	margin: 0 33px 25px 13px
+	.content-right-block 
+		margin-left: 0
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.content .main-container
+		display: flex
+	.col-lg-3.bg-right-menu
+		background-color: #fff
+		margin-bottom: 25px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	.navbar
+		.container-fluid
+			max-width: 1170px
+			padding: 0
+			left: 13px
+			position: relative
+    		
+	.navbar-inverse
+		.nav>li
+			margin-right: 26px 
+	.navbar-inverse
+		.nav>li:last-child
+			margin-right: 0 		
+	.navbar-collapse
+		padding: 0

@@ -1,0 +1,343 @@
+.content-range-block
+	.h-line-three
+		margin-top: 0		
+	.left-block
+		margin-left: 15px
+	.right-block
+		margin-left: 25px	
+		p
+			padding: 10px 0
+	.price-product
+		background-color: $bg-price-item
+		width: 160px
+		height: 160px
+		border-radius: 160px
+		position: relative
+		margin: 5px 20px 20px
+	.price-item
+		left: 50%
+		transform: translate(-50%,-50%)
+	    
+		position: absolute
+		font-family: Lato
+		font-size: 80px
+		font-weight: 400
+		top: 50%
+		color: #000000
+		text-shadow: -2px 0 3px #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff; color: #000
+		&:before
+			top: 52%
+			left: 100%
+	.option-product
+		min-height: 200px
+		margin-bottom: 20px
+		float: right
+		width: 28%
+		position: relative
+		margin-right: 20px
+		ul li
+			display: block
+			+text-small-black()  
+			text-transform: uppercase
+			margin: 0px auto 30px
+			line-height: 35px
+		.t-cell
+			span
+				display: inline-block
+				position: relative
+				margin: 5px 5px 5px 0
+	  			vertical-align: middle
+	  			
+				&:first-child
+				    width: 45px
+				    text-align: center  
+				img
+					vertical-align: middle 	
+
+	.shop-actions
+		float: left
+		width: 60%
+	.btn-product-block
+		float: left		
+	
+		
+	.file-p-item
+		+text-small-black()  
+		text-transform: uppercase
+		color: #dd1010
+		margin-bottom: 20px	
+	.btn-product-block
+		.btn-fram
+			display: inline-block
+			margin: 20px 0 20px 20px
+			.arrow-y:after
+				left: 15px
+				transform: translate(-50%,-50%) rotate(-180deg)		
+	.btn-red
+			padding-left: 10px
+			&:hover, &:focus 
+				background-color: #a70606
+				transition: $delay-btn
+	.icon-cart:before 
+		left: 3px
+		top: 5px
+
+// Продукция
+.content-products-block
+	min-height: 90px
+	margin: 0 25px 25px 25px
+	.crb-item
+		margin-bottom: 25px
+		background-color: #fff 
+		min-height: 200px
+	.line-three-block
+		margin-top: 20px
+		position: relative
+		.h-line-three
+			margin: 0
+		.h-img-line
+		    transform: translate(50%,0%)
+	.products-item
+		position: relative
+		.pi-img	
+			width: 100%
+			img
+				margin: 0 auto
+				padding-top: 33px
+$border-table-color: #e6d4c7
+.content-range-block
+table
+	
+	border-collapse: collapse
+	width: 100%
+	border-spacing: 0
+	margin: 0
+	padding: 0
+	border: 1px solid $border-table-color
+	tr
+	    border: 1px solid $border-table-color
+	    padding: 0
+	th, td
+		padding: 10px
+		text-align: center
+		border-right: 1px solid $border-table-color
+		span
+			margin-left: 5px
+	th
+		text-transform: uppercase
+		font-size: 14px
+		letter-spacing: 1px
+		max-width: 138px
+		color: #000
+		&:last-child
+			font-weight: bold
+
+	.rezult
+		width: 120px
+		height: 39px
+		border: 1px solid $border-table-color
+		margin: 0 auto
+		vertical-align: middle
+		display: inline-block
+		text-align: center
+		line-height: 39px
+	input
+		padding: 8px 15px
+		height: 39px
+		border: 1px solid $border-table-color
+		text-align: center;
+		vertical-align: middle
+.t-bg-gray
+	background: url(../../img/content/product/shop-action/sha-gray.jpg) no-repeat
+	background-size: cover
+	box-shadow: 1px 1px 2px 1px #fff inset
+.t-bg-yellow
+	background: url(../../img/content/product/shop-action/sha-yellow.png) no-repeat
+	background-size: cover
+	box-shadow: 1px 1px 2px 1px #fff inset
+.t-bg-input
+	box-shadow: inset 0 9px 16px rgba(81, 65, 53, 0.22)
+	outline: none
+@media screen and (max-width: 600px)
+	table 
+		border: 0
+		width: 95%	
+		thead 
+			display: none
+	tr
+		margin-bottom: 10px
+		display: block
+		border-bottom: 2px solid $border-table-color
+		td
+			display: block
+			text-align: left
+			font-size: 13px
+			border-bottom: 1px dotted $border-table-color
+			border-right: 0
+			min-height: 60px
+			line-height: 60px
+			padding: 1px 10px
+			&:last-child
+				border-bottom: 0
+			&:before
+				content: attr(data-label)
+				float: left
+				text-transform: uppercase
+				font-weight: bold
+				width: 45%
+				margin-right: 20px
+				border-right: 1px dotted $border-table-color
+	.t-bg-gray
+		background: none
+.title-product
+	text-align: center
+.img-product
+	display: table
+ 
+
+$var1: #4c4c4c
+$var2: #ffffff
+$var3: #000000
+$var4: #222222
+$var5: #cccccc
+
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.10
+ * (c) 2016 Josh Cope
+ * licensed under MIT
+ */
+$var6: #ffffff
+
+.slicknav_menu 
+	display: none
+
+@media screen and (max-width: 900px) 
+	#menu 
+		display: none
+
+	.slicknav_menu 
+		display: block
+
+
+
+.slicknav_btn 
+	position: relative
+	vertical-align: middle
+	padding: 0.438em 0.625em 0.438em 0.625em
+	line-height: 1.125em
+	cursor: pointer
+	.slicknav_icon-bar + .slicknav_icon-bar 
+		margin-top: 0.188em
+	
+
+.slicknav_menu 
+	zoom: 1
+	.slicknav_menutxt 
+		display: block
+		line-height: 1.188em
+		float: left
+	
+	.slicknav_icon 
+		float: left
+		width: 1.125em
+		height: 0.875em
+		margin: 0.188em 0 0 0.438em
+		&:before 
+			background: transparent
+			width: 1.125em
+			height: 0.875em
+			display: block
+			content: ""
+			position: absolute
+		
+		&-bar 
+			display: block
+			width: 1.125em
+			height: 0.125em
+			border-radius: 1px
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25)
+		
+		&-bar 
+			background-color: $var2
+		
+	
+	.slicknav_no-text 
+		margin: 0
+	
+	&:before 
+		content: " "
+		display: table
+	
+	&:after 
+		content: " "
+		display: table
+		clear: both
+	
+	.slicknav_menutxt 
+		color: #9d8a66
+	
+
+.slicknav_nav 
+	clear: both
+	ul 
+		display: block
+	
+	li 
+		display: block
+	
+	.slicknav_arrow 
+		display: none
+
+		
+	
+	.slicknav_row 
+		display: block
+		&:hover
+			background: $var5
+			color: $var2
+	
+	.slicknav_parent-link a 
+		display: inline
+
+	.slicknav_txtnode 
+		margin-left: 15px
+	
+	.slicknav_parent-link a 
+		padding: 0
+		margin: 0
+	
+
+.slicknav_brand 
+	float: left
+
+.slicknav_menu 
+	font-size: 16px
+	box-sizing: border-box
+	background: transparent
+	padding: 5px
+	ul li
+		padding: 10px 15px
+	.dropdown-menu li
+		padding: 0
+		
+.slicknav_btn 
+	margin: 5px 5px 6px
+	text-decoration: none
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75)
+
+.slicknav_nav 
+	color: $var2
+	margin: 0
+	padding: 0
+	font-size: 0.875em
+	list-style: none
+	overflow: hidden
+
+.slicknav_brand 
+	color: $var2
+	font-size: 18px
+	line-height: 30px
+	padding: 7px 12px
+	height: 44px
+
+   	

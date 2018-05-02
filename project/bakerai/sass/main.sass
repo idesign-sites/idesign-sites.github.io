@@ -1,0 +1,288 @@
+@import "bourbon"
+@import "fonts"
+@import "libs"
+@import "vars"
+//@import "flexslider"
+@import "contacts"
+@import "button"
+@import "style_home/home" // стили главной страницы
+@import "style_menu/menu" // стили меню
+@import "style_product/product" // стили продуктов
+@import "style_order/order" // стили заказы
+@import "style_franchise/franchise" // стили франшизы
+
+*::-webkit-input-placeholder 
+	color: #838888
+	opacity: 1
+
+*:-moz-placeholder
+	color: #838888
+	opacity: 1
+
+*::-moz-placeholder
+	color: #838888
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #838888
+	opacity: 1
+
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	+text-small-black()  
+	overflow-x: hidden
+	background-image: url(../img/bg-body.jpg)
+	background-attachment: fixed
+    
+	// .container
+	//	border: 1px solid #eee
+	.p-l-0
+		padding-left: 0
+	.p-r-0
+		padding-right: 0
+	.small-text	
+		+text-small-black()
+	ul
+		padding: 0
+	ul li
+		list-style: none
+	a
+		text-decoration: none
+		transition: $delay-btn
+		&:hover, &:focus
+			text-decoration: none
+			transition: $delay-btn
+	.absolut-center
+		transform: translateX(-50%)
+		position: absolute
+		left: 50%
+	.wrapper
+		display: flex
+		flex-direction: column
+		height: 100%
+	.content
+		flex: 1 0 auto
+	footer
+		flex: 0 0 auto
+.header
+	.logo-bl
+		left: 50%
+		position: absolute
+		z-index: 10
+		transform: translateX(-50%)
+	.logo-bl-contact
+		overflow: hidden
+		position: relative
+		.bl-contact-tel
+			+text-small-upper-black()   
+			position: absolute
+			bottom: 29px	
+			right: 43px
+			font-weight: bold
+			transition: $delay-btn
+			&:hover, &:focus 
+				text-shadow: 1px 1px 8px #faddb5
+				text-decoration: none
+    			
+	.right-bl
+		float: right
+	.flexslider	
+		border: none
+		margin: 0
+	.flexslider .slides img
+		width: auto
+	.flex-control-nav
+	    width: 100%
+    	max-width: 1170px
+	    margin: 0 auto
+	    position: absolute
+	    bottom: 20px
+	    text-align: left
+	    z-index: 100
+	    left: 50%
+    	transform: translateX(-50%)
+	.flex-control-nav li
+	    border: 1px solid $yellow
+	    border-radius: 110px
+	    padding: 5px
+	.flex-control-nav li a
+		margin: 0 auto 
+		width: 100px
+		height: 100px
+		border-radius: 100px
+		border: 5px solid rgba(255, 255, 255, 0.25)
+    	 
+	.flex-control-nav li:nth-child(1) a
+		background-image: url(../img/header/round-pic1.png)
+		+border-box-light() 
+	.flex-control-nav li:nth-child(2) a
+		background-image: url(../img/header/round-pic2.png)
+		+border-box-light() 
+	.flex-control-nav li:nth-child(3) a
+		background-image: url(../img/header/round-pic3.png)
+		+border-box-light() 
+	.flex-control-nav li:nth-child(4) a
+		background-image: url(../img/header/round-pic4.png)
+		+border-box-light() 
+.content
+	.main-container
+		max-width: 1200px
+	.content-block
+		max-width: 1200px
+		background-color: #fff
+		overflow: hidden
+		margin: 0 25px 25px 25px
+	.content-center-block, .content-contacts-block
+		max-width: 1200px
+		background-color: #fff
+		overflow: hidden
+		margin: 0 25px 25px 25px
+		.ccb-item
+			overflow: hidden
+			max-height: 420px
+	.content-right-block
+		overflow: hidden
+		background-color: #fff	
+		margin-right: 25px
+		min-height: 100px
+	.breadcrumb-block , .content-range-block
+		min-height: 90px
+		background-color: #fff
+		margin: 0 25px 25px 25px
+	.content-range-block
+		padding-top: 20px
+		.h-img-line
+    		transform: translate(50%,0%)
+	.title-product
+		+text-big-black() 
+		margin: 0
+
+//  Хлебные крошки
+.breadcrumb-block
+	padding: 22px 0 0 10px
+	.brb-title
+		+text-news-big-red()
+	.breadcrumb
+		background-color: #fff
+		padding: 8px 0
+		margin-bottom: 15px
+		a
+			color: #000
+			border-bottom: 1px solid #000
+			&:hover , &:focus
+				border-bottom: 0
+//	Правое меню
+.right-menu
+	border-bottom: 1px dashed #9d8a66
+	ul li a
+			+text-small-black() 
+			font-size: 18px
+			text-transform: uppercase
+			span 
+				border-bottom: 1px solid #000
+				&:hover , &:focus
+					border-bottom: 0  
+	.active>a
+		+text-news-big-red()
+		span
+			border-bottom: 0
+	.dropdown-menu
+		position: relative
+		background-color: #fff
+		border: 0
+		float: none
+		box-shadow: none
+		li a
+			font-size: 14px
+			color: #877758 
+			&:hover , &:focus
+				background-color: #eee
+				color: #515959
+//  ФУТЕР
+.footer
+	background-color: $yellow 
+	+text-small-black()
+	text-align: center; 
+	color: #000
+	min-height: 100px
+	padding: 20px 0
+	.f-inner-item 
+		display: table
+		vertical-align: middle
+		min-height: 60px;
+		width: 100%
+		.f-tcell
+			display: table-cell
+			vertical-align: middle
+			width: 100%
+		.adress-block
+	[class*="col-"]:last-child 
+		border-right: 0
+		box-shadow:	none		
+	[class*="col-"] 
+		border-right: 1px solid #ffeca3
+		box-shadow: inset -1px 0px #e2b407; 
+		min-height: 60px
+		.icon:before
+			left: -50%
+		.icon-phone-icon
+			font-size: 0
+			color: transparent
+		.icon-phone-icon:before
+			top: -33px
+			left: 0px
+
+		.ab-text
+			text-align: left		 	
+		.soc-block 
+			li
+				text-align: center
+				display: inline-block		
+			a
+				display: inline-block
+				margin: 5px 5px 0
+				height: 40px
+				width: 40px
+    			
+		.tel-company li
+			display: inline-block
+			padding-left: 25px;
+		.tel-company li	a
+			display: block
+			+text-small-black()
+			color: #000
+			&:hover, &:focus 
+				text-decoration: none
+		.made-in
+			text-align: right	
+			.name-company
+				+text-mgmedia()
+				padding-left: 6px
+			.mi-line:after
+				
+    			padding-right: 3px
+    			content: ' \2014'
+
+			
+
+
+
+@import "media" // Всегда в конце
+
+
+
+
