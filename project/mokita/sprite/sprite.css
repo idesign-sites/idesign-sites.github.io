@@ -1,0 +1,16 @@
+
+.icon-icon-list{
+	position: relative;
+}
+
+.icon-icon-list:before{
+	content:"";
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: 0px 0px;
+	width: 14px;
+	height: 12px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
